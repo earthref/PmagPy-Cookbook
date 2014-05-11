@@ -67,12 +67,13 @@
 
 \item Optional: If you have installed the full version of Canopy and want to use the mapping programs (e.g., \href{#basemap_magic.py}{basemap\_magic.py}),  
 \customlink{HighRes}
-click on  the `Package Manager' button on the Canopy welcome page, and then on `Available Packages'.  Install both basemap packages (one has high resolution data files in it). 
+click on  the `Package Manager' button on the Canopy welcome page, and then on `Available Packages'.  Install both basemap packages (one has high resolution data files in it).  
  \item Download the example data files folder from:
  
    \url{https://github.com/ltauxe/PmagPy-Cookbook/blob/master/Datafiles_2.0.zip}
   
 On the github website, click on the `raw' button.  When the zip file is downloaded,  double click it  (for Macs) or `extract' the data files on a PC.  
+\item  To install the Etopo20 package, see \href{#install_etopo.py}{install\_etopo.py}.
   \item Create a \href{#Project_Directory}{MagIC Project Directory} (see Section~\ref{sect:ProjectDirectory}).
   \item Find your \href{#command_line}{command line} and type {\bf QuickMagIC.py} or {\bf MagIC.py}. 
     \item Select your MagIC Project Directory as your working directory.  
@@ -1065,7 +1066,7 @@ Use the program {\bf b\_vdm} to convert an estimated paleofield value of 33 $\mu
 \href{https://github.com/ltauxe/PmagPy/blob/master/basemap_magic.py}{[basemap\_magic docs]}
 
 Python has a complete map plotting package and PmagPy has a utility for making simple base maps for projects.  Site location data imported for example using \href{#orientation_magic.py}{orientation\_magic.py} into an {\it er\_sites} formatted text file can be plotted using {\bf basemap\_magic.py}.  There are many options, so check the help message for more details.   Note that if you want to use  \href{#hires}{high resolution datafiles}
- or the etopo20 meshgrid (-etp option), you must install the high resolution continental outlines.
+ or the etopo20 meshgrid (-etp option), you must install the high resolution continental outlines.  You can use \href{#install_etopo.py}{install\_etopo.py}  for that.
 As an example, use the program {\bf basemap\_magic.py} to make  a simple base map  with site locations in a MagIC {\it er\_sites.txt}  formatted file named {\it basemap\_example.txt}.  
 
 \begin{verbatim}
@@ -2358,8 +2359,23 @@ and get this plot:
 
   \includegraphics[width=15cm]{EPSfiles/igrf.eps}
 
+\customlink{install_etopo.py}
+
+\subsection{install\_etopo.py}
+\href{https://github.com/ltauxe/PmagPy/blob/master/incfish.py}{[incfish docs]}
+
+Some  mapping utilities use the Etopo package for topography and these data sets do not come standard with the Python installation.  To install these properly, change directories into the etopo20 subdirectory in the Datafiles directory.  Simply type:
+
+\begin{verbatim}
+% install_etopo.py 
+\end{verbatim}
+
+
+
+
 
 \customlink{incfish.py}
+
 \subsection{incfish.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{ [ Essentials Chapter 11]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/incfish.py}{[incfish docs]}
@@ -3294,7 +3310,8 @@ which should have generated a plot something like this:
   \href{https://github.com/ltauxe/PmagPy/blob/master/plot_mapPTS.py}{[plot\_mapPTS docs]}
 
 NOTE:  This program only works if you have installed basemap (full version of Enthought Python as opposed to the free version.)  It will not work with the free version of Enthought Python.  {\bf plot\_mapPTS.py} will generate a simple map of the data points in a file (lon lat) on the desired projection.    
-If you want to use high resolution or the etopo20 meshgrid (-etp option), you must install the \href{#hires}{high resolution} continental outlines.  There are many options, so check the documentation (-h option) for details.  
+If you want to use high resolution or the etopo20 meshgrid (-etp option), You must install the etopo20 data files and can use \href{#install_etopo.py}{install\_etopo.py}  for that.
+ There are many options, so check the documentation (-h option) for details.  
 
 Draw a set of 200 uniformly distributed points on the globe with the program \href{#uniform.py}{uniform.py}.  Plot these on an orthographic projection with the viewing point at a longitude of 0 and a latitude of 30$^{\circ}$N.  If you have installed the high resolution data sets, use the -etp option to plot the topographic mesh.  Plot the points as large (size = 10) white dots.  Also note that for some reason the .svg output does not place nicely with illustrator.  
 
@@ -4322,8 +4339,8 @@ Just for good measure, you could try it out on the data in the \href{#di_vgp.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#ch2}{[Essentials Chapter 2]},  \href{#MagICDatabase}{[MagIC Database]} and   \href{#hires}{high resolution instructions}
 \href{https://github.com/ltauxe/PmagPy/blob/master/vgpmap_magic.py}{[vgpmap\_magic docs]}
 
-Make a plot of the VGPs calculated for the dataset downloaded in the \href{#download_magic.py}{download\_magic.py} example.  Use the  \href{#hires}{high resolution}
- topography (ETOPO 20) dataset and plot the data on an orthographic projection with the viewpoint at 60$^{\circ}$N and the Greenwich Meridian (longitude = 0).  Make the points black dots with a size of 10pts.   Save the file in png format
+Make a plot of the VGPs calculated for the dataset downloaded in the \href{#download_magic.py}{download\_magic.py} example.  Install the  \href{#hires}{high resolution} and the etopo20 data files. Use \href{#install_etopo.py}{install\_etopo.py}  for that.
+and plot the data on an orthographic projection with the viewpoint at 60$^{\circ}$N and the Greenwich Meridian (longitude = 0).  Make the points black dots with a size of 10pts.   Save the file in png format
 
 \begin{verbatim}
  vgpmap_magic.py -crd g -prj ortho -eye 60 0 -etp -sym ko 10 -fmt png
