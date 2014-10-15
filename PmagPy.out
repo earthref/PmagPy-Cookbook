@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 \BOOKMARK [0][-]{chapter.1}{MagIC Quick Start}{}% 1
 \BOOKMARK [0][-]{chapter.2}{QuickMagIC.py Tutorial}{}% 2
 \BOOKMARK [1][-]{section.2.1}{Converting magnetometer files to MagIC format}{chapter.2}% 3
@@ -217,3 +218,5 @@
 \BOOKMARK [2][-]{section*.60}{A first plot}{section.7.9}% 217
 \BOOKMARK [3][-]{section*.61}{Multiple figures and more customization}{section*.60}% 218
 \BOOKMARK [3][-]{section*.62}{Adding text}{section*.60}% 219
+=======
+>>>>>>> master
