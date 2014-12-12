@@ -3,44 +3,46 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: PmagPy.aux
 The style file: apalike2.bst
 Database file #1: UCPbook.bib
-You've used 30 entries,
+Warning--can't use both author and editor fields in tauxe04d
+You've used 34 entries,
             2229 wiz_defined-function locations,
-            687 strings with 9864 characters,
-and the built_in function-call counts, 16349 in all, are:
-= -- 1587
-> -- 744
-< -- 18
-+ -- 270
-- -- 262
-* -- 1452
-:= -- 2676
-add.period$ -- 91
-call.type$ -- 30
-change.case$ -- 276
-chr.to.int$ -- 30
-cite$ -- 30
-duplicate$ -- 523
-empty$ -- 1113
-format.name$ -- 306
-if$ -- 3287
+            711 strings with 10297 characters,
+and the built_in function-call counts, 17821 in all, are:
+= -- 1738
+> -- 781
+< -- 21
++ -- 282
+- -- 274
+* -- 1576
+:= -- 2927
+add.period$ -- 102
+call.type$ -- 34
+change.case$ -- 303
+chr.to.int$ -- 34
+cite$ -- 35
+duplicate$ -- 576
+empty$ -- 1225
+format.name$ -- 326
+if$ -- 3577
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 33
-newline$ -- 153
-num.names$ -- 92
-pop$ -- 233
+missing$ -- 38
+newline$ -- 173
+num.names$ -- 102
+pop$ -- 251
 preamble$ -- 1
-purify$ -- 279
+purify$ -- 307
 quote$ -- 0
-skip$ -- 448
+skip$ -- 490
 stack$ -- 0
-substring$ -- 1617
-swap$ -- 130
+substring$ -- 1759
+swap$ -- 135
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 174
-warning$ -- 0
-while$ -- 92
+type$ -- 196
+warning$ -- 1
+while$ -- 104
 width$ -- 0
-write$ -- 395
+write$ -- 446
+(There was 1 warning)

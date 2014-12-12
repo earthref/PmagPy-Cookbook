@@ -280,7 +280,7 @@ Congratulations. Your data are now in the database but are not yet activated.  O
 
 %
 %  
-%\customlink{MagIC.py}
+\customlink{MagIC.py}
 %
 %\chapter{MagIC.py}
 %\label{chap:MagIC} \href{#MagICDatabase}{[MagIC}]
@@ -407,7 +407,7 @@ When you are finished with editing the {\it orient.txt} file,  return to  \href{
 
 
 %
-%\customlink{AZDIP}
+\customlink{AZDIP}
 %
 %\subsubsection{AZDIP formatted files}
 %
@@ -504,7 +504,7 @@ Now you've collected together all the files you need, we can start importing the
 %\section{Using the MagIC.py GUI}
 %The MagIC.py graphical user interface is a Python program that facilitates importing of measurement data and sample information (location, orientation, etc.) into the MagIC format and interpretation thereof. It will help prepare all the files into a text format that can be imported directly into a \href{http://earthref.org/cgi-bin/help.cgi?lib=magic\qquad &id=140}{MagIC smartbook}. MagIC.py copies files to be uploaded into a special project MagIC directory, translates them into the MagIC format and keeps track of things in various log files.  Note that when it does this, it  will translate them into a Unix file format (from MacOS and Windows file formats) so you don't have to.  Once the \href{#Project_Directory} {MagIC project directory} has been created, you should just leave it alone.  Assuming you have placed all the needed files (orient.txt formatted files for each location and the measurement data files) in the {\it MyFiles} directory, open up a \href{#command_line }{terminal window} and type MagIC.py on the command line. Select the MagIC directory in your \href{#Project_Directory}{Project Directory} when prompted.
 %
-%\customlink{FileMenu}
+\customlink{FileMenu}
 %
 %\subsection{The File menu}
 %Different operating systems will have a different look, but all versions will put up a Welcome window when you have fired up the program MagIC.py. When you pull down the "File" menu, you will see these options either on the top of your Desktop (Mac OS) or on the top of the window itself (Windows version):
@@ -645,20 +645,20 @@ When you are finished importing all the measurement data you need, choose ``Next
 
 
 %
-%\customlink{Combining_measurement_files}
+\customlink{Combining_measurement_files}
 %
 %\subsubsection{Combining measurement files}
 %Each time you import a measurement file, you create a MagIC version of the imported data file with the same name, but a .magic appended to the end.  These filenames are stored in the file {\it measurements.log}.  After you have completed importing all your measurement files, you must combine them together into a single {\it magic\_measurements.txt} file in order to use the other functions in MagIC.py.  Just select this option and everything will be done for you. 
 %
 %
-%\customlink{samp2orient}
+\customlink{samp2orient}
 %
 %\subsubsection{Creating an orient.txt file from er\_samples}
 %
 %
 %This option makes a call to \href{#convert_samples.txt}{convert\_samples.txt} to convert the {\it er\_samples.txt} file created by some import procedures into an {\it orient.txt} file which can be filled in as desired.  It can be re-imported by \href{#ImportOrient}{importing orientation} information.   After re-importing the orient.txt file, you should update your measurements.  
 %
-%\customlink{updatemeas}
+\customlink{updatemeas}
 %
 %\subsubsection{Update measurements:}
 %
@@ -668,7 +668,7 @@ When you are finished importing all the measurement data you need, choose ``Next
 %\subsubsection{Importing prior interpretations}
 %Many people prefer to use the software package that they are familiar with (e.g., \href{#PMD_magic.py}{PaleoMac software of Cogn\'e, 2003)}, \nocite{cogne03}  \href{#CIT_magic.py}{Craig Jones' {\bf PaleoMag} software},  or even previously processed Pmag (Tauxe, 1998) or PmagPy (Tauxe et al., 2010) softare and have generated files containing favorite interpretations of the paleomagnetic data.  MagIC.py can import these interpretation files, allowing the user to skip re-analysis and proceed directly to preparation of files for uploading, or re-interpretation of data files using PmagPy starting with the prior interpretations as a basis.    In any case, the following interpretation files are supported (or could be): 
 %
-%\customlink{import_redo}
+\customlink{import_redo}
 %
 %\begin{itemize}
 %\item {PmagPy redo file}:   This option copies the files used by \href{#zeq_redo.py}{zeq\_magic\_redo.py}, \href{#thellier_gui.py}{thellier\_gui.py}  and \href{#thellier_magic_redo.py}{thellier\_magic\_redo.py} and then runs them (see documentation in \href{#mk_redo.py}{mk\_redo.py} for file formats.  This will overwrite any existing interpretation files ({\it zeq\_specimen.txt} or {\it thellier\_specimens.txt}) files you may have created already, so be careful!  Also, this is the main way that the  \href{#thellier_gui.py}{thellier\_gui.py} shares information with the MagIC.py GUI, so import the redo file generated by the auto-interpreter (e.g., {\it thellier\_interpreter\_STDEV-OPT\_redo}  with this option and you will be able to use them within the MagIC.py GUI.  
@@ -679,20 +679,20 @@ When you are finished importing all the measurement data you need, choose ``Next
 %\end{itemize}
 %
 %
-%\customlink{ImportMagIC}
+\customlink{ImportMagIC}
 %
 %\subsubsection{Copying over your MagIC formatted files}
 %If you have already some MagIC tables ready,  you can import them into your MagIC folder with this option.  For example, you might have a previous set of specimen interpretations in a {\it pmag\_specimen.txt} file, or age information (in an {\it er\_ages.txt} file.  All age information specific to a give sample or site can be documented in an {\it er\_ages.txt} file (see \url{http://earthref.org/MAGIC/metadata.htm}).  These will be assembled with the respective site/samples in the results table when you \href{#PrepareMagicConsole}{assemble your results}. Other examples might be a location table ({\it er\_locations.txt}) or a citation table ({\it er\_citations.txt}).  
 %
 % This option will copy your \href{#DataTables}{MagIC} formatted file into the MagIC Project Directory.  Be sure to use the standard file names or the MagIC GUI will ignore them.  
 %
-%\customlink{AnalysisPlotsMenu}
+\customlink{AnalysisPlotsMenu}
 %
 %\subsection{Analysis and Plots Menu}
 %
 %After you have imported your various datafiles, you can process them using the tools in the \href{#AnalysisPlotsMenu}{Analysis and Plots menu}.    All of these options generate and execute command line calls for various \href{#PmagPy}{PmagPy} programs.  The {\bf MagIC.py} GUI uses default options because it ``knows'' the names of the files it has created, saving you from having to figure that out.   Many of these options require you to type things in on the command line, such as 'a' to s[a]ve plots, 'q' to quit, or simply return to increment the specimen name.  Follow the instructions for the specific program that are printed  in the terminal window   (see also the documentation in the section on \href{#PmagPy}{PmagPy} programs). Once the program has exited, control will be returned to the MagIC.py GUI.  
 %
-%\customlink{customize_criteria}
+\customlink{customize_criteria}
 %
 %\begin{itemize}
 %\item Customize Criteria: here you can change your criteria for acceptance or rejection of data.
@@ -717,7 +717,7 @@ When you are finished importing all the measurement data you need, choose ``Next
 %
 %\end{itemize}
 %
-%\customlink{PrepareMagic}
+\customlink{PrepareMagic}
 %
 %\subsection{Prepare for MagIC}
 %Once all your data have been imported and interpreted using one of the interpretation tools outlined in the section on \href{#AnalysisPlotsMenu}{Analysis and Plots}, you can assemble the results into the various \href{#DataTables}{tables} expected by MagIC, e.g., the {\it pmag\_specimens, pmag\_samples, pmag\_sites} and {\it pmag\_results} tables (also various rock magnetic tables, if available).  
@@ -743,7 +743,7 @@ When you are finished importing all the measurement data you need, choose ``Next
 %
 %
 %
-%\customlink{Utilities}
+\customlink{Utilities}
 %
 %\subsection{Utilities Menu}
 %
@@ -2060,7 +2060,7 @@ which produces plots like:
 
  \includegraphics[width=15cm]{EPSfiles/eqarea_magic_BV.eps}
 
-%\customlink{extract_methods.py}
+\customlink{extract_methods.py}
 %\subsection{extract\_methods.py}
 %\href{#MagIC}{MagIC}
 
@@ -2663,7 +2663,7 @@ S[a]ve figure? [q]uit, <return> to continue
 % 
 %%\subsection{microwave\_magic.py}  ADD this one eventually.
 %
-%\customlink{MagIC_Tutorial}
+\customlink{MagIC_Tutorial}
 %\subsection{MagIC.py Tutorial}
 %\href{#MagIC}{MagIC}
 %\href{#MagIC.py}{MagIC.py}
@@ -3429,7 +3429,7 @@ which should have generated a plot something like this:
 \includegraphics[width=12 cm]{EPSfiles/plot_cdf.eps}
 
 
-%\customlink{plot_geomagia.py}
+\customlink{plot_geomagia.py}
 %\subsection{plot\_geomagia.py}
 %
 %ADD
@@ -3517,7 +3517,7 @@ data saved in:  ./Directions.txt ./Intensities.txt ./SiteNfo.txt
 This creates tab delimited files that can be incorporated into a paper, for example.   You can also export the information in LaTeX format if you prefer. 
 
 
-%\customlink{PMM_redo.py}
+\customlink{PMM_redo.py}
 %\subsection{PMM\_redo.py}
 
 %ADD
@@ -4435,7 +4435,7 @@ now converting to dos file 'upload_dos.txt'
 Finished preparing upload file 
 \end{verbatim}
 
-%\customlink{Vdiff.py}
+\customlink{Vdiff.py}
 %\subsection{Vdiff.py}
 
 %ADD THIS
@@ -4937,7 +4937,7 @@ Text editing is a blessing and a curse.  You either love it or
 hate it and in the beginning, and if you are used to programs like Word, you will certainly hate it. (And if you are used to a decent text editor, you will hate Word!).   There are many ways of
 editing text and the subject is beyond the scope of this documentation.   But you can't use Word because the output is in a weird format that no scripting languages read easily.  So you have to use an editor that will produce a plain (ascii) file, like Notepad or TextWrangler.   The latter is freeware available for Macs and the former comes standard in the Windows operating system.   Fortunately, Enthought Python's Canopy programming environment comes with its own text editor, so we recommend that you just use that.   
 %
-%\customlink{installing_python}
+\customlink{installing_python}
 %\section{Installing Python and PmagPy}
 %\label{sect:python}
 %
@@ -6615,7 +6615,7 @@ Underlying the {\bf PmagPy}  programs that are accessible through the command li
 
 To provide a glimpse of what is possible in terms of data analysis using {\bf PmagPy} in a notebook environment, we have created an example notebook that is available in the {\it IPmag\_notebook} folder in the Datafiles package downloaded as a part of  the {\bf PmagPy} package. This notebook imports a data set downloaded from the  MagIC database,  plots them  and conducts some statistical analyses.   
 
- In the notebook, reversal tests are conducted using both the \cite{mcfadden90}  implementation of the \cite{watson83} $V_w$ statistic test for a common mean and the bootstrap reversal test (\cite{tauxe91} and Section 11.3.4 in the textbook \url{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html}). The notebook can be viewed as a static webpage at this link \url{https://nbviewer.jupyter.org/github/swanson-hysell/2015_Tauxe-et-al_PmagPy_Notebook/blob/master/PmagPy_notebook.ipynb} or downloaded as executable code as detailed below.  The notebook example is also in the PmagPy\_Tutorial folder that you downloaded as the Datafiles zip folder (see Section~\ref{sect:quick_start}).  
+ In the notebook, reversal tests are conducted using both the \cite{mcfadden90}  implementation of the \cite{watson83} $V_w$ statistic test for a common mean and the bootstrap reversal test (\cite{tauxe91} and Section 11.3.4 in the textbook \url{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html}). The notebook can be viewed as a static webpage at this link \url{https://nbviewer.jupyter.org/github/swanson-hysell/2015_Tauxe-et-al_PmagPy_Notebook/blob/master/PmagPy_notebook.ipynb} or downloaded as executable code as detailed below.  The notebook example is also in the PmagPy\_Tutorial folder that you downloaded as the Datafiles zip folder (see \href{#quick_start}{Quick Start Section}).
 
 To execute and edit the notebook code yourself,  find it in the Datafiles directory under PmagPy\_Tutorial.  If you installed the Enthought Canopy Python distribution you will have the IPython package installed. If you have another Python distribution you will want to make sure that you have IPython (installation instructions can currently be found here: \url{http://ipython.org/install.html}). The example notebook was created using IPython version 2.3. Now type {\bf ipython notebook} in the \href{#command_line}{command line}  which will open up a local IPython server in your default web browser within which you can use the directory to navigate to the folder where you downloaded the notebook and click on it to open. You will see something like this: 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=latex 2013.5.30)  10 DEC 2014 21:37
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=latex 2012.6.30)  11 DEC 2014 20:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -9,9 +9,9 @@ documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname
  tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{
 \HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode html,1,sections+.a.b.c.\inp
 ut  PmagPy
-(./PmagPy.tex (/usr/local/texlive/2013/texmf-dist/tex/latex/base/book.cls
+(./PmagPy.tex (/usr/local/texlive/2012/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/bk11.clo
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/bk11.clo
 File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -27,7 +27,7 @@ File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/tex4ht.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/tex4ht.sty
 version 2008-10-27-17:23
 Package: tex4ht 
 --------------------------------------
@@ -38,52 +38,52 @@ Package: tex4ht
 --------------------------------------
 \tmp:toks=\toks14
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/usepackage.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/usepackage.4ht
 version 2009-05-21-09:32
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: dvips.def on input line 91.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/dvips.def
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/dvips.def
 File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: dvips.def on input line 130.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/dvipsnam.def
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/latex/natbib/natbib.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip43
 \bibsep=\skip44
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count88
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/bm.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup4
 \symboldletters=\mathgroup5
@@ -91,25 +91,25 @@ Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
 LaTeX Info: Redefining \bm on input line 204.
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \@emptytoks=\toks16
 \symAMSa=\mathgroup7
 \symAMSb=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/05/13 v6.82q Hypertext links for LaTeX
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
@@ -150,60 +150,52 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/auxhook.sty
-Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
-
-
-Package auxhook Warning: Cannot patch \document,
-(auxhook)                using \AtBeginDocument instead.
-
-) (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen105
 \Hy@linkcounter=\count89
 \Hy@pagecounter=\count90
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/05/13 v6.82q Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count91
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
-Package hyperref Info: Hyper figures OFF on input line 4443.
-Package hyperref Info: Link nesting OFF on input line 4448.
-Package hyperref Info: Hyper index ON on input line 4451.
-Package hyperref Info: Plain pages OFF on input line 4458.
-Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Option `colorlinks' set `true' on input line 3941.
+Package hyperref Info: Hyper figures OFF on input line 4062.
+Package hyperref Info: Link nesting OFF on input line 4067.
+Package hyperref Info: Hyper index ON on input line 4070.
+Package hyperref Info: Plain pages OFF on input line 4077.
+Package hyperref Info: Backreferencing OFF on input line 4082.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4688.
+Package hyperref Info: Bookmarks ON on input line 4300.
 \c@Hy@tempcnt=\count92
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/url/url.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen106
+LaTeX Info: Redefining \url on input line 4653.
 \Fld@menulength=\count93
-\Field@Width=\dimen107
-\Fld@charsize=\dimen108
+\Field@Width=\dimen106
+\Fld@charsize=\dimen107
 \Field@toks=\toks17
-Package hyperref Info: Hyper figures OFF on input line 6295.
-Package hyperref Info: Link nesting OFF on input line 6300.
-Package hyperref Info: Hyper index ON on input line 6303.
-Package hyperref Info: backreferencing OFF on input line 6310.
-Package hyperref Info: Link coloring ON on input line 6313.
-Package hyperref Info: Link coloring with OCG OFF on input line 6320.
-Package hyperref Info: PDF/A mode OFF on input line 6325.
-LaTeX Info: Redefining \ref on input line 6365.
-LaTeX Info: Redefining \pageref on input line 6369.
+Package hyperref Info: Hyper figures OFF on input line 5773.
+Package hyperref Info: Link nesting OFF on input line 5778.
+Package hyperref Info: Hyper index ON on input line 5781.
+Package hyperref Info: backreferencing OFF on input line 5788.
+Package hyperref Info: Link coloring ON on input line 5791.
+Package hyperref Info: Link coloring with OCG OFF on input line 5798.
+Package hyperref Info: PDF/A mode OFF on input line 5803.
+LaTeX Info: Redefining \ref on input line 5843.
+LaTeX Info: Redefining \pageref on input line 5847.
 \Hy@abspage=\count94
 
 
@@ -213,11 +205,11 @@ Package hyperref Message: Stopped early.
 
 Package hyperref Message: Driver: htex4ht.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/htex4ht.def
-File: htex4ht.def 2012/11/06 v6.83m Hyperref driver for TeX4ht
+(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/htex4ht.def
+File: htex4ht.def 2012/05/13 v6.82q Hyperref driver for TeX4ht
 Package hyperref Info: tex4ht is already loaded.
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/tex4ht.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/tex4ht.4ht
 version 2009-01-07-07:11
 --------------------------------------
 --- Note --- for additional information, use the command line option `info'
@@ -226,7 +218,7 @@ version 2009-01-07-07:11
 ::::::::::::::::::::::::::::::::::::::::::
  TeX4ht info is available in the log file 
 ::::::::::::::::::::::::::::::::::::::::::
-) (/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/tex4ht.sty
+) (/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/tex4ht.sty
 version 2008-10-27-17:23
 
 --- needs --- tex4ht PmagPy ---
@@ -243,7 +235,7 @@ version 2008-10-27-17:23
 \openout3 = `PmagPy.xref'.
 
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 --------------------------------------
 --- Note --- to remove the <?xml version=...?> processing instruction use the c
@@ -254,7 +246,7 @@ ommand line option `no-VERSION'
 DOCTYPE'
 --------------------------------------
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 )
 --------------------------------------
@@ -274,7 +266,7 @@ version 2009-05-18-23:01
 --- Note --- for ^ of catcode 13, use the command line option `^13'
 --------------------------------------
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 --------------------------------------
 --- Note --- For section filenames that reflect on their titles use the command
@@ -325,7 +317,7 @@ TeX4ht package options: html,1,sections+
 on `imgdir:.../'
 --------------------------------------
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 )
 \:tokwrite=\toks18
@@ -340,20 +332,20 @@ version 2009-05-18-23:01
 \openout4 = `PmagPy.4tc'.
 
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/latex.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/latex.4ht
 version 2009-05-21-09:32
 --------------------------------------
 --- Note --- for links into captions, instead of float heads, use the command l
 ine option `refcaption'
 --------------------------------------
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 --------------------------------------
 --- Note --- For mini tocs immediately aftter the header use the command line o
@@ -393,7 +385,7 @@ ommand line option or a configuration similar to \Configure{HColWidth}{\HCode{
 style="width:\HColWidth"}}
 --------------------------------------
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 --------------------------------------
 --- Note --- for pictorial eqnarray, use the command line option `pic-eqnarray'
@@ -414,19 +406,19 @@ he command line option `pic-m+' (not safe!!)
 --- Note --- for pictorial array, use the command line option `pic-array'
 --------------------------------------
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/fontmath.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/fontmath.4ht
 version 2009-05-21-09:32
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/book.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/book.4ht
 version 2009-05-21-09:32
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 --------------------------------------
 --- Note --- for tocs without * entries, use command line option `notoc*'
@@ -448,22 +440,22 @@ option `sec-filename'
 index=2)
 --------------------------------------
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/graphicx.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/graphicx.4ht
 version 2009-05-21-09:32
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/graphics.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/graphics.4ht
 version 2009-05-21-09:32
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 --------------------------------------
 --- Note --- if included graphics are of degraded quality, try the command line
@@ -475,128 +467,128 @@ version 2009-05-18-23:01
 en bounding box is unavailable try `Gin-dim+'; neither is recommended
 --------------------------------------
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/dvips.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/dvips.4ht
 version 2009-05-21-09:32
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/color.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/color.4ht
 version 2009-05-21-09:32
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/dvipsnam.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/dvipsnam.4ht
 version 2009-05-21-09:32
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/dvipsnam.def)
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/dvipsnam.def)
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/natbib.4ht
-version 2013-01-19-12:33
-
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
-version 2009-05-18-23:01
-)
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
-version 2009-05-18-23:01
-))
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/bm.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/natbib.4ht
 version 2009-05-21-09:32
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/amssymb.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/bm.4ht
 version 2009-05-21-09:32
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/amsfonts.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/amssymb.4ht
 version 2009-05-21-09:32
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/hyperref.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/amsfonts.4ht
+version 2009-05-21-09:32
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2009-05-18-23:01
+)
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+version 2009-05-18-23:01
+))
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/hyperref.4ht
 version 2011-01-30-16:01
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count96
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/nameref.4ht
-version 2012-10-14-11:06
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/nameref.4ht
+version 2010-09-04-21:02
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
 LaTeX Info: Redefining \autoref on input line 100.
 \Hy@SectionHShift=\skip46
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/pd1enc.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/pd1enc.4ht
 version 2009-05-21-09:32
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/url.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/url.4ht
 version 2009-05-21-09:32
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 --------------------------------------
 --- Note --- for URL encoding within href use the command line option `url-enc'
 
 --------------------------------------
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2009-05-18-23:01
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+(/usr/local/texlive/2012/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2009-05-18-23:01
 ))
 (./PmagPy.aux)
@@ -635,13 +627,13 @@ File: EPSfiles/logo.eps Graphic file (type eps)
 ] [9]
 LaTeX Font Info:    Try loading font information for U+msa on input line 43.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 43.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 
 LaTeX Warning: No \author given.
@@ -657,7 +649,7 @@ Chapter 1.
 
 ]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 94.
- (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
@@ -756,6 +748,7 @@ File: EPSfiles/FigThellierGui.eps Graphic file (type eps)
 l. 274 Writing PmagPy.idv[19] (PmagPy18x.png)
 File: EPSfiles/upload2MagIC.eps Graphic file (type eps)
 <EPSfiles/upload2MagIC.eps>
+ --- Customlinks says: Custom link named 'MagIC.py': PmagPy.html#MagIC.py 
  --- Customlinks says: Custom link named 'Project_Directory': PmagPy.html#Proje
 ct_Directory 
  --- Customlinks says: Link to section 2.7: PmagPy.html#sec2-7
@@ -766,12 +759,12 @@ File: EPSfiles/ProjectDirectory.eps Graphic file (type eps)
  <EPSfiles/ProjectDirectory.eps>
  --- Customlinks says: Link to subsection 2.7.2: PmagPy.html#subsec2-7-2
  --- Customlinks says: Custom link named 'field_info': PmagPy.html#field_info 
+[30]
  --- Customlinks says: Link to subsubsection 2.7.2.0: PmagPy.html#subsubsec2-7-
 2-0
-[30]
 l. 323 Writing PmagPy.idv[21] (PmagPy20x.png)
 File: EPSfiles/orient.eps Graphic file (type eps)
- <EPSfiles/orient.eps> [31]
+<EPSfiles/orient.eps> [31]
 l. 339 Writing PmagPy.idv[22] (PmagPy21x.png)
 File: EPSfiles/suncomp.eps Graphic file (type eps)
  <EPSfiles/suncomp.eps>
@@ -801,6 +794,7 @@ File: EPSfiles/orcon_6.eps Graphic file (type eps)
  --- Customlinks says: Custom link named 'naming_schemes': PmagPy.html#naming_s
 chemes 
 [39]
+ --- Customlinks says: Custom link named 'AZDIP': PmagPy.html#AZDIP 
  --- Customlinks says: Custom link named 'LIMS': PmagPy.html#LIMS 
  --- Customlinks says: Link to subsubsection 2.7.2.0: PmagPy.html#subsubsec2-7-
 2-0
@@ -821,6 +815,7 @@ ropy_files
 #Hysteresis_file_formats 
  --- Customlinks says: Link to subsubsection 2.7.3.0: PmagPy.html#subsubsec2-7-
 3-0
+ --- Customlinks says: Custom link named 'FileMenu': PmagPy.html#FileMenu 
  --- Customlinks says: Link to subsection 2.7.4: PmagPy.html#subsec2-7-4
  --- Customlinks says: Custom link named 'SIO': PmagPy.html#SIO 
 [44]
@@ -835,6 +830,22 @@ Anisotropy
 Hysteresis 
  --- Customlinks says: Link to subsection 2.8.2: PmagPy.html#subsec2-8-2
 [48]
+ --- Customlinks says: Custom link named 'Combining_measurement_files': PmagPy.
+html#Combining_measurement_files 
+ --- Customlinks says: Custom link named 'samp2orient': PmagPy.html#samp2orient
+ 
+ --- Customlinks says: Custom link named 'updatemeas': PmagPy.html#updatemeas 
+ --- Customlinks says: Custom link named 'import_redo': PmagPy.html#import_redo
+ 
+ --- Customlinks says: Custom link named 'ImportMagIC': PmagPy.html#ImportMagIC
+ 
+ --- Customlinks says: Custom link named 'AnalysisPlotsMenu': PmagPy.html#Analy
+sisPlotsMenu 
+ --- Customlinks says: Custom link named 'customize_criteria': PmagPy.html#cust
+omize_criteria 
+ --- Customlinks says: Custom link named 'PrepareMagic': PmagPy.html#PrepareMag
+ic 
+ --- Customlinks says: Custom link named 'Utilities': PmagPy.html#Utilities 
  --- Customlinks says: Custom link named 'PmagPy': PmagPy.html#PmagPy 
 [49] [50
 
@@ -1063,6 +1074,8 @@ l. 2061 Writing PmagPy.idv[54] (PmagPy53x.png)
 File: EPSfiles/eqarea_magic_BV.eps Graphic file (type eps)
 
 <EPSfiles/eqarea_magic_BV.eps> [123]
+ --- Customlinks says: Custom link named 'extract_methods.py': PmagPy.html#extr
+act_methods.py 
  --- Customlinks says: Custom link named 'find_EI.py': PmagPy.html#find_EI.py 
  --- Customlinks says: Link to subsection 3.2.40: PmagPy.html#subsec3-2-40
 [124] [125]
@@ -1180,6 +1193,8 @@ magic.py
 [165]
  --- Customlinks says: Link to subsection 3.2.63: PmagPy.html#subsec3-2-63
 [166]
+ --- Customlinks says: Custom link named 'MagIC_Tutorial': PmagPy.html#MagIC_Tu
+torial 
  --- Customlinks says: Custom link named 'magic_select.py': PmagPy.html#magic_s
 elect.py 
  --- Customlinks says: Link to subsection 3.2.64: PmagPy.html#subsec3-2-64
@@ -1287,10 +1302,12 @@ LaTeX Warning: Reference `app:MagIC' on page 200 undefined on input line 3396.
 l. 3429 Writing PmagPy.idv[68] (PmagPy67x.png)
 File: EPSfiles/plot_cdf.eps Graphic file (type eps)
  <EPSfiles/plot_cdf.eps>
+ --- Customlinks says: Custom link named 'plot_geomagia.py': PmagPy.html#plot_g
+eomagia.py 
  --- Customlinks says: Custom link named 'plot_magic_keys.py': PmagPy.html#plot
 _magic_keys.py 
- --- Customlinks says: Link to subsection 3.2.75: PmagPy.html#subsec3-2-75
 [201]
+ --- Customlinks says: Link to subsection 3.2.75: PmagPy.html#subsec3-2-75
  --- Customlinks says: Custom link named 'plot_mapPTS.py': PmagPy.html#plot_map
 PTS.py 
  --- Customlinks says: Link to subsection 3.2.76: PmagPy.html#subsec3-2-76
@@ -1310,6 +1327,8 @@ File: EPSfiles/plotdi-a-example.eps Graphic file (type eps)
 #pmag_results_extract.py 
  --- Customlinks says: Link to subsection 3.2.78: PmagPy.html#subsec3-2-78
 [205] [206]
+ --- Customlinks says: Custom link named 'PMM_redo.py': PmagPy.html#PMM_redo.py
+ 
  --- Customlinks says: Custom link named 'pt_rot.py': PmagPy.html#pt_rot.py 
  --- Customlinks says: Link to subsection 3.2.79: PmagPy.html#subsec3-2-79
 [207]
@@ -1458,6 +1477,7 @@ update_measurements.py
 magic.py 
  --- Customlinks says: Link to subsection 3.2.103: PmagPy.html#subsec3-2-103
 [260]
+ --- Customlinks says: Custom link named 'Vdiff.py': PmagPy.html#Vdiff.py 
  --- Customlinks says: Custom link named 'vdm_b.py': PmagPy.html#vdm_b.py 
  --- Customlinks says: Link to subsection 3.2.104: PmagPy.html#subsec3-2-104
 [261]
@@ -1555,6 +1575,8 @@ File: EPSfiles/filesys.eps Graphic file (type eps)
  --- Customlinks says: Custom link named 'standard_IO': PmagPy.html#standard_IO
  
  --- Customlinks says: Link to section 5.6: PmagPy.html#sec5-6
+ --- Customlinks says: Custom link named 'installing_python': PmagPy.html#insta
+lling_python 
  --- Customlinks says: Custom link named 'Python': PmagPy.html#Python 
 [290]
 Chapter 6.
@@ -1685,26 +1707,6 @@ File: EPSfiles/matplotlib4.eps Graphic file (type eps)
 [402]
 Chapter 7.
  --- Customlinks says: Link to chapter 7: PmagPy.html#ch7
-
-Package natbib Warning: Citation `perez07' on page 403 undefined on input line 
-6612.
-
-
-Package natbib Warning: Citation `mcfadden90' on page 403 undefined on input li
-ne 6618.
-
-
-Package natbib Warning: Citation `watson83' on page 403 undefined on input line
- 6618.
-
-
-Package natbib Warning: Citation `tauxe91' on page 403 undefined on input line 
-6618.
-
-
-LaTeX Warning: Reference `sect:quick_start' on page 403 undefined on input line
- 6618.
-
 [403
 
 ]
@@ -1716,12 +1718,9 @@ File: EPSfiles/SnakeRiver.eps Graphic file (type eps)
  <EPSfiles/SnakeRiver.eps> [405] [406]
 (./PmagPy.bbl [407] [408
 
-] [409] [410] [411] [412])
-
-Package natbib Warning: There were undefined citations.
-
+] [409] [410] [411] [412] [413])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6638.
-[413]
+ [414]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 6638.
  (./PmagPy.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 6638.
@@ -1741,12 +1740,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 6638.
 ### simple group (level 1) entered at line 39 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10436 strings out of 493316
- 144462 string characters out of 6137930
- 341985 words of memory out of 5000000
- 13594 multiletter control sequences out of 15000+600000
- 15547 words of font info for 57 fonts, out of 8000000 for 9000
+ 10361 strings out of 493489
+ 143103 string characters out of 3141349
+ 336430 words of memory out of 3000000
+ 13377 multiletter control sequences out of 15000+200000
+ 15547 words of font info for 57 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,9n,32p,1808b,2210s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,9n,30p,1808b,2208s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on PmagPy.dvi (422 pages, 1142828 bytes).
+Output written on PmagPy.dvi (423 pages, 1145756 bytes).

@@ -1,203 +1,203 @@
 \contentsline {chapter}{\numberline {1}MagIC Quick Start}{3}{chapter.1}
-\contentsline {chapter}{\numberline {2}QuickMagIC.py Tutorial}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}Converting magnetometer files to MagIC format}{8}{section.2.1}
-\contentsline {section}{\numberline {2.2}Optional: Calculate geographic / tilt-corrected direction}{14}{section.2.2}
-\contentsline {section}{\numberline {2.3}Filling in the EarthRef data}{18}{section.2.3}
-\contentsline {section}{\numberline {2.4}Demag GUI tool}{26}{section.2.4}
-\contentsline {section}{\numberline {2.5}Thellier GUI tool}{27}{section.2.5}
-\contentsline {section}{\numberline {2.6}Upload to the database }{28}{section.2.6}
-\contentsline {section}{\numberline {2.7}Preparing for MagIC}{28}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Project Directory}{28}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}What goes in {\it MyFiles}}{31}{subsection.2.7.2}
-\contentsline {subsubsection}{Field and sampling information}{31}{section*.2}
-\contentsline {subsubsection}{Data files downloaded from the IODP (LIMS) database}{39}{section*.3}
-\contentsline {subsection}{\numberline {2.7.3}Supported Rock Magnetometer files}{42}{subsection.2.7.3}
-\contentsline {subsubsection}{Hysteresis file formats}{43}{section*.4}
-\contentsline {subsection}{\numberline {2.7.4}Importing magnetometer data}{43}{subsection.2.7.4}
-\contentsline {section}{\numberline {2.8}Import menu option}{46}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}Importing Anisotropy of magnetic susceptibility data}{46}{subsection.2.8.1}
-\contentsline {subsection}{\numberline {2.8.2}Importing hysteresis data}{46}{subsection.2.8.2}
-\contentsline {chapter}{\numberline {3}The {\bf PmagPy} software package}{49}{chapter.3}
-\contentsline {section}{\numberline {3.1}General characteristics of PmagPy programs}{49}{section.3.1}
-\contentsline {section}{\numberline {3.2}Examples of how to use {\bf PmagPy} programs}{51}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}aarm\_magic.py}{51}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}angle.py }{52}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}ANI\_depthplot.py}{53}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}aniso\_magic.py}{56}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}apwp.py }{58}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}atrm\_magic.py}{59}{subsection.3.2.6}
-\contentsline {subsection}{\numberline {3.2.7}azdip\_magic.py}{61}{subsection.3.2.7}
-\contentsline {subsection}{\numberline {3.2.8}b\_vdm.py}{61}{subsection.3.2.8}
-\contentsline {subsection}{\numberline {3.2.9}basemap\_magic.py}{62}{subsection.3.2.9}
-\contentsline {subsection}{\numberline {3.2.10}biplot\_magic.py}{63}{subsection.3.2.10}
-\contentsline {subsection}{\numberline {3.2.11}bootams.py}{65}{subsection.3.2.11}
-\contentsline {subsection}{\numberline {3.2.12}cart\_dir.py}{66}{subsection.3.2.12}
-\contentsline {subsection}{\numberline {3.2.13}chartmaker.py}{66}{subsection.3.2.13}
-\contentsline {subsection}{\numberline {3.2.14}chi\_magic.py}{68}{subsection.3.2.14}
-\contentsline {subsection}{\numberline {3.2.15}combine\_magic.py}{69}{subsection.3.2.15}
-\contentsline {subsection}{\numberline {3.2.16}common\_mean.py}{69}{subsection.3.2.16}
-\contentsline {subsection}{\numberline {3.2.17}cont\_rot.py}{71}{subsection.3.2.17}
-\contentsline {subsection}{\numberline {3.2.18}convert2unix.py}{72}{subsection.3.2.18}
-\contentsline {subsection}{\numberline {3.2.19}convert\_samples.py}{73}{subsection.3.2.19}
-\contentsline {subsection}{\numberline {3.2.20}core\_depthplot.py}{73}{subsection.3.2.20}
-\contentsline {subsection}{\numberline {3.2.21}curie.py}{75}{subsection.3.2.21}
-\contentsline {subsection}{\numberline {3.2.22}customize\_criteria.py}{76}{subsection.3.2.22}
-\contentsline {subsection}{\numberline {3.2.23}dayplot\_magic.py}{77}{subsection.3.2.23}
-\contentsline {subsection}{\numberline {3.2.24}demag\_gui.py}{77}{subsection.3.2.24}
-\contentsline {subsection}{\numberline {3.2.25}di\_eq.py}{77}{subsection.3.2.25}
-\contentsline {subsection}{\numberline {3.2.26}di\_geo.py}{78}{subsection.3.2.26}
-\contentsline {subsection}{\numberline {3.2.27}di\_rot.py}{80}{subsection.3.2.27}
-\contentsline {subsection}{\numberline {3.2.28}di\_tilt.py}{81}{subsection.3.2.28}
-\contentsline {subsection}{\numberline {3.2.29}di\_vgp.py}{82}{subsection.3.2.29}
-\contentsline {subsection}{\numberline {3.2.30}dipole\_pinc.py}{82}{subsection.3.2.30}
-\contentsline {subsection}{\numberline {3.2.31}dipole\_plat.py}{82}{subsection.3.2.31}
-\contentsline {subsection}{\numberline {3.2.32}dir\_cart.py}{83}{subsection.3.2.32}
-\contentsline {subsection}{\numberline {3.2.33}dmag\_magic.py}{83}{subsection.3.2.33}
-\contentsline {subsection}{\numberline {3.2.34}download\_magic.py}{85}{subsection.3.2.34}
-\contentsline {subsection}{\numberline {3.2.35}eigs\_s.py}{86}{subsection.3.2.35}
-\contentsline {subsection}{\numberline {3.2.36}eq\_di.py}{86}{subsection.3.2.36}
-\contentsline {subsection}{\numberline {3.2.37}eqarea.py}{87}{subsection.3.2.37}
-\contentsline {subsection}{\numberline {3.2.38}eqarea\_ell.py}{88}{subsection.3.2.38}
-\contentsline {subsection}{\numberline {3.2.39}eqarea\_magic.py}{90}{subsection.3.2.39}
-\contentsline {subsection}{\numberline {3.2.40}find\_EI.py}{94}{subsection.3.2.40}
-\contentsline {subsection}{\numberline {3.2.41}fisher.py}{97}{subsection.3.2.41}
-\contentsline {subsection}{\numberline {3.2.42}fishqq.py}{97}{subsection.3.2.42}
-\contentsline {subsection}{\numberline {3.2.43}fishrot.py}{99}{subsection.3.2.43}
-\contentsline {subsection}{\numberline {3.2.44}foldtest.py}{99}{subsection.3.2.44}
-\contentsline {subsection}{\numberline {3.2.45}foldtest\_magic.py}{101}{subsection.3.2.45}
-\contentsline {subsection}{\numberline {3.2.46}gaussian.py}{101}{subsection.3.2.46}
-\contentsline {subsection}{\numberline {3.2.47}gobing.py}{101}{subsection.3.2.47}
-\contentsline {subsection}{\numberline {3.2.48}gofish.py}{101}{subsection.3.2.48}
-\contentsline {subsection}{\numberline {3.2.49}gokent.py}{102}{subsection.3.2.49}
-\contentsline {subsection}{\numberline {3.2.50}goprinc.py}{102}{subsection.3.2.50}
-\contentsline {subsection}{\numberline {3.2.51}grab\_magic\_key.py}{102}{subsection.3.2.51}
-\contentsline {subsection}{\numberline {3.2.52}histplot.py}{104}{subsection.3.2.52}
-\contentsline {subsection}{\numberline {3.2.53}hysteresis\_magic.py}{105}{subsection.3.2.53}
-\contentsline {subsection}{\numberline {3.2.54}igrf.py}{107}{subsection.3.2.54}
-\contentsline {subsection}{\numberline {3.2.55}install\_etopo.py}{108}{subsection.3.2.55}
-\contentsline {subsection}{\numberline {3.2.56}incfish.py}{108}{subsection.3.2.56}
-\contentsline {subsection}{\numberline {3.2.57}irmaq\_magic.py}{109}{subsection.3.2.57}
-\contentsline {subsection}{\numberline {3.2.58}k15\_magic.py}{110}{subsection.3.2.58}
-\contentsline {subsection}{\numberline {3.2.59}k15\_s.py}{113}{subsection.3.2.59}
-\contentsline {subsection}{\numberline {3.2.60}KLY4S\_magic.py}{113}{subsection.3.2.60}
-\contentsline {subsection}{\numberline {3.2.61}lnp\_magic.py}{114}{subsection.3.2.61}
-\contentsline {subsection}{\numberline {3.2.62}lowrie.py}{116}{subsection.3.2.62}
-\contentsline {subsection}{\numberline {3.2.63}lowrie\_magic.py}{117}{subsection.3.2.63}
-\contentsline {subsection}{\numberline {3.2.64}magic\_select.py}{118}{subsection.3.2.64}
-\contentsline {subsection}{\numberline {3.2.65}make\_magic\_plots.py}{119}{subsection.3.2.65}
-\contentsline {subsection}{\numberline {3.2.66}Measurement Import Scripts}{119}{subsection.3.2.66}
-\contentsline {subsubsection}{2G\_bin\_magic.py}{119}{section*.5}
-\contentsline {subsubsection}{AGM\_magic.py}{119}{section*.6}
-\contentsline {subsubsection}{CIT\_magic.py}{120}{section*.7}
-\contentsline {subsubsection}{generic\_magic.py}{122}{section*.8}
-\contentsline {subsubsection}{HUJI\_magic.py}{123}{section*.9}
-\contentsline {subsubsection}{LDEO\_magic.py}{124}{section*.10}
-\contentsline {subsubsection}{IODP\_csv\_magic.py}{125}{section*.11}
-\contentsline {subsubsection}{PMD\_magic.py}{125}{section*.12}
-\contentsline {subsubsection}{sio\_magic.py}{126}{section*.13}
-\contentsline {subsubsection}{SUFAR4-asc\_magic.py}{129}{section*.14}
-\contentsline {subsubsection}{TDT\_magic.py}{129}{section*.15}
-\contentsline {subsection}{\numberline {3.2.67}measurements\_normalize.py}{130}{subsection.3.2.67}
-\contentsline {subsection}{\numberline {3.2.68}mk\_redo.py}{130}{subsection.3.2.68}
-\contentsline {subsection}{\numberline {3.2.69}nrm\_specimens\_magic.py}{131}{subsection.3.2.69}
-\contentsline {subsection}{\numberline {3.2.70}orientation\_magic.py}{133}{subsection.3.2.70}
-\contentsline {subsection}{\numberline {3.2.71}parse\_measurements.py}{134}{subsection.3.2.71}
-\contentsline {subsection}{\numberline {3.2.72}pca.py}{134}{subsection.3.2.72}
-\contentsline {subsection}{\numberline {3.2.73}plotXY.py}{135}{subsection.3.2.73}
-\contentsline {subsection}{\numberline {3.2.74}plot\_cdf.py}{135}{subsection.3.2.74}
-\contentsline {subsection}{\numberline {3.2.75}plot\_magic\_keys.py}{136}{subsection.3.2.75}
-\contentsline {subsection}{\numberline {3.2.76}plot\_mapPTS.py}{136}{subsection.3.2.76}
-\contentsline {subsection}{\numberline {3.2.77}plotdi\_a.py}{138}{subsection.3.2.77}
-\contentsline {subsection}{\numberline {3.2.78}pmag\_results\_extract.py}{139}{subsection.3.2.78}
-\contentsline {subsection}{\numberline {3.2.79}pt\_rot.py}{140}{subsection.3.2.79}
-\contentsline {subsection}{\numberline {3.2.80}qqlot.py}{142}{subsection.3.2.80}
-\contentsline {subsection}{\numberline {3.2.81}quick\_hyst.py}{143}{subsection.3.2.81}
-\contentsline {subsection}{\numberline {3.2.82}revtest.py}{145}{subsection.3.2.82}
-\contentsline {subsection}{\numberline {3.2.83}revtest\_magic.py}{146}{subsection.3.2.83}
-\contentsline {subsection}{\numberline {3.2.84}revtest\_MM1990.py}{146}{subsection.3.2.84}
-\contentsline {subsection}{\numberline {3.2.85}s\_eigs.py}{148}{subsection.3.2.85}
-\contentsline {subsection}{\numberline {3.2.86}s\_geo.py}{148}{subsection.3.2.86}
-\contentsline {subsection}{\numberline {3.2.87}s\_hext.py}{149}{subsection.3.2.87}
-\contentsline {subsection}{\numberline {3.2.88}s\_tilt.py}{149}{subsection.3.2.88}
-\contentsline {subsection}{\numberline {3.2.89}s\_magic.py}{149}{subsection.3.2.89}
-\contentsline {subsection}{\numberline {3.2.90}scalc.py}{150}{subsection.3.2.90}
-\contentsline {subsection}{\numberline {3.2.91}scalc\_magic.py}{150}{subsection.3.2.91}
-\contentsline {subsection}{\numberline {3.2.92}site\_edit\_magic.py}{151}{subsection.3.2.92}
-\contentsline {subsection}{\numberline {3.2.93}specimens\_results\_magic.py}{153}{subsection.3.2.93}
-\contentsline {subsection}{\numberline {3.2.94}stats.py}{154}{subsection.3.2.94}
-\contentsline {subsection}{\numberline {3.2.95}strip\_magic.py}{155}{subsection.3.2.95}
-\contentsline {subsection}{\numberline {3.2.96}sundec.py}{156}{subsection.3.2.96}
-\contentsline {subsection}{\numberline {3.2.97}thellier\_GUI.py}{157}{subsection.3.2.97}
-\contentsline {subsubsection}{Starting the GUI}{158}{section*.16}
-\contentsline {subsubsection}{Reading and compiling measurements data}{158}{section*.17}
-\contentsline {subsubsection}{Main panel}{159}{section*.18}
-\contentsline {subsubsection}{ Tutorial by example}{161}{section*.19}
-\contentsline {subsection}{\numberline {3.2.98}thellier\_magic.py}{165}{subsection.3.2.98}
-\contentsline {subsection}{\numberline {3.2.99}thellier\_magic\_redo.py}{168}{subsection.3.2.99}
-\contentsline {subsection}{\numberline {3.2.100}tk03.py}{169}{subsection.3.2.100}
-\contentsline {subsection}{\numberline {3.2.101}uniform.py}{170}{subsection.3.2.101}
-\contentsline {subsection}{\numberline {3.2.102}update\_measurements.py}{171}{subsection.3.2.102}
-\contentsline {subsection}{\numberline {3.2.103}upload\_magic.py}{172}{subsection.3.2.103}
-\contentsline {subsection}{\numberline {3.2.104}vdm\_b.py}{173}{subsection.3.2.104}
-\contentsline {subsection}{\numberline {3.2.105}vector\_mean.py}{173}{subsection.3.2.105}
-\contentsline {subsection}{\numberline {3.2.106}vgp\_di.py}{173}{subsection.3.2.106}
-\contentsline {subsection}{\numberline {3.2.107}vgpmap\_magic.py}{174}{subsection.3.2.107}
-\contentsline {subsection}{\numberline {3.2.108}watsonsF.py}{175}{subsection.3.2.108}
-\contentsline {subsection}{\numberline {3.2.109}watsonsV.py}{176}{subsection.3.2.109}
-\contentsline {subsection}{\numberline {3.2.110}zeq.py}{177}{subsection.3.2.110}
-\contentsline {subsection}{\numberline {3.2.111}zeq\_magic.py}{180}{subsection.3.2.111}
-\contentsline {subsection}{\numberline {3.2.112}zeq\_magic\_redo.py}{181}{subsection.3.2.112}
-\contentsline {section}{\numberline {3.3}Complaints department}{181}{section.3.3}
-\contentsline {chapter}{\numberline {4}The MagIC database and file formats}{183}{chapter.4}
-\contentsline {section}{\numberline {4.1}Perusing the existing data}{183}{section.4.1}
-\contentsline {section}{\numberline {4.2}Uploading data to the database}{184}{section.4.2}
-\contentsline {section}{\numberline {4.3}Structure of the database tables}{184}{section.4.3}
-\contentsline {section}{\numberline {4.4}A word about method codes}{186}{section.4.4}
-\contentsline {chapter}{\numberline {5}Survival computer skills}{189}{chapter.5}
-\contentsline {section}{\numberline {5.1}Finding your command line}{189}{section.5.1}
-\contentsline {section}{\numberline {5.2}File systems}{192}{section.5.2}
-\contentsline {section}{\numberline {5.3}Moving around in the file system}{193}{section.5.3}
-\contentsline {section}{\numberline {5.4}Wildcards}{193}{section.5.4}
-\contentsline {section}{\numberline {5.5}Redirecting input and output}{194}{section.5.5}
-\contentsline {section}{\numberline {5.6}Text editors}{194}{section.5.6}
-\contentsline {chapter}{\numberline {6}Introduction to Python Programming}{195}{chapter.6}
-\contentsline {section}{\numberline {6.1}A first look at NumPy}{196}{section.6.1}
-\contentsline {section}{\numberline {6.2}Variable types}{199}{section.6.2}
-\contentsline {section}{\numberline {6.3}Data Structures}{200}{section.6.3}
-\contentsline {subsubsection}{Lists}{200}{section*.20}
-\contentsline {subsubsection}{More about strings}{201}{section*.21}
-\contentsline {subsubsection}{Data structures as objects}{202}{section*.22}
-\contentsline {subsubsection}{Tuples}{202}{section*.23}
-\contentsline {subsubsection}{Dictionaries!}{202}{section*.24}
-\contentsline {subsubsection}{N-dimensional arrays}{203}{section*.25}
-\contentsline {section}{\numberline {6.4}Pandas}{208}{section.6.4}
-\contentsline {section}{\numberline {6.5}Python Scripts}{209}{section.6.5}
-\contentsline {section}{\numberline {6.6}Code blocks}{211}{section.6.6}
-\contentsline {subsubsection}{The for loop}{212}{section*.26}
-\contentsline {subsubsection}{Looping through lists}{212}{section*.27}
-\contentsline {subsubsection}{Looping through arrays}{215}{section*.28}
-\contentsline {subsubsection}{If and while blocks}{215}{section*.29}
-\contentsline {subsubsection}{Finer points of `if' blocks}{216}{section*.30}
-\contentsline {subsubsection}{While loops}{217}{section*.31}
-\contentsline {subsubsection}{Code blocks in interactive Python}{217}{section*.32}
-\contentsline {section}{\numberline {6.7}File I/O in Python}{218}{section.6.7}
-\contentsline {subsubsection}{Reading data in}{218}{section*.33}
-\contentsline {subsubsection}{From a file}{218}{section*.34}
-\contentsline {subsubsection}{From Standard Input }{221}{section*.35}
-\contentsline {subsubsection}{Command line switches}{222}{section*.36}
-\contentsline {subsubsection}{Reading numeric files}{222}{section*.37}
-\contentsline {subsubsection}{Writing data out}{222}{section*.38}
-\contentsline {section}{\numberline {6.8}Functions}{225}{section.6.8}
-\contentsline {subsubsection}{Line by line analysis}{225}{section*.39}
-\contentsline {subsubsection}{def FUNCNAME(in\_args):}{225}{section*.40}
-\contentsline {subsubsection}{Doc String}{227}{section*.41}
-\contentsline {subsubsection}{Function body}{227}{section*.42}
-\contentsline {subsubsection}{Return statement}{227}{section*.43}
-\contentsline {subsubsection}{Main program as function}{227}{section*.44}
-\contentsline {subsubsection}{Scope of variables}{229}{section*.45}
-\contentsline {section}{\numberline {6.9}Classes}{229}{section.6.9}
-\contentsline {section}{\numberline {6.10}Matplotlib}{231}{section.6.10}
-\contentsline {subsubsection}{A first plot}{231}{section*.46}
-\contentsline {subsubsection}{Multiple figures and more customization}{235}{section*.47}
-\contentsline {subsubsection}{Adding text}{237}{section*.48}
-\contentsline {chapter}{\numberline {7}IPython Notebooks}{241}{chapter.7}
+\contentsline {chapter}{\numberline {2}QuickMagIC.py Tutorial}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Converting magnetometer files to MagIC format}{6}{section.2.1}
+\contentsline {section}{\numberline {2.2}Optional: Calculate geographic / tilt-corrected direction}{12}{section.2.2}
+\contentsline {section}{\numberline {2.3}Filling in the EarthRef data}{14}{section.2.3}
+\contentsline {section}{\numberline {2.4}Demag GUI tool}{23}{section.2.4}
+\contentsline {section}{\numberline {2.5}Thellier GUI tool}{24}{section.2.5}
+\contentsline {section}{\numberline {2.6}Upload to the database }{25}{section.2.6}
+\contentsline {section}{\numberline {2.7}Preparing for MagIC}{25}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Project Directory}{25}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}What goes in {\it MyFiles}}{26}{subsection.2.7.2}
+\contentsline {subsubsection}{Field and sampling information}{26}{section*.2}
+\contentsline {subsubsection}{Data files downloaded from the IODP (LIMS) database}{34}{section*.3}
+\contentsline {subsection}{\numberline {2.7.3}Supported Rock Magnetometer files}{36}{subsection.2.7.3}
+\contentsline {subsubsection}{Hysteresis file formats}{37}{section*.4}
+\contentsline {subsection}{\numberline {2.7.4}Importing magnetometer data}{38}{subsection.2.7.4}
+\contentsline {section}{\numberline {2.8}Import menu option}{41}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Importing Anisotropy of magnetic susceptibility data}{41}{subsection.2.8.1}
+\contentsline {subsection}{\numberline {2.8.2}Importing hysteresis data}{41}{subsection.2.8.2}
+\contentsline {chapter}{\numberline {3}The {\bf PmagPy} software package}{43}{chapter.3}
+\contentsline {section}{\numberline {3.1}General characteristics of PmagPy programs}{43}{section.3.1}
+\contentsline {section}{\numberline {3.2}Examples of how to use {\bf PmagPy} programs}{45}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}aarm\_magic.py}{45}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}angle.py }{46}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}ANI\_depthplot.py}{47}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}aniso\_magic.py}{49}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}apwp.py }{52}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}atrm\_magic.py}{53}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}azdip\_magic.py}{54}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {3.2.8}b\_vdm.py}{55}{subsection.3.2.8}
+\contentsline {subsection}{\numberline {3.2.9}basemap\_magic.py}{55}{subsection.3.2.9}
+\contentsline {subsection}{\numberline {3.2.10}biplot\_magic.py}{56}{subsection.3.2.10}
+\contentsline {subsection}{\numberline {3.2.11}bootams.py}{58}{subsection.3.2.11}
+\contentsline {subsection}{\numberline {3.2.12}cart\_dir.py}{59}{subsection.3.2.12}
+\contentsline {subsection}{\numberline {3.2.13}chartmaker.py}{59}{subsection.3.2.13}
+\contentsline {subsection}{\numberline {3.2.14}chi\_magic.py}{61}{subsection.3.2.14}
+\contentsline {subsection}{\numberline {3.2.15}combine\_magic.py}{62}{subsection.3.2.15}
+\contentsline {subsection}{\numberline {3.2.16}common\_mean.py}{62}{subsection.3.2.16}
+\contentsline {subsection}{\numberline {3.2.17}cont\_rot.py}{64}{subsection.3.2.17}
+\contentsline {subsection}{\numberline {3.2.18}convert2unix.py}{65}{subsection.3.2.18}
+\contentsline {subsection}{\numberline {3.2.19}convert\_samples.py}{66}{subsection.3.2.19}
+\contentsline {subsection}{\numberline {3.2.20}core\_depthplot.py}{66}{subsection.3.2.20}
+\contentsline {subsection}{\numberline {3.2.21}curie.py}{67}{subsection.3.2.21}
+\contentsline {subsection}{\numberline {3.2.22}customize\_criteria.py}{68}{subsection.3.2.22}
+\contentsline {subsection}{\numberline {3.2.23}dayplot\_magic.py}{69}{subsection.3.2.23}
+\contentsline {subsection}{\numberline {3.2.24}demag\_gui.py}{70}{subsection.3.2.24}
+\contentsline {subsection}{\numberline {3.2.25}di\_eq.py}{70}{subsection.3.2.25}
+\contentsline {subsection}{\numberline {3.2.26}di\_geo.py}{71}{subsection.3.2.26}
+\contentsline {subsection}{\numberline {3.2.27}di\_rot.py}{73}{subsection.3.2.27}
+\contentsline {subsection}{\numberline {3.2.28}di\_tilt.py}{74}{subsection.3.2.28}
+\contentsline {subsection}{\numberline {3.2.29}di\_vgp.py}{75}{subsection.3.2.29}
+\contentsline {subsection}{\numberline {3.2.30}dipole\_pinc.py}{75}{subsection.3.2.30}
+\contentsline {subsection}{\numberline {3.2.31}dipole\_plat.py}{75}{subsection.3.2.31}
+\contentsline {subsection}{\numberline {3.2.32}dir\_cart.py}{76}{subsection.3.2.32}
+\contentsline {subsection}{\numberline {3.2.33}dmag\_magic.py}{76}{subsection.3.2.33}
+\contentsline {subsection}{\numberline {3.2.34}download\_magic.py}{78}{subsection.3.2.34}
+\contentsline {subsection}{\numberline {3.2.35}eigs\_s.py}{79}{subsection.3.2.35}
+\contentsline {subsection}{\numberline {3.2.36}eq\_di.py}{79}{subsection.3.2.36}
+\contentsline {subsection}{\numberline {3.2.37}eqarea.py}{80}{subsection.3.2.37}
+\contentsline {subsection}{\numberline {3.2.38}eqarea\_ell.py}{81}{subsection.3.2.38}
+\contentsline {subsection}{\numberline {3.2.39}eqarea\_magic.py}{83}{subsection.3.2.39}
+\contentsline {subsection}{\numberline {3.2.40}find\_EI.py}{87}{subsection.3.2.40}
+\contentsline {subsection}{\numberline {3.2.41}fisher.py}{88}{subsection.3.2.41}
+\contentsline {subsection}{\numberline {3.2.42}fishqq.py}{89}{subsection.3.2.42}
+\contentsline {subsection}{\numberline {3.2.43}fishrot.py}{90}{subsection.3.2.43}
+\contentsline {subsection}{\numberline {3.2.44}foldtest.py}{90}{subsection.3.2.44}
+\contentsline {subsection}{\numberline {3.2.45}foldtest\_magic.py}{91}{subsection.3.2.45}
+\contentsline {subsection}{\numberline {3.2.46}gaussian.py}{91}{subsection.3.2.46}
+\contentsline {subsection}{\numberline {3.2.47}gobing.py}{91}{subsection.3.2.47}
+\contentsline {subsection}{\numberline {3.2.48}gofish.py}{92}{subsection.3.2.48}
+\contentsline {subsection}{\numberline {3.2.49}gokent.py}{92}{subsection.3.2.49}
+\contentsline {subsection}{\numberline {3.2.50}goprinc.py}{93}{subsection.3.2.50}
+\contentsline {subsection}{\numberline {3.2.51}grab\_magic\_key.py}{93}{subsection.3.2.51}
+\contentsline {subsection}{\numberline {3.2.52}histplot.py}{94}{subsection.3.2.52}
+\contentsline {subsection}{\numberline {3.2.53}hysteresis\_magic.py}{95}{subsection.3.2.53}
+\contentsline {subsection}{\numberline {3.2.54}igrf.py}{97}{subsection.3.2.54}
+\contentsline {subsection}{\numberline {3.2.55}install\_etopo.py}{98}{subsection.3.2.55}
+\contentsline {subsection}{\numberline {3.2.56}incfish.py}{98}{subsection.3.2.56}
+\contentsline {subsection}{\numberline {3.2.57}irmaq\_magic.py}{99}{subsection.3.2.57}
+\contentsline {subsection}{\numberline {3.2.58}k15\_magic.py}{100}{subsection.3.2.58}
+\contentsline {subsection}{\numberline {3.2.59}k15\_s.py}{103}{subsection.3.2.59}
+\contentsline {subsection}{\numberline {3.2.60}KLY4S\_magic.py}{103}{subsection.3.2.60}
+\contentsline {subsection}{\numberline {3.2.61}lnp\_magic.py}{104}{subsection.3.2.61}
+\contentsline {subsection}{\numberline {3.2.62}lowrie.py}{106}{subsection.3.2.62}
+\contentsline {subsection}{\numberline {3.2.63}lowrie\_magic.py}{107}{subsection.3.2.63}
+\contentsline {subsection}{\numberline {3.2.64}magic\_select.py}{108}{subsection.3.2.64}
+\contentsline {subsection}{\numberline {3.2.65}make\_magic\_plots.py}{109}{subsection.3.2.65}
+\contentsline {subsection}{\numberline {3.2.66}Measurement Import Scripts}{109}{subsection.3.2.66}
+\contentsline {subsubsection}{2G\_bin\_magic.py}{109}{section*.5}
+\contentsline {subsubsection}{AGM\_magic.py}{109}{section*.6}
+\contentsline {subsubsection}{CIT\_magic.py}{110}{section*.7}
+\contentsline {subsubsection}{generic\_magic.py}{112}{section*.8}
+\contentsline {subsubsection}{HUJI\_magic.py}{113}{section*.9}
+\contentsline {subsubsection}{LDEO\_magic.py}{114}{section*.10}
+\contentsline {subsubsection}{IODP\_csv\_magic.py}{115}{section*.11}
+\contentsline {subsubsection}{PMD\_magic.py}{115}{section*.12}
+\contentsline {subsubsection}{sio\_magic.py}{116}{section*.13}
+\contentsline {subsubsection}{SUFAR4-asc\_magic.py}{119}{section*.14}
+\contentsline {subsubsection}{TDT\_magic.py}{119}{section*.15}
+\contentsline {subsection}{\numberline {3.2.67}measurements\_normalize.py}{120}{subsection.3.2.67}
+\contentsline {subsection}{\numberline {3.2.68}mk\_redo.py}{120}{subsection.3.2.68}
+\contentsline {subsection}{\numberline {3.2.69}nrm\_specimens\_magic.py}{121}{subsection.3.2.69}
+\contentsline {subsection}{\numberline {3.2.70}orientation\_magic.py}{123}{subsection.3.2.70}
+\contentsline {subsection}{\numberline {3.2.71}parse\_measurements.py}{124}{subsection.3.2.71}
+\contentsline {subsection}{\numberline {3.2.72}pca.py}{124}{subsection.3.2.72}
+\contentsline {subsection}{\numberline {3.2.73}plotXY.py}{125}{subsection.3.2.73}
+\contentsline {subsection}{\numberline {3.2.74}plot\_cdf.py}{125}{subsection.3.2.74}
+\contentsline {subsection}{\numberline {3.2.75}plot\_magic\_keys.py}{126}{subsection.3.2.75}
+\contentsline {subsection}{\numberline {3.2.76}plot\_mapPTS.py}{126}{subsection.3.2.76}
+\contentsline {subsection}{\numberline {3.2.77}plotdi\_a.py}{128}{subsection.3.2.77}
+\contentsline {subsection}{\numberline {3.2.78}pmag\_results\_extract.py}{129}{subsection.3.2.78}
+\contentsline {subsection}{\numberline {3.2.79}pt\_rot.py}{130}{subsection.3.2.79}
+\contentsline {subsection}{\numberline {3.2.80}qqlot.py}{132}{subsection.3.2.80}
+\contentsline {subsection}{\numberline {3.2.81}quick\_hyst.py}{133}{subsection.3.2.81}
+\contentsline {subsection}{\numberline {3.2.82}revtest.py}{135}{subsection.3.2.82}
+\contentsline {subsection}{\numberline {3.2.83}revtest\_magic.py}{136}{subsection.3.2.83}
+\contentsline {subsection}{\numberline {3.2.84}revtest\_MM1990.py}{136}{subsection.3.2.84}
+\contentsline {subsection}{\numberline {3.2.85}s\_eigs.py}{138}{subsection.3.2.85}
+\contentsline {subsection}{\numberline {3.2.86}s\_geo.py}{138}{subsection.3.2.86}
+\contentsline {subsection}{\numberline {3.2.87}s\_hext.py}{139}{subsection.3.2.87}
+\contentsline {subsection}{\numberline {3.2.88}s\_tilt.py}{139}{subsection.3.2.88}
+\contentsline {subsection}{\numberline {3.2.89}s\_magic.py}{139}{subsection.3.2.89}
+\contentsline {subsection}{\numberline {3.2.90}scalc.py}{140}{subsection.3.2.90}
+\contentsline {subsection}{\numberline {3.2.91}scalc\_magic.py}{140}{subsection.3.2.91}
+\contentsline {subsection}{\numberline {3.2.92}site\_edit\_magic.py}{141}{subsection.3.2.92}
+\contentsline {subsection}{\numberline {3.2.93}specimens\_results\_magic.py}{143}{subsection.3.2.93}
+\contentsline {subsection}{\numberline {3.2.94}stats.py}{144}{subsection.3.2.94}
+\contentsline {subsection}{\numberline {3.2.95}strip\_magic.py}{145}{subsection.3.2.95}
+\contentsline {subsection}{\numberline {3.2.96}sundec.py}{146}{subsection.3.2.96}
+\contentsline {subsection}{\numberline {3.2.97}thellier\_GUI.py}{147}{subsection.3.2.97}
+\contentsline {subsubsection}{Starting the GUI}{148}{section*.16}
+\contentsline {subsubsection}{Reading and compiling measurements data}{148}{section*.17}
+\contentsline {subsubsection}{Main panel}{149}{section*.18}
+\contentsline {subsubsection}{ Tutorial by example}{151}{section*.19}
+\contentsline {subsection}{\numberline {3.2.98}thellier\_magic.py}{155}{subsection.3.2.98}
+\contentsline {subsection}{\numberline {3.2.99}thellier\_magic\_redo.py}{158}{subsection.3.2.99}
+\contentsline {subsection}{\numberline {3.2.100}tk03.py}{159}{subsection.3.2.100}
+\contentsline {subsection}{\numberline {3.2.101}uniform.py}{160}{subsection.3.2.101}
+\contentsline {subsection}{\numberline {3.2.102}update\_measurements.py}{161}{subsection.3.2.102}
+\contentsline {subsection}{\numberline {3.2.103}upload\_magic.py}{162}{subsection.3.2.103}
+\contentsline {subsection}{\numberline {3.2.104}vdm\_b.py}{163}{subsection.3.2.104}
+\contentsline {subsection}{\numberline {3.2.105}vector\_mean.py}{163}{subsection.3.2.105}
+\contentsline {subsection}{\numberline {3.2.106}vgp\_di.py}{163}{subsection.3.2.106}
+\contentsline {subsection}{\numberline {3.2.107}vgpmap\_magic.py}{164}{subsection.3.2.107}
+\contentsline {subsection}{\numberline {3.2.108}watsonsF.py}{165}{subsection.3.2.108}
+\contentsline {subsection}{\numberline {3.2.109}watsonsV.py}{166}{subsection.3.2.109}
+\contentsline {subsection}{\numberline {3.2.110}zeq.py}{167}{subsection.3.2.110}
+\contentsline {subsection}{\numberline {3.2.111}zeq\_magic.py}{168}{subsection.3.2.111}
+\contentsline {subsection}{\numberline {3.2.112}zeq\_magic\_redo.py}{169}{subsection.3.2.112}
+\contentsline {section}{\numberline {3.3}Complaints department}{170}{section.3.3}
+\contentsline {chapter}{\numberline {4}The MagIC database and file formats}{171}{chapter.4}
+\contentsline {section}{\numberline {4.1}Perusing the existing data}{171}{section.4.1}
+\contentsline {section}{\numberline {4.2}Uploading data to the database}{172}{section.4.2}
+\contentsline {section}{\numberline {4.3}Structure of the database tables}{172}{section.4.3}
+\contentsline {section}{\numberline {4.4}A word about method codes}{174}{section.4.4}
+\contentsline {chapter}{\numberline {5}Survival computer skills}{177}{chapter.5}
+\contentsline {section}{\numberline {5.1}Finding your command line}{177}{section.5.1}
+\contentsline {section}{\numberline {5.2}File systems}{179}{section.5.2}
+\contentsline {section}{\numberline {5.3}Moving around in the file system}{181}{section.5.3}
+\contentsline {section}{\numberline {5.4}Wildcards}{181}{section.5.4}
+\contentsline {section}{\numberline {5.5}Redirecting input and output}{181}{section.5.5}
+\contentsline {section}{\numberline {5.6}Text editors}{182}{section.5.6}
+\contentsline {chapter}{\numberline {6}Introduction to Python Programming}{183}{chapter.6}
+\contentsline {section}{\numberline {6.1}A first look at NumPy}{184}{section.6.1}
+\contentsline {section}{\numberline {6.2}Variable types}{187}{section.6.2}
+\contentsline {section}{\numberline {6.3}Data Structures}{188}{section.6.3}
+\contentsline {subsubsection}{Lists}{188}{section*.20}
+\contentsline {subsubsection}{More about strings}{189}{section*.21}
+\contentsline {subsubsection}{Data structures as objects}{190}{section*.22}
+\contentsline {subsubsection}{Tuples}{190}{section*.23}
+\contentsline {subsubsection}{Dictionaries!}{190}{section*.24}
+\contentsline {subsubsection}{N-dimensional arrays}{191}{section*.25}
+\contentsline {section}{\numberline {6.4}Pandas}{196}{section.6.4}
+\contentsline {section}{\numberline {6.5}Python Scripts}{197}{section.6.5}
+\contentsline {section}{\numberline {6.6}Code blocks}{199}{section.6.6}
+\contentsline {subsubsection}{The for loop}{200}{section*.26}
+\contentsline {subsubsection}{Looping through lists}{200}{section*.27}
+\contentsline {subsubsection}{Looping through arrays}{203}{section*.28}
+\contentsline {subsubsection}{If and while blocks}{203}{section*.29}
+\contentsline {subsubsection}{Finer points of `if' blocks}{204}{section*.30}
+\contentsline {subsubsection}{While loops}{205}{section*.31}
+\contentsline {subsubsection}{Code blocks in interactive Python}{205}{section*.32}
+\contentsline {section}{\numberline {6.7}File I/O in Python}{206}{section.6.7}
+\contentsline {subsubsection}{Reading data in}{206}{section*.33}
+\contentsline {subsubsection}{From a file}{206}{section*.34}
+\contentsline {subsubsection}{From Standard Input }{209}{section*.35}
+\contentsline {subsubsection}{Command line switches}{210}{section*.36}
+\contentsline {subsubsection}{Reading numeric files}{210}{section*.37}
+\contentsline {subsubsection}{Writing data out}{210}{section*.38}
+\contentsline {section}{\numberline {6.8}Functions}{213}{section.6.8}
+\contentsline {subsubsection}{Line by line analysis}{213}{section*.39}
+\contentsline {subsubsection}{def FUNCNAME(in\_args):}{213}{section*.40}
+\contentsline {subsubsection}{Doc String}{215}{section*.41}
+\contentsline {subsubsection}{Function body}{215}{section*.42}
+\contentsline {subsubsection}{Return statement}{215}{section*.43}
+\contentsline {subsubsection}{Main program as function}{215}{section*.44}
+\contentsline {subsubsection}{Scope of variables}{217}{section*.45}
+\contentsline {section}{\numberline {6.9}Classes}{217}{section.6.9}
+\contentsline {section}{\numberline {6.10}Matplotlib}{219}{section.6.10}
+\contentsline {subsubsection}{A first plot}{219}{section*.46}
+\contentsline {subsubsection}{Multiple figures and more customization}{223}{section*.47}
+\contentsline {subsubsection}{Adding text}{225}{section*.48}
+\contentsline {chapter}{\numberline {7}IPython Notebooks}{229}{chapter.7}
