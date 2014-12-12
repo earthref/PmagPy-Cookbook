@@ -3,204 +3,204 @@
 \doTocEntry\tocchapter{1}{\csname a:TocLink\endcsname{1}{x1-20001}{QQ2-1-2}{MagIC Quick Start}}{3}\relax 
 \doTocEntry\tocchapter{2}{\csname a:TocLink\endcsname{1}{x1-30002}{QQ2-1-3}{QuickMagIC.py Tutorial}}{7}\relax 
 \doTocEntry\tocsection{2.1}{\csname a:TocLink\endcsname{1}{x1-40002.1}{QQ2-1-4}{Converting magnetometer files to MagIC format}}{8}\relax 
-\doTocEntry\tocsection{2.2}{\csname a:TocLink\endcsname{1}{x1-50002.2}{QQ2-1-5}{Optional: Calculate geographic / tilt-corrected direction}}{14}\relax 
-\doTocEntry\tocsection{2.3}{\csname a:TocLink\endcsname{1}{x1-60002.3}{QQ2-1-6}{Filling in the EarthRef data}}{17}\relax 
-\doTocEntry\tocsection{2.4}{\csname a:TocLink\endcsname{1}{x1-70002.4}{QQ2-1-7}{Demag GUI tool}}{26}\relax 
-\doTocEntry\tocsection{2.5}{\csname a:TocLink\endcsname{1}{x1-80002.5}{QQ2-1-8}{Thellier GUI tool}}{27}\relax 
-\doTocEntry\tocsection{2.6}{\csname a:TocLink\endcsname{1}{x1-90002.6}{QQ2-1-9}{Upload to the database }}{29}\relax 
-\doTocEntry\tocsection{2.7}{\csname a:TocLink\endcsname{1}{x1-100002.7}{QQ2-1-10}{Preparing for MagIC}}{29}\relax 
-\doTocEntry\tocsubsection{2.7.1}{\csname a:TocLink\endcsname{1}{x1-110002.7.1}{QQ2-1-11}{Project Directory}}{30}\relax 
-\doTocEntry\tocsubsection{2.7.2}{\csname a:TocLink\endcsname{1}{x1-120002.7.2}{QQ2-1-12}{What goes in {\it  MyFiles}}}{30}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-130002.7.2}{QQ2-1-13}{Field and sampling information}}{31}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-140002.7.2}{QQ2-1-14}{Data files downloaded from the IODP (LIMS) database}}{40}\relax 
-\doTocEntry\tocsubsection{2.7.3}{\csname a:TocLink\endcsname{1}{x1-150002.7.3}{QQ2-1-15}{Supported Rock Magnetometer files}}{42}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-160002.7.3}{QQ2-1-16}{Hysteresis file formats}}{44}\relax 
-\doTocEntry\tocsubsection{2.7.4}{\csname a:TocLink\endcsname{1}{x1-170002.7.4}{QQ2-1-17}{Importing magnetometer data}}{44}\relax 
-\doTocEntry\tocsection{2.8}{\csname a:TocLink\endcsname{1}{x1-180002.8}{QQ2-1-18}{Import menu option}}{48}\relax 
-\doTocEntry\tocsubsection{2.8.1}{\csname a:TocLink\endcsname{1}{x1-190002.8.1}{QQ2-1-19}{Importing Anisotropy of magnetic susceptibility data}}{48}\relax 
-\doTocEntry\tocsubsection{2.8.2}{\csname a:TocLink\endcsname{1}{x1-200002.8.2}{QQ2-1-20}{Importing hysteresis data}}{48}\relax 
-\doTocEntry\tocchapter{3}{\csname a:TocLink\endcsname{1}{x1-210003}{QQ2-1-21}{The {\bf  PmagPy} software package}}{51}\relax 
-\doTocEntry\tocsection{3.1}{\csname a:TocLink\endcsname{1}{x1-220003.1}{QQ2-1-22}{General characteristics of PmagPy programs}}{51}\relax 
-\doTocEntry\tocsection{3.2}{\csname a:TocLink\endcsname{1}{x1-230003.2}{QQ2-1-23}{Examples of how to use {\bf  PmagPy} programs}}{53}\relax 
-\doTocEntry\tocsubsection{3.2.1}{\csname a:TocLink\endcsname{1}{x1-240003.2.1}{QQ2-1-24}{aarm\_magic.py}}{53}\relax 
-\doTocEntry\tocsubsection{3.2.2}{\csname a:TocLink\endcsname{1}{x1-250003.2.2}{QQ2-1-25}{angle.py }}{55}\relax 
-\doTocEntry\tocsubsection{3.2.3}{\csname a:TocLink\endcsname{1}{x1-260003.2.3}{QQ2-1-26}{ANI\_depthplot.py}}{57}\relax 
-\doTocEntry\tocsubsection{3.2.4}{\csname a:TocLink\endcsname{1}{x1-270003.2.4}{QQ2-1-27}{aniso\_magic.py}}{59}\relax 
-\doTocEntry\tocsubsection{3.2.5}{\csname a:TocLink\endcsname{1}{x1-280003.2.5}{QQ2-1-28}{apwp.py }}{64}\relax 
-\doTocEntry\tocsubsection{3.2.6}{\csname a:TocLink\endcsname{1}{x1-290003.2.6}{QQ2-1-29}{atrm\_magic.py}}{66}\relax 
-\doTocEntry\tocsubsection{3.2.7}{\csname a:TocLink\endcsname{1}{x1-300003.2.7}{QQ2-1-30}{azdip\_magic.py}}{68}\relax 
-\doTocEntry\tocsubsection{3.2.8}{\csname a:TocLink\endcsname{1}{x1-310003.2.8}{QQ2-1-31}{b\_vdm.py}}{69}\relax 
-\doTocEntry\tocsubsection{3.2.9}{\csname a:TocLink\endcsname{1}{x1-320003.2.9}{QQ2-1-32}{basemap\_magic.py}}{70}\relax 
-\doTocEntry\tocsubsection{3.2.10}{\csname a:TocLink\endcsname{1}{x1-330003.2.10}{QQ2-1-33}{biplot\_magic.py}}{72}\relax 
-\doTocEntry\tocsubsection{3.2.11}{\csname a:TocLink\endcsname{1}{x1-340003.2.11}{QQ2-1-34}{bootams.py}}{75}\relax 
-\doTocEntry\tocsubsection{3.2.12}{\csname a:TocLink\endcsname{1}{x1-350003.2.12}{QQ2-1-35}{cart\_dir.py}}{76}\relax 
-\doTocEntry\tocsubsection{3.2.13}{\csname a:TocLink\endcsname{1}{x1-360003.2.13}{QQ2-1-36}{chartmaker.py}}{78}\relax 
-\doTocEntry\tocsubsection{3.2.14}{\csname a:TocLink\endcsname{1}{x1-370003.2.14}{QQ2-1-37}{chi\_magic.py}}{80}\relax 
-\doTocEntry\tocsubsection{3.2.15}{\csname a:TocLink\endcsname{1}{x1-380003.2.15}{QQ2-1-38}{combine\_magic.py}}{81}\relax 
-\doTocEntry\tocsubsection{3.2.16}{\csname a:TocLink\endcsname{1}{x1-390003.2.16}{QQ2-1-39}{common\_mean.py}}{82}\relax 
-\doTocEntry\tocsubsection{3.2.17}{\csname a:TocLink\endcsname{1}{x1-400003.2.17}{QQ2-1-40}{cont\_rot.py}}{85}\relax 
-\doTocEntry\tocsubsection{3.2.18}{\csname a:TocLink\endcsname{1}{x1-410003.2.18}{QQ2-1-41}{convert2unix.py}}{86}\relax 
-\doTocEntry\tocsubsection{3.2.19}{\csname a:TocLink\endcsname{1}{x1-420003.2.19}{QQ2-1-42}{convert\_samples.py}}{87}\relax 
-\doTocEntry\tocsubsection{3.2.20}{\csname a:TocLink\endcsname{1}{x1-430003.2.20}{QQ2-1-43}{core\_depthplot.py}}{88}\relax 
-\doTocEntry\tocsubsection{3.2.21}{\csname a:TocLink\endcsname{1}{x1-440003.2.21}{QQ2-1-44}{curie.py}}{89}\relax 
-\doTocEntry\tocsubsection{3.2.22}{\csname a:TocLink\endcsname{1}{x1-450003.2.22}{QQ2-1-45}{customize\_criteria.py}}{92}\relax 
-\doTocEntry\tocsubsection{3.2.23}{\csname a:TocLink\endcsname{1}{x1-460003.2.23}{QQ2-1-46}{dayplot\_magic.py}}{93}\relax 
-\doTocEntry\tocsubsection{3.2.24}{\csname a:TocLink\endcsname{1}{x1-470003.2.24}{QQ2-1-47}{demag\_gui.py}}{95}\relax 
-\doTocEntry\tocsubsection{3.2.25}{\csname a:TocLink\endcsname{1}{x1-480003.2.25}{QQ2-1-48}{di\_eq.py}}{95}\relax 
-\doTocEntry\tocsubsection{3.2.26}{\csname a:TocLink\endcsname{1}{x1-490003.2.26}{QQ2-1-49}{di\_geo.py}}{96}\relax 
-\doTocEntry\tocsubsection{3.2.27}{\csname a:TocLink\endcsname{1}{x1-500003.2.27}{QQ2-1-50}{di\_rot.py}}{99}\relax 
-\doTocEntry\tocsubsection{3.2.28}{\csname a:TocLink\endcsname{1}{x1-510003.2.28}{QQ2-1-51}{di\_tilt.py}}{101}\relax 
-\doTocEntry\tocsubsection{3.2.29}{\csname a:TocLink\endcsname{1}{x1-520003.2.29}{QQ2-1-52}{di\_vgp.py}}{103}\relax 
-\doTocEntry\tocsubsection{3.2.30}{\csname a:TocLink\endcsname{1}{x1-530003.2.30}{QQ2-1-53}{dipole\_pinc.py}}{104}\relax 
-\doTocEntry\tocsubsection{3.2.31}{\csname a:TocLink\endcsname{1}{x1-540003.2.31}{QQ2-1-54}{dipole\_plat.py}}{105}\relax 
-\doTocEntry\tocsubsection{3.2.32}{\csname a:TocLink\endcsname{1}{x1-550003.2.32}{QQ2-1-55}{dir\_cart.py}}{106}\relax 
-\doTocEntry\tocsubsection{3.2.33}{\csname a:TocLink\endcsname{1}{x1-560003.2.33}{QQ2-1-56}{dmag\_magic.py}}{108}\relax 
-\doTocEntry\tocsubsection{3.2.34}{\csname a:TocLink\endcsname{1}{x1-570003.2.34}{QQ2-1-57}{download\_magic.py}}{109}\relax 
-\doTocEntry\tocsubsection{3.2.35}{\csname a:TocLink\endcsname{1}{x1-580003.2.35}{QQ2-1-58}{eigs\_s.py}}{112}\relax 
-\doTocEntry\tocsubsection{3.2.36}{\csname a:TocLink\endcsname{1}{x1-590003.2.36}{QQ2-1-59}{eq\_di.py}}{113}\relax 
-\doTocEntry\tocsubsection{3.2.37}{\csname a:TocLink\endcsname{1}{x1-600003.2.37}{QQ2-1-60}{eqarea.py}}{114}\relax 
-\doTocEntry\tocsubsection{3.2.38}{\csname a:TocLink\endcsname{1}{x1-610003.2.38}{QQ2-1-61}{eqarea\_ell.py}}{115}\relax 
-\doTocEntry\tocsubsection{3.2.39}{\csname a:TocLink\endcsname{1}{x1-620003.2.39}{QQ2-1-62}{eqarea\_magic.py}}{118}\relax 
-\doTocEntry\tocsubsection{3.2.40}{\csname a:TocLink\endcsname{1}{x1-630003.2.40}{QQ2-1-63}{find\_EI.py}}{124}\relax 
-\doTocEntry\tocsubsection{3.2.41}{\csname a:TocLink\endcsname{1}{x1-640003.2.41}{QQ2-1-64}{fisher.py}}{127}\relax 
-\doTocEntry\tocsubsection{3.2.42}{\csname a:TocLink\endcsname{1}{x1-650003.2.42}{QQ2-1-65}{fishqq.py}}{129}\relax 
-\doTocEntry\tocsubsection{3.2.43}{\csname a:TocLink\endcsname{1}{x1-660003.2.43}{QQ2-1-66}{fishrot.py}}{130}\relax 
-\doTocEntry\tocsubsection{3.2.44}{\csname a:TocLink\endcsname{1}{x1-670003.2.44}{QQ2-1-67}{foldtest.py}}{131}\relax 
-\doTocEntry\tocsubsection{3.2.45}{\csname a:TocLink\endcsname{1}{x1-680003.2.45}{QQ2-1-68}{foldtest\_magic.py}}{133}\relax 
-\doTocEntry\tocsubsection{3.2.46}{\csname a:TocLink\endcsname{1}{x1-690003.2.46}{QQ2-1-69}{gaussian.py}}{133}\relax 
-\doTocEntry\tocsubsection{3.2.47}{\csname a:TocLink\endcsname{1}{x1-700003.2.47}{QQ2-1-70}{gobing.py}}{134}\relax 
-\doTocEntry\tocsubsection{3.2.48}{\csname a:TocLink\endcsname{1}{x1-710003.2.48}{QQ2-1-71}{gofish.py}}{135}\relax 
-\doTocEntry\tocsubsection{3.2.49}{\csname a:TocLink\endcsname{1}{x1-720003.2.49}{QQ2-1-72}{gokent.py}}{136}\relax 
-\doTocEntry\tocsubsection{3.2.50}{\csname a:TocLink\endcsname{1}{x1-730003.2.50}{QQ2-1-73}{goprinc.py}}{137}\relax 
-\doTocEntry\tocsubsection{3.2.51}{\csname a:TocLink\endcsname{1}{x1-740003.2.51}{QQ2-1-74}{grab\_magic\_key.py}}{138}\relax 
-\doTocEntry\tocsubsection{3.2.52}{\csname a:TocLink\endcsname{1}{x1-750003.2.52}{QQ2-1-75}{histplot.py}}{141}\relax 
-\doTocEntry\tocsubsection{3.2.53}{\csname a:TocLink\endcsname{1}{x1-760003.2.53}{QQ2-1-76}{hysteresis\_magic.py}}{142}\relax 
-\doTocEntry\tocsubsection{3.2.54}{\csname a:TocLink\endcsname{1}{x1-770003.2.54}{QQ2-1-77}{igrf.py}}{145}\relax 
-\doTocEntry\tocsubsection{3.2.55}{\csname a:TocLink\endcsname{1}{x1-780003.2.55}{QQ2-1-78}{install\_etopo.py}}{149}\relax 
-\doTocEntry\tocsubsection{3.2.56}{\csname a:TocLink\endcsname{1}{x1-790003.2.56}{QQ2-1-79}{incfish.py}}{151}\relax 
-\doTocEntry\tocsubsection{3.2.57}{\csname a:TocLink\endcsname{1}{x1-800003.2.57}{QQ2-1-80}{irmaq\_magic.py}}{152}\relax 
-\doTocEntry\tocsubsection{3.2.58}{\csname a:TocLink\endcsname{1}{x1-810003.2.58}{QQ2-1-81}{k15\_magic.py}}{154}\relax 
-\doTocEntry\tocsubsection{3.2.59}{\csname a:TocLink\endcsname{1}{x1-820003.2.59}{QQ2-1-82}{k15\_s.py}}{159}\relax 
-\doTocEntry\tocsubsection{3.2.60}{\csname a:TocLink\endcsname{1}{x1-830003.2.60}{QQ2-1-83}{KLY4S\_magic.py}}{160}\relax 
-\doTocEntry\tocsubsection{3.2.61}{\csname a:TocLink\endcsname{1}{x1-840003.2.61}{QQ2-1-84}{lnp\_magic.py}}{162}\relax 
-\doTocEntry\tocsubsection{3.2.62}{\csname a:TocLink\endcsname{1}{x1-850003.2.62}{QQ2-1-85}{lowrie.py}}{164}\relax 
-\doTocEntry\tocsubsection{3.2.63}{\csname a:TocLink\endcsname{1}{x1-860003.2.63}{QQ2-1-86}{lowrie\_magic.py}}{166}\relax 
-\doTocEntry\tocsubsection{3.2.64}{\csname a:TocLink\endcsname{1}{x1-870003.2.64}{QQ2-1-87}{magic\_select.py}}{167}\relax 
-\doTocEntry\tocsubsection{3.2.65}{\csname a:TocLink\endcsname{1}{x1-880003.2.65}{QQ2-1-88}{make\_magic\_plots.py}}{169}\relax 
-\doTocEntry\tocsubsection{3.2.66}{\csname a:TocLink\endcsname{1}{x1-890003.2.66}{QQ2-1-89}{Measurement Import Scripts}}{169}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-900003.2.66}{QQ2-1-90}{2G\_bin\_magic.py}}{169}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-910003.2.66}{QQ2-1-91}{AGM\_magic.py}}{170}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-920003.2.66}{QQ2-1-92}{CIT\_magic.py}}{171}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-930003.2.66}{QQ2-1-93}{generic\_magic.py}}{174}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-940003.2.66}{QQ2-1-94}{HUJI\_magic.py}}{177}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-950003.2.66}{QQ2-1-95}{LDEO\_magic.py}}{178}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-960003.2.66}{QQ2-1-96}{IODP\_csv\_magic.py}}{181}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-970003.2.66}{QQ2-1-97}{PMD\_magic.py}}{182}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-980003.2.66}{QQ2-1-98}{sio\_magic.py}}{185}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-990003.2.66}{QQ2-1-99}{SUFAR4-asc\_magic.py}}{189}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1000003.2.66}{QQ2-1-100}{TDT\_magic.py}}{190}\relax 
-\doTocEntry\tocsubsection{3.2.67}{\csname a:TocLink\endcsname{1}{x1-1010003.2.67}{QQ2-1-101}{measurements\_normalize.py}}{192}\relax 
-\doTocEntry\tocsubsection{3.2.68}{\csname a:TocLink\endcsname{1}{x1-1020003.2.68}{QQ2-1-102}{mk\_redo.py}}{193}\relax 
-\doTocEntry\tocsubsection{3.2.69}{\csname a:TocLink\endcsname{1}{x1-1030003.2.69}{QQ2-1-103}{nrm\_specimens\_magic.py}}{194}\relax 
-\doTocEntry\tocsubsection{3.2.70}{\csname a:TocLink\endcsname{1}{x1-1040003.2.70}{QQ2-1-104}{orientation\_magic.py}}{196}\relax 
-\doTocEntry\tocsubsection{3.2.71}{\csname a:TocLink\endcsname{1}{x1-1050003.2.71}{QQ2-1-105}{parse\_measurements.py}}{198}\relax 
-\doTocEntry\tocsubsection{3.2.72}{\csname a:TocLink\endcsname{1}{x1-1060003.2.72}{QQ2-1-106}{pca.py}}{199}\relax 
-\doTocEntry\tocsubsection{3.2.73}{\csname a:TocLink\endcsname{1}{x1-1070003.2.73}{QQ2-1-107}{plotXY.py}}{200}\relax 
-\doTocEntry\tocsubsection{3.2.74}{\csname a:TocLink\endcsname{1}{x1-1080003.2.74}{QQ2-1-108}{plot\_cdf.py}}{200}\relax 
-\doTocEntry\tocsubsection{3.2.75}{\csname a:TocLink\endcsname{1}{x1-1090003.2.75}{QQ2-1-109}{plot\_magic\_keys.py}}{202}\relax 
-\doTocEntry\tocsubsection{3.2.76}{\csname a:TocLink\endcsname{1}{x1-1100003.2.76}{QQ2-1-110}{plot\_mapPTS.py}}{202}\relax 
-\doTocEntry\tocsubsection{3.2.77}{\csname a:TocLink\endcsname{1}{x1-1110003.2.77}{QQ2-1-111}{plotdi\_a.py}}{204}\relax 
-\doTocEntry\tocsubsection{3.2.78}{\csname a:TocLink\endcsname{1}{x1-1120003.2.78}{QQ2-1-112}{pmag\_results\_extract.py}}{205}\relax 
-\doTocEntry\tocsubsection{3.2.79}{\csname a:TocLink\endcsname{1}{x1-1130003.2.79}{QQ2-1-113}{pt\_rot.py}}{207}\relax 
-\doTocEntry\tocsubsection{3.2.80}{\csname a:TocLink\endcsname{1}{x1-1140003.2.80}{QQ2-1-114}{qqlot.py}}{211}\relax 
-\doTocEntry\tocsubsection{3.2.81}{\csname a:TocLink\endcsname{1}{x1-1150003.2.81}{QQ2-1-115}{quick\_hyst.py}}{213}\relax 
-\doTocEntry\tocsubsection{3.2.82}{\csname a:TocLink\endcsname{1}{x1-1160003.2.82}{QQ2-1-116}{revtest.py}}{215}\relax 
-\doTocEntry\tocsubsection{3.2.83}{\csname a:TocLink\endcsname{1}{x1-1170003.2.83}{QQ2-1-117}{revtest\_magic.py}}{216}\relax 
-\doTocEntry\tocsubsection{3.2.84}{\csname a:TocLink\endcsname{1}{x1-1180003.2.84}{QQ2-1-118}{revtest\_MM1990.py}}{217}\relax 
-\doTocEntry\tocsubsection{3.2.85}{\csname a:TocLink\endcsname{1}{x1-1190003.2.85}{QQ2-1-119}{s\_eigs.py}}{220}\relax 
-\doTocEntry\tocsubsection{3.2.86}{\csname a:TocLink\endcsname{1}{x1-1200003.2.86}{QQ2-1-120}{s\_geo.py}}{221}\relax 
-\doTocEntry\tocsubsection{3.2.87}{\csname a:TocLink\endcsname{1}{x1-1210003.2.87}{QQ2-1-121}{s\_hext.py}}{222}\relax 
-\doTocEntry\tocsubsection{3.2.88}{\csname a:TocLink\endcsname{1}{x1-1220003.2.88}{QQ2-1-122}{s\_tilt.py}}{223}\relax 
-\doTocEntry\tocsubsection{3.2.89}{\csname a:TocLink\endcsname{1}{x1-1230003.2.89}{QQ2-1-123}{s\_magic.py}}{224}\relax 
-\doTocEntry\tocsubsection{3.2.90}{\csname a:TocLink\endcsname{1}{x1-1240003.2.90}{QQ2-1-124}{scalc.py}}{225}\relax 
-\doTocEntry\tocsubsection{3.2.91}{\csname a:TocLink\endcsname{1}{x1-1250003.2.91}{QQ2-1-125}{scalc\_magic.py}}{226}\relax 
-\doTocEntry\tocsubsection{3.2.92}{\csname a:TocLink\endcsname{1}{x1-1260003.2.92}{QQ2-1-126}{site\_edit\_magic.py}}{227}\relax 
-\doTocEntry\tocsubsection{3.2.93}{\csname a:TocLink\endcsname{1}{x1-1270003.2.93}{QQ2-1-127}{specimens\_results\_magic.py}}{230}\relax 
-\doTocEntry\tocsubsection{3.2.94}{\csname a:TocLink\endcsname{1}{x1-1280003.2.94}{QQ2-1-128}{stats.py}}{231}\relax 
-\doTocEntry\tocsubsection{3.2.95}{\csname a:TocLink\endcsname{1}{x1-1290003.2.95}{QQ2-1-129}{strip\_magic.py}}{233}\relax 
-\doTocEntry\tocsubsection{3.2.96}{\csname a:TocLink\endcsname{1}{x1-1300003.2.96}{QQ2-1-130}{sundec.py}}{235}\relax 
-\doTocEntry\tocsubsection{3.2.97}{\csname a:TocLink\endcsname{1}{x1-1310003.2.97}{QQ2-1-131}{thellier\_GUI.py}}{239}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1320003.2.97}{QQ2-1-132}{Starting the GUI}}{240}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1330003.2.97}{QQ2-1-133}{Reading and compiling measurements data}}{241}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1340003.2.97}{QQ2-1-134}{Main panel}}{242}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1350003.2.97}{QQ2-1-135}{ Tutorial by example}}{244}\relax 
-\doTocEntry\tocsubsection{3.2.98}{\csname a:TocLink\endcsname{1}{x1-1360003.2.98}{QQ2-1-136}{thellier\_magic.py}}{251}\relax 
-\doTocEntry\tocsubsection{3.2.99}{\csname a:TocLink\endcsname{1}{x1-1370003.2.99}{QQ2-1-137}{thellier\_magic\_redo.py}}{255}\relax 
-\doTocEntry\tocsubsection{3.2.100}{\csname a:TocLink\endcsname{1}{x1-1380003.2.100}{QQ2-1-138}{tk03.py}}{256}\relax 
-\doTocEntry\tocsubsection{3.2.101}{\csname a:TocLink\endcsname{1}{x1-1390003.2.101}{QQ2-1-139}{uniform.py}}{257}\relax 
-\doTocEntry\tocsubsection{3.2.102}{\csname a:TocLink\endcsname{1}{x1-1400003.2.102}{QQ2-1-140}{update\_measurements.py}}{260}\relax 
-\doTocEntry\tocsubsection{3.2.103}{\csname a:TocLink\endcsname{1}{x1-1410003.2.103}{QQ2-1-141}{upload\_magic.py}}{260}\relax 
-\doTocEntry\tocsubsection{3.2.104}{\csname a:TocLink\endcsname{1}{x1-1420003.2.104}{QQ2-1-142}{vdm\_b.py}}{261}\relax 
-\doTocEntry\tocsubsection{3.2.105}{\csname a:TocLink\endcsname{1}{x1-1430003.2.105}{QQ2-1-143}{vector\_mean.py}}{262}\relax 
-\doTocEntry\tocsubsection{3.2.106}{\csname a:TocLink\endcsname{1}{x1-1440003.2.106}{QQ2-1-144}{vgp\_di.py}}{263}\relax 
-\doTocEntry\tocsubsection{3.2.107}{\csname a:TocLink\endcsname{1}{x1-1450003.2.107}{QQ2-1-145}{vgpmap\_magic.py}}{264}\relax 
-\doTocEntry\tocsubsection{3.2.108}{\csname a:TocLink\endcsname{1}{x1-1460003.2.108}{QQ2-1-146}{watsonsF.py}}{266}\relax 
-\doTocEntry\tocsubsection{3.2.109}{\csname a:TocLink\endcsname{1}{x1-1470003.2.109}{QQ2-1-147}{watsonsV.py}}{268}\relax 
-\doTocEntry\tocsubsection{3.2.110}{\csname a:TocLink\endcsname{1}{x1-1480003.2.110}{QQ2-1-148}{zeq.py}}{270}\relax 
-\doTocEntry\tocsubsection{3.2.111}{\csname a:TocLink\endcsname{1}{x1-1490003.2.111}{QQ2-1-149}{zeq\_magic.py}}{272}\relax 
-\doTocEntry\tocsubsection{3.2.112}{\csname a:TocLink\endcsname{1}{x1-1500003.2.112}{QQ2-1-150}{zeq\_magic\_redo.py}}{274}\relax 
-\doTocEntry\tocsection{3.3}{\csname a:TocLink\endcsname{1}{x1-1510003.3}{QQ2-1-151}{Complaints department}}{275}\relax 
-\doTocEntry\tocchapter{4}{\csname a:TocLink\endcsname{1}{x1-1520004}{QQ2-1-152}{The MagIC database and file formats}}{277}\relax 
-\doTocEntry\tocsection{4.1}{\csname a:TocLink\endcsname{1}{x1-1530004.1}{QQ2-1-153}{Perusing the existing data}}{277}\relax 
-\doTocEntry\tocsection{4.2}{\csname a:TocLink\endcsname{1}{x1-1540004.2}{QQ2-1-154}{Uploading data to the database}}{278}\relax 
-\doTocEntry\tocsection{4.3}{\csname a:TocLink\endcsname{1}{x1-1550004.3}{QQ2-1-155}{Structure of the database tables}}{278}\relax 
-\doTocEntry\tocsection{4.4}{\csname a:TocLink\endcsname{1}{x1-1560004.4}{QQ2-1-156}{A word about method codes}}{279}\relax 
-\doTocEntry\tocchapter{5}{\csname a:TocLink\endcsname{1}{x1-1570005}{QQ2-1-157}{Survival computer skills}}{283}\relax 
-\doTocEntry\tocsection{5.1}{\csname a:TocLink\endcsname{1}{x1-1580005.1}{QQ2-1-158}{Finding your command line}}{283}\relax 
-\doTocEntry\tocsection{5.2}{\csname a:TocLink\endcsname{1}{x1-1590005.2}{QQ2-1-159}{File systems}}{285}\relax 
-\doTocEntry\tocsection{5.3}{\csname a:TocLink\endcsname{1}{x1-1600005.3}{QQ2-1-160}{Moving around in the file system}}{287}\relax 
-\doTocEntry\tocsection{5.4}{\csname a:TocLink\endcsname{1}{x1-1610005.4}{QQ2-1-161}{Wildcards}}{289}\relax 
-\doTocEntry\tocsection{5.5}{\csname a:TocLink\endcsname{1}{x1-1620005.5}{QQ2-1-162}{Redirecting input and output}}{290}\relax 
-\doTocEntry\tocsection{5.6}{\csname a:TocLink\endcsname{1}{x1-1630005.6}{QQ2-1-163}{Text editors}}{290}\relax 
-\doTocEntry\tocchapter{6}{\csname a:TocLink\endcsname{1}{x1-1640006}{QQ2-1-164}{Introduction to Python Programming}}{291}\relax 
-\doTocEntry\tocsection{6.1}{\csname a:TocLink\endcsname{1}{x1-1650006.1}{QQ2-1-165}{A first look at NumPy}}{293}\relax 
-\doTocEntry\tocsection{6.2}{\csname a:TocLink\endcsname{1}{x1-1660006.2}{QQ2-1-166}{Variable types}}{299}\relax 
-\doTocEntry\tocsection{6.3}{\csname a:TocLink\endcsname{1}{x1-1670006.3}{QQ2-1-167}{Data Structures}}{302}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1680006.3}{QQ2-1-168}{Lists}}{302}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1690006.3}{QQ2-1-169}{More about strings}}{310}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1700006.3}{QQ2-1-170}{Data structures as objects}}{311}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1710006.3}{QQ2-1-171}{Tuples}}{311}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1720006.3}{QQ2-1-172}{Dictionaries!}}{312}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1730006.3}{QQ2-1-173}{N-dimensional arrays}}{317}\relax 
-\doTocEntry\tocsection{6.4}{\csname a:TocLink\endcsname{1}{x1-1740006.4}{QQ2-1-174}{Pandas}}{330}\relax 
-\doTocEntry\tocsection{6.5}{\csname a:TocLink\endcsname{1}{x1-1750006.5}{QQ2-1-175}{Python Scripts}}{332}\relax 
-\doTocEntry\tocsection{6.6}{\csname a:TocLink\endcsname{1}{x1-1760006.6}{QQ2-1-176}{Code blocks}}{340}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1770006.6}{QQ2-1-177}{The for loop}}{342}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1780006.6}{QQ2-1-178}{Looping through lists}}{342}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1790006.6}{QQ2-1-179}{Looping through arrays}}{349}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1800006.6}{QQ2-1-180}{If and while blocks}}{351}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1810006.6}{QQ2-1-181}{Finer points of `if' blocks}}{353}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1820006.6}{QQ2-1-182}{While loops}}{355}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1830006.6}{QQ2-1-183}{Code blocks in interactive Python}}{356}\relax 
-\doTocEntry\tocsection{6.7}{\csname a:TocLink\endcsname{1}{x1-1840006.7}{QQ2-1-184}{File I/O in Python}}{357}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1850006.7}{QQ2-1-185}{Reading data in}}{357}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1860006.7}{QQ2-1-186}{From a file}}{357}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1870006.7}{QQ2-1-187}{From Standard Input }}{365}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1880006.7}{QQ2-1-188}{Command line switches}}{367}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1890006.7}{QQ2-1-189}{Reading numeric files}}{369}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1900006.7}{QQ2-1-190}{Writing data out}}{369}\relax 
-\doTocEntry\tocsection{6.8}{\csname a:TocLink\endcsname{1}{x1-1910006.8}{QQ2-1-191}{Functions}}{376}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1920006.8}{QQ2-1-192}{Line by line analysis}}{377}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1930006.8}{QQ2-1-193}{def FUNCNAME(in\_args):}}{377}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1940006.8}{QQ2-1-194}{Doc String}}{381}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1950006.8}{QQ2-1-195}{Function body}}{381}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1960006.8}{QQ2-1-196}{Return statement}}{381}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1970006.8}{QQ2-1-197}{Main program as function}}{382}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1980006.8}{QQ2-1-198}{Scope of variables}}{385}\relax 
-\doTocEntry\tocsection{6.9}{\csname a:TocLink\endcsname{1}{x1-1990006.9}{QQ2-1-199}{Classes}}{386}\relax 
-\doTocEntry\tocsection{6.10}{\csname a:TocLink\endcsname{1}{x1-2000006.10}{QQ2-1-200}{Matplotlib}}{389}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2010006.10}{QQ2-1-201}{A first plot}}{389}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2020006.10}{QQ2-1-202}{Multiple figures and more customization}}{395}\relax 
-\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2030006.10}{QQ2-1-203}{Adding text}}{399}\relax 
-\doTocEntry\tocchapter{7}{\csname a:TocLink\endcsname{1}{x1-2040007}{QQ2-1-204}{IPython Notebooks}}{403}\relax 
-\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-2050007}{QQ2-1-205}{Bibliography}}{409}\relax 
+\doTocEntry\tocsection{2.2}{\csname a:TocLink\endcsname{1}{x1-50002.2}{QQ2-1-5}{Optional: Calculate geographic / tilt-corrected direction}}{15}\relax 
+\doTocEntry\tocsection{2.3}{\csname a:TocLink\endcsname{1}{x1-60002.3}{QQ2-1-6}{Filling in the EarthRef data}}{18}\relax 
+\doTocEntry\tocsection{2.4}{\csname a:TocLink\endcsname{1}{x1-70002.4}{QQ2-1-7}{Demag GUI tool}}{28}\relax 
+\doTocEntry\tocsection{2.5}{\csname a:TocLink\endcsname{1}{x1-80002.5}{QQ2-1-8}{Thellier GUI tool}}{30}\relax 
+\doTocEntry\tocsection{2.6}{\csname a:TocLink\endcsname{1}{x1-90002.6}{QQ2-1-9}{Upload to the database }}{31}\relax 
+\doTocEntry\tocsection{2.7}{\csname a:TocLink\endcsname{1}{x1-100002.7}{QQ2-1-10}{Preparing for MagIC}}{32}\relax 
+\doTocEntry\tocsubsection{2.7.1}{\csname a:TocLink\endcsname{1}{x1-110002.7.1}{QQ2-1-11}{Project Directory}}{32}\relax 
+\doTocEntry\tocsubsection{2.7.2}{\csname a:TocLink\endcsname{1}{x1-120002.7.2}{QQ2-1-12}{What goes in {\it  MyFiles}}}{33}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-130002.7.2}{QQ2-1-13}{Field and sampling information}}{33}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-140002.7.2}{QQ2-1-14}{Data files downloaded from the IODP (LIMS) database}}{42}\relax 
+\doTocEntry\tocsubsection{2.7.3}{\csname a:TocLink\endcsname{1}{x1-150002.7.3}{QQ2-1-15}{Supported Rock Magnetometer files}}{44}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-160002.7.3}{QQ2-1-16}{Hysteresis file formats}}{46}\relax 
+\doTocEntry\tocsubsection{2.7.4}{\csname a:TocLink\endcsname{1}{x1-170002.7.4}{QQ2-1-17}{Importing magnetometer data}}{46}\relax 
+\doTocEntry\tocsection{2.8}{\csname a:TocLink\endcsname{1}{x1-180002.8}{QQ2-1-18}{Import menu option}}{50}\relax 
+\doTocEntry\tocsubsection{2.8.1}{\csname a:TocLink\endcsname{1}{x1-190002.8.1}{QQ2-1-19}{Importing Anisotropy of magnetic susceptibility data}}{50}\relax 
+\doTocEntry\tocsubsection{2.8.2}{\csname a:TocLink\endcsname{1}{x1-200002.8.2}{QQ2-1-20}{Importing hysteresis data}}{50}\relax 
+\doTocEntry\tocchapter{3}{\csname a:TocLink\endcsname{1}{x1-210003}{QQ2-1-21}{The {\bf  PmagPy} software package}}{53}\relax 
+\doTocEntry\tocsection{3.1}{\csname a:TocLink\endcsname{1}{x1-220003.1}{QQ2-1-22}{General characteristics of PmagPy programs}}{53}\relax 
+\doTocEntry\tocsection{3.2}{\csname a:TocLink\endcsname{1}{x1-230003.2}{QQ2-1-23}{Examples of how to use {\bf  PmagPy} programs}}{55}\relax 
+\doTocEntry\tocsubsection{3.2.1}{\csname a:TocLink\endcsname{1}{x1-240003.2.1}{QQ2-1-24}{aarm\_magic.py}}{55}\relax 
+\doTocEntry\tocsubsection{3.2.2}{\csname a:TocLink\endcsname{1}{x1-250003.2.2}{QQ2-1-25}{angle.py }}{57}\relax 
+\doTocEntry\tocsubsection{3.2.3}{\csname a:TocLink\endcsname{1}{x1-260003.2.3}{QQ2-1-26}{ANI\_depthplot.py}}{59}\relax 
+\doTocEntry\tocsubsection{3.2.4}{\csname a:TocLink\endcsname{1}{x1-270003.2.4}{QQ2-1-27}{aniso\_magic.py}}{61}\relax 
+\doTocEntry\tocsubsection{3.2.5}{\csname a:TocLink\endcsname{1}{x1-280003.2.5}{QQ2-1-28}{apwp.py }}{66}\relax 
+\doTocEntry\tocsubsection{3.2.6}{\csname a:TocLink\endcsname{1}{x1-290003.2.6}{QQ2-1-29}{atrm\_magic.py}}{68}\relax 
+\doTocEntry\tocsubsection{3.2.7}{\csname a:TocLink\endcsname{1}{x1-300003.2.7}{QQ2-1-30}{azdip\_magic.py}}{70}\relax 
+\doTocEntry\tocsubsection{3.2.8}{\csname a:TocLink\endcsname{1}{x1-310003.2.8}{QQ2-1-31}{b\_vdm.py}}{71}\relax 
+\doTocEntry\tocsubsection{3.2.9}{\csname a:TocLink\endcsname{1}{x1-320003.2.9}{QQ2-1-32}{basemap\_magic.py}}{72}\relax 
+\doTocEntry\tocsubsection{3.2.10}{\csname a:TocLink\endcsname{1}{x1-330003.2.10}{QQ2-1-33}{biplot\_magic.py}}{74}\relax 
+\doTocEntry\tocsubsection{3.2.11}{\csname a:TocLink\endcsname{1}{x1-340003.2.11}{QQ2-1-34}{bootams.py}}{77}\relax 
+\doTocEntry\tocsubsection{3.2.12}{\csname a:TocLink\endcsname{1}{x1-350003.2.12}{QQ2-1-35}{cart\_dir.py}}{78}\relax 
+\doTocEntry\tocsubsection{3.2.13}{\csname a:TocLink\endcsname{1}{x1-360003.2.13}{QQ2-1-36}{chartmaker.py}}{80}\relax 
+\doTocEntry\tocsubsection{3.2.14}{\csname a:TocLink\endcsname{1}{x1-370003.2.14}{QQ2-1-37}{chi\_magic.py}}{82}\relax 
+\doTocEntry\tocsubsection{3.2.15}{\csname a:TocLink\endcsname{1}{x1-380003.2.15}{QQ2-1-38}{combine\_magic.py}}{83}\relax 
+\doTocEntry\tocsubsection{3.2.16}{\csname a:TocLink\endcsname{1}{x1-390003.2.16}{QQ2-1-39}{common\_mean.py}}{84}\relax 
+\doTocEntry\tocsubsection{3.2.17}{\csname a:TocLink\endcsname{1}{x1-400003.2.17}{QQ2-1-40}{cont\_rot.py}}{87}\relax 
+\doTocEntry\tocsubsection{3.2.18}{\csname a:TocLink\endcsname{1}{x1-410003.2.18}{QQ2-1-41}{convert2unix.py}}{88}\relax 
+\doTocEntry\tocsubsection{3.2.19}{\csname a:TocLink\endcsname{1}{x1-420003.2.19}{QQ2-1-42}{convert\_samples.py}}{89}\relax 
+\doTocEntry\tocsubsection{3.2.20}{\csname a:TocLink\endcsname{1}{x1-430003.2.20}{QQ2-1-43}{core\_depthplot.py}}{90}\relax 
+\doTocEntry\tocsubsection{3.2.21}{\csname a:TocLink\endcsname{1}{x1-440003.2.21}{QQ2-1-44}{curie.py}}{91}\relax 
+\doTocEntry\tocsubsection{3.2.22}{\csname a:TocLink\endcsname{1}{x1-450003.2.22}{QQ2-1-45}{customize\_criteria.py}}{94}\relax 
+\doTocEntry\tocsubsection{3.2.23}{\csname a:TocLink\endcsname{1}{x1-460003.2.23}{QQ2-1-46}{dayplot\_magic.py}}{95}\relax 
+\doTocEntry\tocsubsection{3.2.24}{\csname a:TocLink\endcsname{1}{x1-470003.2.24}{QQ2-1-47}{demag\_gui.py}}{97}\relax 
+\doTocEntry\tocsubsection{3.2.25}{\csname a:TocLink\endcsname{1}{x1-480003.2.25}{QQ2-1-48}{di\_eq.py}}{97}\relax 
+\doTocEntry\tocsubsection{3.2.26}{\csname a:TocLink\endcsname{1}{x1-490003.2.26}{QQ2-1-49}{di\_geo.py}}{98}\relax 
+\doTocEntry\tocsubsection{3.2.27}{\csname a:TocLink\endcsname{1}{x1-500003.2.27}{QQ2-1-50}{di\_rot.py}}{101}\relax 
+\doTocEntry\tocsubsection{3.2.28}{\csname a:TocLink\endcsname{1}{x1-510003.2.28}{QQ2-1-51}{di\_tilt.py}}{103}\relax 
+\doTocEntry\tocsubsection{3.2.29}{\csname a:TocLink\endcsname{1}{x1-520003.2.29}{QQ2-1-52}{di\_vgp.py}}{105}\relax 
+\doTocEntry\tocsubsection{3.2.30}{\csname a:TocLink\endcsname{1}{x1-530003.2.30}{QQ2-1-53}{dipole\_pinc.py}}{106}\relax 
+\doTocEntry\tocsubsection{3.2.31}{\csname a:TocLink\endcsname{1}{x1-540003.2.31}{QQ2-1-54}{dipole\_plat.py}}{107}\relax 
+\doTocEntry\tocsubsection{3.2.32}{\csname a:TocLink\endcsname{1}{x1-550003.2.32}{QQ2-1-55}{dir\_cart.py}}{108}\relax 
+\doTocEntry\tocsubsection{3.2.33}{\csname a:TocLink\endcsname{1}{x1-560003.2.33}{QQ2-1-56}{dmag\_magic.py}}{110}\relax 
+\doTocEntry\tocsubsection{3.2.34}{\csname a:TocLink\endcsname{1}{x1-570003.2.34}{QQ2-1-57}{download\_magic.py}}{111}\relax 
+\doTocEntry\tocsubsection{3.2.35}{\csname a:TocLink\endcsname{1}{x1-580003.2.35}{QQ2-1-58}{eigs\_s.py}}{114}\relax 
+\doTocEntry\tocsubsection{3.2.36}{\csname a:TocLink\endcsname{1}{x1-590003.2.36}{QQ2-1-59}{eq\_di.py}}{115}\relax 
+\doTocEntry\tocsubsection{3.2.37}{\csname a:TocLink\endcsname{1}{x1-600003.2.37}{QQ2-1-60}{eqarea.py}}{116}\relax 
+\doTocEntry\tocsubsection{3.2.38}{\csname a:TocLink\endcsname{1}{x1-610003.2.38}{QQ2-1-61}{eqarea\_ell.py}}{117}\relax 
+\doTocEntry\tocsubsection{3.2.39}{\csname a:TocLink\endcsname{1}{x1-620003.2.39}{QQ2-1-62}{eqarea\_magic.py}}{120}\relax 
+\doTocEntry\tocsubsection{3.2.40}{\csname a:TocLink\endcsname{1}{x1-630003.2.40}{QQ2-1-63}{find\_EI.py}}{126}\relax 
+\doTocEntry\tocsubsection{3.2.41}{\csname a:TocLink\endcsname{1}{x1-640003.2.41}{QQ2-1-64}{fisher.py}}{129}\relax 
+\doTocEntry\tocsubsection{3.2.42}{\csname a:TocLink\endcsname{1}{x1-650003.2.42}{QQ2-1-65}{fishqq.py}}{131}\relax 
+\doTocEntry\tocsubsection{3.2.43}{\csname a:TocLink\endcsname{1}{x1-660003.2.43}{QQ2-1-66}{fishrot.py}}{132}\relax 
+\doTocEntry\tocsubsection{3.2.44}{\csname a:TocLink\endcsname{1}{x1-670003.2.44}{QQ2-1-67}{foldtest.py}}{133}\relax 
+\doTocEntry\tocsubsection{3.2.45}{\csname a:TocLink\endcsname{1}{x1-680003.2.45}{QQ2-1-68}{foldtest\_magic.py}}{135}\relax 
+\doTocEntry\tocsubsection{3.2.46}{\csname a:TocLink\endcsname{1}{x1-690003.2.46}{QQ2-1-69}{gaussian.py}}{135}\relax 
+\doTocEntry\tocsubsection{3.2.47}{\csname a:TocLink\endcsname{1}{x1-700003.2.47}{QQ2-1-70}{gobing.py}}{136}\relax 
+\doTocEntry\tocsubsection{3.2.48}{\csname a:TocLink\endcsname{1}{x1-710003.2.48}{QQ2-1-71}{gofish.py}}{137}\relax 
+\doTocEntry\tocsubsection{3.2.49}{\csname a:TocLink\endcsname{1}{x1-720003.2.49}{QQ2-1-72}{gokent.py}}{138}\relax 
+\doTocEntry\tocsubsection{3.2.50}{\csname a:TocLink\endcsname{1}{x1-730003.2.50}{QQ2-1-73}{goprinc.py}}{139}\relax 
+\doTocEntry\tocsubsection{3.2.51}{\csname a:TocLink\endcsname{1}{x1-740003.2.51}{QQ2-1-74}{grab\_magic\_key.py}}{140}\relax 
+\doTocEntry\tocsubsection{3.2.52}{\csname a:TocLink\endcsname{1}{x1-750003.2.52}{QQ2-1-75}{histplot.py}}{143}\relax 
+\doTocEntry\tocsubsection{3.2.53}{\csname a:TocLink\endcsname{1}{x1-760003.2.53}{QQ2-1-76}{hysteresis\_magic.py}}{144}\relax 
+\doTocEntry\tocsubsection{3.2.54}{\csname a:TocLink\endcsname{1}{x1-770003.2.54}{QQ2-1-77}{igrf.py}}{147}\relax 
+\doTocEntry\tocsubsection{3.2.55}{\csname a:TocLink\endcsname{1}{x1-780003.2.55}{QQ2-1-78}{install\_etopo.py}}{151}\relax 
+\doTocEntry\tocsubsection{3.2.56}{\csname a:TocLink\endcsname{1}{x1-790003.2.56}{QQ2-1-79}{incfish.py}}{153}\relax 
+\doTocEntry\tocsubsection{3.2.57}{\csname a:TocLink\endcsname{1}{x1-800003.2.57}{QQ2-1-80}{irmaq\_magic.py}}{154}\relax 
+\doTocEntry\tocsubsection{3.2.58}{\csname a:TocLink\endcsname{1}{x1-810003.2.58}{QQ2-1-81}{k15\_magic.py}}{156}\relax 
+\doTocEntry\tocsubsection{3.2.59}{\csname a:TocLink\endcsname{1}{x1-820003.2.59}{QQ2-1-82}{k15\_s.py}}{161}\relax 
+\doTocEntry\tocsubsection{3.2.60}{\csname a:TocLink\endcsname{1}{x1-830003.2.60}{QQ2-1-83}{KLY4S\_magic.py}}{162}\relax 
+\doTocEntry\tocsubsection{3.2.61}{\csname a:TocLink\endcsname{1}{x1-840003.2.61}{QQ2-1-84}{lnp\_magic.py}}{164}\relax 
+\doTocEntry\tocsubsection{3.2.62}{\csname a:TocLink\endcsname{1}{x1-850003.2.62}{QQ2-1-85}{lowrie.py}}{166}\relax 
+\doTocEntry\tocsubsection{3.2.63}{\csname a:TocLink\endcsname{1}{x1-860003.2.63}{QQ2-1-86}{lowrie\_magic.py}}{168}\relax 
+\doTocEntry\tocsubsection{3.2.64}{\csname a:TocLink\endcsname{1}{x1-870003.2.64}{QQ2-1-87}{magic\_select.py}}{169}\relax 
+\doTocEntry\tocsubsection{3.2.65}{\csname a:TocLink\endcsname{1}{x1-880003.2.65}{QQ2-1-88}{make\_magic\_plots.py}}{171}\relax 
+\doTocEntry\tocsubsection{3.2.66}{\csname a:TocLink\endcsname{1}{x1-890003.2.66}{QQ2-1-89}{Measurement Import Scripts}}{171}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-900003.2.66}{QQ2-1-90}{2G\_bin\_magic.py}}{171}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-910003.2.66}{QQ2-1-91}{AGM\_magic.py}}{172}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-920003.2.66}{QQ2-1-92}{CIT\_magic.py}}{173}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-930003.2.66}{QQ2-1-93}{generic\_magic.py}}{176}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-940003.2.66}{QQ2-1-94}{HUJI\_magic.py}}{179}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-950003.2.66}{QQ2-1-95}{LDEO\_magic.py}}{180}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-960003.2.66}{QQ2-1-96}{IODP\_csv\_magic.py}}{183}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-970003.2.66}{QQ2-1-97}{PMD\_magic.py}}{184}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-980003.2.66}{QQ2-1-98}{sio\_magic.py}}{187}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-990003.2.66}{QQ2-1-99}{SUFAR4-asc\_magic.py}}{191}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1000003.2.66}{QQ2-1-100}{TDT\_magic.py}}{192}\relax 
+\doTocEntry\tocsubsection{3.2.67}{\csname a:TocLink\endcsname{1}{x1-1010003.2.67}{QQ2-1-101}{measurements\_normalize.py}}{194}\relax 
+\doTocEntry\tocsubsection{3.2.68}{\csname a:TocLink\endcsname{1}{x1-1020003.2.68}{QQ2-1-102}{mk\_redo.py}}{195}\relax 
+\doTocEntry\tocsubsection{3.2.69}{\csname a:TocLink\endcsname{1}{x1-1030003.2.69}{QQ2-1-103}{nrm\_specimens\_magic.py}}{196}\relax 
+\doTocEntry\tocsubsection{3.2.70}{\csname a:TocLink\endcsname{1}{x1-1040003.2.70}{QQ2-1-104}{orientation\_magic.py}}{198}\relax 
+\doTocEntry\tocsubsection{3.2.71}{\csname a:TocLink\endcsname{1}{x1-1050003.2.71}{QQ2-1-105}{parse\_measurements.py}}{200}\relax 
+\doTocEntry\tocsubsection{3.2.72}{\csname a:TocLink\endcsname{1}{x1-1060003.2.72}{QQ2-1-106}{pca.py}}{201}\relax 
+\doTocEntry\tocsubsection{3.2.73}{\csname a:TocLink\endcsname{1}{x1-1070003.2.73}{QQ2-1-107}{plotXY.py}}{202}\relax 
+\doTocEntry\tocsubsection{3.2.74}{\csname a:TocLink\endcsname{1}{x1-1080003.2.74}{QQ2-1-108}{plot\_cdf.py}}{202}\relax 
+\doTocEntry\tocsubsection{3.2.75}{\csname a:TocLink\endcsname{1}{x1-1090003.2.75}{QQ2-1-109}{plot\_magic\_keys.py}}{204}\relax 
+\doTocEntry\tocsubsection{3.2.76}{\csname a:TocLink\endcsname{1}{x1-1100003.2.76}{QQ2-1-110}{plot\_mapPTS.py}}{204}\relax 
+\doTocEntry\tocsubsection{3.2.77}{\csname a:TocLink\endcsname{1}{x1-1110003.2.77}{QQ2-1-111}{plotdi\_a.py}}{206}\relax 
+\doTocEntry\tocsubsection{3.2.78}{\csname a:TocLink\endcsname{1}{x1-1120003.2.78}{QQ2-1-112}{pmag\_results\_extract.py}}{207}\relax 
+\doTocEntry\tocsubsection{3.2.79}{\csname a:TocLink\endcsname{1}{x1-1130003.2.79}{QQ2-1-113}{pt\_rot.py}}{209}\relax 
+\doTocEntry\tocsubsection{3.2.80}{\csname a:TocLink\endcsname{1}{x1-1140003.2.80}{QQ2-1-114}{qqlot.py}}{213}\relax 
+\doTocEntry\tocsubsection{3.2.81}{\csname a:TocLink\endcsname{1}{x1-1150003.2.81}{QQ2-1-115}{quick\_hyst.py}}{215}\relax 
+\doTocEntry\tocsubsection{3.2.82}{\csname a:TocLink\endcsname{1}{x1-1160003.2.82}{QQ2-1-116}{revtest.py}}{217}\relax 
+\doTocEntry\tocsubsection{3.2.83}{\csname a:TocLink\endcsname{1}{x1-1170003.2.83}{QQ2-1-117}{revtest\_magic.py}}{218}\relax 
+\doTocEntry\tocsubsection{3.2.84}{\csname a:TocLink\endcsname{1}{x1-1180003.2.84}{QQ2-1-118}{revtest\_MM1990.py}}{219}\relax 
+\doTocEntry\tocsubsection{3.2.85}{\csname a:TocLink\endcsname{1}{x1-1190003.2.85}{QQ2-1-119}{s\_eigs.py}}{222}\relax 
+\doTocEntry\tocsubsection{3.2.86}{\csname a:TocLink\endcsname{1}{x1-1200003.2.86}{QQ2-1-120}{s\_geo.py}}{223}\relax 
+\doTocEntry\tocsubsection{3.2.87}{\csname a:TocLink\endcsname{1}{x1-1210003.2.87}{QQ2-1-121}{s\_hext.py}}{224}\relax 
+\doTocEntry\tocsubsection{3.2.88}{\csname a:TocLink\endcsname{1}{x1-1220003.2.88}{QQ2-1-122}{s\_tilt.py}}{225}\relax 
+\doTocEntry\tocsubsection{3.2.89}{\csname a:TocLink\endcsname{1}{x1-1230003.2.89}{QQ2-1-123}{s\_magic.py}}{226}\relax 
+\doTocEntry\tocsubsection{3.2.90}{\csname a:TocLink\endcsname{1}{x1-1240003.2.90}{QQ2-1-124}{scalc.py}}{227}\relax 
+\doTocEntry\tocsubsection{3.2.91}{\csname a:TocLink\endcsname{1}{x1-1250003.2.91}{QQ2-1-125}{scalc\_magic.py}}{228}\relax 
+\doTocEntry\tocsubsection{3.2.92}{\csname a:TocLink\endcsname{1}{x1-1260003.2.92}{QQ2-1-126}{site\_edit\_magic.py}}{229}\relax 
+\doTocEntry\tocsubsection{3.2.93}{\csname a:TocLink\endcsname{1}{x1-1270003.2.93}{QQ2-1-127}{specimens\_results\_magic.py}}{232}\relax 
+\doTocEntry\tocsubsection{3.2.94}{\csname a:TocLink\endcsname{1}{x1-1280003.2.94}{QQ2-1-128}{stats.py}}{233}\relax 
+\doTocEntry\tocsubsection{3.2.95}{\csname a:TocLink\endcsname{1}{x1-1290003.2.95}{QQ2-1-129}{strip\_magic.py}}{235}\relax 
+\doTocEntry\tocsubsection{3.2.96}{\csname a:TocLink\endcsname{1}{x1-1300003.2.96}{QQ2-1-130}{sundec.py}}{237}\relax 
+\doTocEntry\tocsubsection{3.2.97}{\csname a:TocLink\endcsname{1}{x1-1310003.2.97}{QQ2-1-131}{thellier\_GUI.py}}{241}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1320003.2.97}{QQ2-1-132}{Starting the GUI}}{242}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1330003.2.97}{QQ2-1-133}{Reading and compiling measurements data}}{243}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1340003.2.97}{QQ2-1-134}{Main panel}}{244}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1350003.2.97}{QQ2-1-135}{ Tutorial by example}}{246}\relax 
+\doTocEntry\tocsubsection{3.2.98}{\csname a:TocLink\endcsname{1}{x1-1360003.2.98}{QQ2-1-136}{thellier\_magic.py}}{253}\relax 
+\doTocEntry\tocsubsection{3.2.99}{\csname a:TocLink\endcsname{1}{x1-1370003.2.99}{QQ2-1-137}{thellier\_magic\_redo.py}}{257}\relax 
+\doTocEntry\tocsubsection{3.2.100}{\csname a:TocLink\endcsname{1}{x1-1380003.2.100}{QQ2-1-138}{tk03.py}}{258}\relax 
+\doTocEntry\tocsubsection{3.2.101}{\csname a:TocLink\endcsname{1}{x1-1390003.2.101}{QQ2-1-139}{uniform.py}}{259}\relax 
+\doTocEntry\tocsubsection{3.2.102}{\csname a:TocLink\endcsname{1}{x1-1400003.2.102}{QQ2-1-140}{update\_measurements.py}}{262}\relax 
+\doTocEntry\tocsubsection{3.2.103}{\csname a:TocLink\endcsname{1}{x1-1410003.2.103}{QQ2-1-141}{upload\_magic.py}}{262}\relax 
+\doTocEntry\tocsubsection{3.2.104}{\csname a:TocLink\endcsname{1}{x1-1420003.2.104}{QQ2-1-142}{vdm\_b.py}}{263}\relax 
+\doTocEntry\tocsubsection{3.2.105}{\csname a:TocLink\endcsname{1}{x1-1430003.2.105}{QQ2-1-143}{vector\_mean.py}}{264}\relax 
+\doTocEntry\tocsubsection{3.2.106}{\csname a:TocLink\endcsname{1}{x1-1440003.2.106}{QQ2-1-144}{vgp\_di.py}}{265}\relax 
+\doTocEntry\tocsubsection{3.2.107}{\csname a:TocLink\endcsname{1}{x1-1450003.2.107}{QQ2-1-145}{vgpmap\_magic.py}}{266}\relax 
+\doTocEntry\tocsubsection{3.2.108}{\csname a:TocLink\endcsname{1}{x1-1460003.2.108}{QQ2-1-146}{watsonsF.py}}{268}\relax 
+\doTocEntry\tocsubsection{3.2.109}{\csname a:TocLink\endcsname{1}{x1-1470003.2.109}{QQ2-1-147}{watsonsV.py}}{270}\relax 
+\doTocEntry\tocsubsection{3.2.110}{\csname a:TocLink\endcsname{1}{x1-1480003.2.110}{QQ2-1-148}{zeq.py}}{272}\relax 
+\doTocEntry\tocsubsection{3.2.111}{\csname a:TocLink\endcsname{1}{x1-1490003.2.111}{QQ2-1-149}{zeq\_magic.py}}{274}\relax 
+\doTocEntry\tocsubsection{3.2.112}{\csname a:TocLink\endcsname{1}{x1-1500003.2.112}{QQ2-1-150}{zeq\_magic\_redo.py}}{276}\relax 
+\doTocEntry\tocsection{3.3}{\csname a:TocLink\endcsname{1}{x1-1510003.3}{QQ2-1-151}{Complaints department}}{277}\relax 
+\doTocEntry\tocchapter{4}{\csname a:TocLink\endcsname{1}{x1-1520004}{QQ2-1-152}{The MagIC database and file formats}}{279}\relax 
+\doTocEntry\tocsection{4.1}{\csname a:TocLink\endcsname{1}{x1-1530004.1}{QQ2-1-153}{Perusing the existing data}}{279}\relax 
+\doTocEntry\tocsection{4.2}{\csname a:TocLink\endcsname{1}{x1-1540004.2}{QQ2-1-154}{Uploading data to the database}}{280}\relax 
+\doTocEntry\tocsection{4.3}{\csname a:TocLink\endcsname{1}{x1-1550004.3}{QQ2-1-155}{Structure of the database tables}}{280}\relax 
+\doTocEntry\tocsection{4.4}{\csname a:TocLink\endcsname{1}{x1-1560004.4}{QQ2-1-156}{A word about method codes}}{281}\relax 
+\doTocEntry\tocchapter{5}{\csname a:TocLink\endcsname{1}{x1-1570005}{QQ2-1-157}{Survival computer skills}}{285}\relax 
+\doTocEntry\tocsection{5.1}{\csname a:TocLink\endcsname{1}{x1-1580005.1}{QQ2-1-158}{Finding your command line}}{285}\relax 
+\doTocEntry\tocsection{5.2}{\csname a:TocLink\endcsname{1}{x1-1590005.2}{QQ2-1-159}{File systems}}{287}\relax 
+\doTocEntry\tocsection{5.3}{\csname a:TocLink\endcsname{1}{x1-1600005.3}{QQ2-1-160}{Moving around in the file system}}{289}\relax 
+\doTocEntry\tocsection{5.4}{\csname a:TocLink\endcsname{1}{x1-1610005.4}{QQ2-1-161}{Wildcards}}{291}\relax 
+\doTocEntry\tocsection{5.5}{\csname a:TocLink\endcsname{1}{x1-1620005.5}{QQ2-1-162}{Redirecting input and output}}{292}\relax 
+\doTocEntry\tocsection{5.6}{\csname a:TocLink\endcsname{1}{x1-1630005.6}{QQ2-1-163}{Text editors}}{292}\relax 
+\doTocEntry\tocchapter{6}{\csname a:TocLink\endcsname{1}{x1-1640006}{QQ2-1-164}{Introduction to Python Programming}}{293}\relax 
+\doTocEntry\tocsection{6.1}{\csname a:TocLink\endcsname{1}{x1-1650006.1}{QQ2-1-165}{A first look at NumPy}}{295}\relax 
+\doTocEntry\tocsection{6.2}{\csname a:TocLink\endcsname{1}{x1-1660006.2}{QQ2-1-166}{Variable types}}{301}\relax 
+\doTocEntry\tocsection{6.3}{\csname a:TocLink\endcsname{1}{x1-1670006.3}{QQ2-1-167}{Data Structures}}{304}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1680006.3}{QQ2-1-168}{Lists}}{304}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1690006.3}{QQ2-1-169}{More about strings}}{312}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1700006.3}{QQ2-1-170}{Data structures as objects}}{313}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1710006.3}{QQ2-1-171}{Tuples}}{313}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1720006.3}{QQ2-1-172}{Dictionaries!}}{314}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1730006.3}{QQ2-1-173}{N-dimensional arrays}}{319}\relax 
+\doTocEntry\tocsection{6.4}{\csname a:TocLink\endcsname{1}{x1-1740006.4}{QQ2-1-174}{Pandas}}{332}\relax 
+\doTocEntry\tocsection{6.5}{\csname a:TocLink\endcsname{1}{x1-1750006.5}{QQ2-1-175}{Python Scripts}}{334}\relax 
+\doTocEntry\tocsection{6.6}{\csname a:TocLink\endcsname{1}{x1-1760006.6}{QQ2-1-176}{Code blocks}}{342}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1770006.6}{QQ2-1-177}{The for loop}}{344}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1780006.6}{QQ2-1-178}{Looping through lists}}{344}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1790006.6}{QQ2-1-179}{Looping through arrays}}{351}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1800006.6}{QQ2-1-180}{If and while blocks}}{353}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1810006.6}{QQ2-1-181}{Finer points of `if' blocks}}{355}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1820006.6}{QQ2-1-182}{While loops}}{357}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1830006.6}{QQ2-1-183}{Code blocks in interactive Python}}{358}\relax 
+\doTocEntry\tocsection{6.7}{\csname a:TocLink\endcsname{1}{x1-1840006.7}{QQ2-1-184}{File I/O in Python}}{359}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1850006.7}{QQ2-1-185}{Reading data in}}{359}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1860006.7}{QQ2-1-186}{From a file}}{359}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1870006.7}{QQ2-1-187}{From Standard Input }}{367}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1880006.7}{QQ2-1-188}{Command line switches}}{369}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1890006.7}{QQ2-1-189}{Reading numeric files}}{371}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1900006.7}{QQ2-1-190}{Writing data out}}{371}\relax 
+\doTocEntry\tocsection{6.8}{\csname a:TocLink\endcsname{1}{x1-1910006.8}{QQ2-1-191}{Functions}}{378}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1920006.8}{QQ2-1-192}{Line by line analysis}}{379}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1930006.8}{QQ2-1-193}{def FUNCNAME(in\_args):}}{379}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1940006.8}{QQ2-1-194}{Doc String}}{383}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1950006.8}{QQ2-1-195}{Function body}}{383}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1960006.8}{QQ2-1-196}{Return statement}}{383}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1970006.8}{QQ2-1-197}{Main program as function}}{384}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1980006.8}{QQ2-1-198}{Scope of variables}}{387}\relax 
+\doTocEntry\tocsection{6.9}{\csname a:TocLink\endcsname{1}{x1-1990006.9}{QQ2-1-199}{Classes}}{388}\relax 
+\doTocEntry\tocsection{6.10}{\csname a:TocLink\endcsname{1}{x1-2000006.10}{QQ2-1-200}{Matplotlib}}{391}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2010006.10}{QQ2-1-201}{A first plot}}{391}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2020006.10}{QQ2-1-202}{Multiple figures and more customization}}{397}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2030006.10}{QQ2-1-203}{Adding text}}{401}\relax 
+\doTocEntry\tocchapter{7}{\csname a:TocLink\endcsname{1}{x1-2040007}{QQ2-1-204}{IPython Notebooks}}{405}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-2050007}{QQ2-1-205}{Bibliography}}{411}\relax 
