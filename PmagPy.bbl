@@ -71,16 +71,15 @@ Leonhardt, R., Heunemann, C., \& Kra\'asa, D. (2004).
   and the software thelliertool4.0.
 \newblock {\em Geochem. Geophys. Geosys.}, 5, Q12016, doi:10.1029/2004GC000807.
 
-\bibitem[Lowrie, 1990]{lowrie90}
-Lowrie, W. (1990).
-\newblock Identification of ferromagnetic minerals in a rock by coercivity and
-  unblocking temperature properties.
-\newblock {\em Geophys. Res. Lett.}, 17, 159--162.
-
 \bibitem[McFadden \& McElhinny, 1990]{mcfadden90}
 McFadden, P.~L. \& McElhinny, M.~W. (1990).
 \newblock Classification of the reversal test in palaeomagnetism.
 \newblock {\em Geophys. J. Int.}, 103, 725--729.
+
+\bibitem[Paterson et~al., 2014]{paterson14}
+Paterson, G., Tauxe, L., Biggin, A., Shaar, R., \& Jonestrask, L. (2014).
+\newblock On improving the selection of thellier-type paleointensity data.
+\newblock {\em Geochem. Geophys. Geosys.}, 15.
 
 \bibitem[P\'erez \& Granger, 2007]{perez07}
 P\'erez, F. \& Granger, B. (2007).
@@ -106,11 +105,11 @@ Shaar, R., Ron, H., Tauxe, L., Kessel, R., Agnon, A., Ben~Yosef, E., \&
   geomagnetic field using copper slag material.
 \newblock {\em Earth and Planetary Science Letters}, 290, 201--213.
 
-\bibitem[Shaar \& Tauxe, 2012]{shaar12}
-Shaar, R. \& Tauxe, L. (2012).
+\bibitem[Shaar \& Tauxe, 2013]{shaar13}
+Shaar, R. \& Tauxe, L. (2013).
 \newblock Thellier\_gui: An integrated tool for analyzing paleointensity data
   from thellier-type experiments.
-\newblock {\em Geochem. Geophys. Geosys.}, (pp.\ submitted).
+\newblock {\em Geochem. Geophys. Geosys.}, 14.
 
 \bibitem[Swanson-Hysell et~al., 2009]{swansonhysell09}
 Swanson-Hysell, N., Maloof, A.~C., Weiss, B.~P., \& Evans, D. (2009).

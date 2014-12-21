@@ -54,11 +54,13 @@
  \today
   \url{http://magician.ucsd.edu/~ltauxe/}
  }
+ \customlink{quick_start}
+ 
 
-\chapter{MagIC Quick Start}
-\customlink{quick_start}
+\chapter{Installing {\bf PmagPy}}
 
- To skip all the details and just start using {\bf QuickMagIC.py} to upload data into the \href{#MagICDatabase}{MagIC database},  follow these steps:
+
+ To skip all the details and just start using \href{#QuickMagIC.py}{QuickMagIC.py} to upload data into the \href{#MagICDatabase}{MagIC database},  follow these steps:
  
  \begin{enumerate}
 
@@ -73,15 +75,11 @@
 \item Optional: If you have installed the full version of Canopy and want to use the mapping programs (e.g., \href{#basemap_magic.py}{basemap\_magic.py}),  
 \customlink{HighRes}
 click on  the `Package Manager' button on the Canopy welcome page, and then on `Available Packages'.  Install both basemap packages (one has high resolution data files in it).  To install the Etopo20 package, see \href{#install_etopo.py}{install\_etopo.py}.
- \item Move the file Datafiles\_2.0.zip from your {\bf PmagPy} folder and place it somewhere (e.g., your Desktop) with no spaces in the path.  Double click it  (for Macs) or `extract' the data files on a PC.  
+\customlink{Datafiles}
 
-  \item Create a \href{#Project_Directory}{MagIC Project Directory} (see Section~\ref{sect:ProjectDirectory}).
-  \item Find your \href{#command_line}{command line} and type {\bf QuickMagIC.py}. 
-    \item Select your MagIC Project Directory as your working directory.  
-\item Convert measurement data to the \href{#MagICDatabase}{MagIC} format.
-\item Complete  the \href{#MagICDatabase}{EarthRef} data tables (coordinates, class, type, lithology, age, etc.)
-\item Optional: interpret data.
-\item Upload the data and/or interpretations to the \href{http://earthref.org/MAGIC}{MagIC database}.
+ \item Move the  Datafiles  folder from your {\bf PmagPy} folder and place it somewhere (e.g., your Desktop) with no spaces in the path.  
+  \item Create a \href{#Project_Directory}{MagIC Project Directory}.
+  \item Find your \href{#command_line}{command line} to launch any {\bf PmagPy} process. 
  \end{enumerate}
 
 %\setcounter{tocdepth}{1}
@@ -91,7 +89,8 @@ click on  the `Package Manager' button on the Canopy welcome page, and then on `
 Where do you want to go from here?   
 
 \begin{itemize}
-\item \href{#QuickMagIC.py}{Analyze  demagnetization and/or paleointensity measurement data. }
+\item \href{#magic_download}{Download data from the {\bf MagIC} database.}
+\item \href{#QuickMagIC.py}{Analyze  and upload demagnetization and/or paleointensity measurement data to {\bf MagIC} database. }
 \item \href{#PmagPy}{Learn more about particular programs in the {\bf PmagPy} software package.}
 \item \href{#MagICDatabase}{Learn about the MagIC Database.}
 \item \href{#Python}{Learn how to write your own programs in Python.}
@@ -109,16 +108,29 @@ Where do you want to go from here?
 \includegraphics[width=15cm]{EPSfiles/FigQkMagicFlow.eps}
 
 \begin{enumerate}
-\item Follow the steps in the \href{#quick_start}{Quick Start} section.
- \item \textbf{copy example files:} Copy the four files that are located in Datafiles\_2.0 (\url{https://github.com/ltauxe/PmagPy-Cookbook/blob/master/Datafiles_2.0.zip}) in a folder named QuickMagIC to your {\it MyFiles} directory within the \href{#Project_Directory}{Project Directory} {\it ThisProject}.  
- \item Type {\bf QuickMagIC.py} on your \href{#command_line}{command line} and choose your {\it MagIC} directory in your {\it ThisProject} directory.  
+\item Follow the steps in the \href{#quick_start}{Installing PmagPy} section.
+
+\customlink{Project_Directory}
+ 
+\item  When you invoke {\bf QuickMagIC.py}, the first step change directories into a  `Project Directory'. For each study, create a directory with a name that relates to that study. Here we will call it {\it ThisProject}.  This is where you will collect  and process all the rock and paleomagnetic data for a given study, usually a publication.   The project directory name should have NO SPACES and be placed on the hard drive in a place that has NO spaces in the path. Under certain Windows versions, this means you should not use your home directory, but create a directory called for example: D:$\backslash$MyPmagProjects and put {\it ThisProject} there.
+%
+%Inside the  {\it ThisProject} directory, create two additional directories: {\it MyFiles} and {\it MagIC}. All the files that you want to convert to the MagIC format should be placed in {\it MyFiles}.  The {\it Project Directory} that {\bf QuickMagIC.py} seeks is that {\it MagIC} directory.
+%
+%Your Directory tree might look like this now:
+%
+%\includegraphics[width=15cm]{EPSfiles/ProjectDirectory.eps}
+
+
+ \item \textbf{copy example files:}  In the \href{#Datafiles}{ Datafiles } folder you will find a subfolder named {\it QuickMagIC}. Copy the contents of the  \href{#Project_Directory}{\it ThisProject} directory  into  your  own \href{#Project_Directory}{Project Directory} folder.  
+ \item Type {\bf QuickMagIC.py} on your \href{#command_line}{command line}.
+ \item Change directories by clicking  on the ``change dir'' button and select your own {\it ThisProject} directory.   
  \end{enumerate}
  
  \customlink{convert2magic}
 
 \section{Converting magnetometer files to MagIC format}
 \begin{itemize}
-\item This program allows for converting many different data types.  For the complete set of instructions, see the section on \href{#magnetometer_files}{Supported Rock Magnetometer files}.   For this example, we will use a `generic' file format. 
+\item {\bf QuickMagIC.py} allows for converting many different laboratory formats.  For the complete set of instructions, see the section on \href{#magnetometer_files}{Supported Rock Magnetometer files}.   For this example, we will use a `generic' file format. 
 %rshaar% In the {\it MyFiles} folder there are  files containing AF, Thermal, and Thellier measurement data of samples from location Snake River (lava flow site). All samples are from site sr01. The measurement data are arranged in the generic format. 
 An example for a generic file format is shown here:
 
@@ -126,48 +138,48 @@ An example for a generic file format is shown here:
 
 To learn what all the column headers mean look at the documentation for \href{#generic_magic.py}{generic\_magic.py}.  
 
-\item Create a directory with a name that relates to that study.(e.g., ThisProject). The project directory name should have NO SPACES and be placed on the hard drive in a place that has NO spaces in the path.
-Inside ThisProject directory, create two additional directories: MyFiles and MagIC.
+%\item Locate the {\it MyFiles} folder in  the {\it Datafiles} subdirectory named {\it QuickMagIC} and copy the contents to your own {\it MyFiles} directory.
+%
+%\includegraphics[width=15cm]{EPSfiles/FigMyFiles.eps}
 
-\item Copy to your MyFiles folder the four files that are in /Datafiles\_2.0/QuickMagIC/QuickMagIC-upload/MyFiles.
+%\item Run the program: Open up a terminal window (Mac) or command prompt (Windows) and type QuickMagIC.py on the command line. In the QuickMagIC main panel press the Õchange dirÕ button. Select the MagIC directory in ThisProject when prompted.
 
-\includegraphics[width=15cm]{EPSfiles/FigMyFiles.pdf}
-
-\item Run the program: Open up a terminal window (Mac) or command prompt (Windows) and type QuickMagIC.py on the command line. In the QuickMagIC main panel press the Õchange dirÕ button. Select the MagIC directory in ThisProject when prompted.
-
-\item In the MyFiles folder there are four files with AF, Thermal, and Thellier measurement data of samples from site sr01 (a lava flow site), location Snake River.
+\item In your  \href{#Project_Directory}{\it ThisProject} directory  there are three files with AF, Thermal, and Thellier measurement data of specimens from site sr01 (a lava flow site) of \cite{tauxe04b}.  There is also a file with sample orientation, location and other metadata typical for a paleomagnetic study.  
 \item Press the [Convert magnetometer files to MagIC format] button. A dialog window will appear with different file formats:
 
 \includegraphics[width=15cm]{EPSfiles/FigChooseFile.eps}
 
-\item  Choose Ã”generic formatÃ• and press [import file] button.  A new dialog box will appear. You can see  details about the generic file format by clicking  on the [help] button, and scrolling down to `INPUT'. In this dialog box,  fill in all the required information as shown here for AF or thermal demagnetization data:
+\item  Click on  `generic format'  and press the  [import file] button.  A new dialog box will appear. For more details click on the [help] button.
+
+\item  In the dialog box, click on the [Add] button and choose one of the measurements files. 
+\item  Optional: Insert your EarthRef user name.
+\item Choose your experiment type from the dropdown list.
+
+\item Choose specimen-sample naming convention.  In this example, specimen sr01a1 belongs to sample sr01a so the specimen-sample naming convention is  `no. of terminal characters ' and the delimiter/number field is `1' ).
+\item Choose sample-site naming convention.  In this example, sample sr01a belongs to site sr01 so the sample-site naming convention is  `no. of terminal characters' with a delimiter/number of  `1'.
+\item  Fill in the \href{#MagICDatabase}{EarthRef Location Name}  for this project .  For this project, it is ``Snake River''.  
+\customlink{location_name}
+
+\item Note:  a location is a stratigraphic section,  a sampling region,  an drill core, and so on.  MagIC doesn't really care what your location name is, but use the same location name every time you are asked for it, because it really ties your dataset together.   
+
+Your dialog boxes should look like this for the AF and thermal data: 
 
 \includegraphics[width=15cm]{EPSfiles/FigConvertGenericA.eps}
 
-or paleointensity data:
+and like this for the  paleointensity data.  For paleointensity data, you must also supply the lab field in micro tesla (40) and orientation relative to sample's X direction:  0 90.
 
 \includegraphics[width=15cm]{EPSfiles/FigConvertGenericB.eps}
 
-\begin{enumerate}
-\item Click on the [Add] button and choose one of the measurements files.
-\item  Optional: Insert your EarthRef user name.
-\item Choose your experiment type from the dropdown list.
-\item Paleointensity data only: insert the lab field in micro tesla and orientation relative to sample's X direction: 40  0 90.
-\item Choose specimen-sample naming convention (no. of terminal characters = 1 ).
-\item Choose sample-site naming convention (no. of terminal characters = 1).
-\item  Fill in the \href{#MagICDatabase}{EarthRef Location Name}  for this project .  For this project, it is ``Snake River''.
-\item Press OK to create a new MagIC measurement file, which is saved in MagIC Project Directory.
-\end{enumerate}
+\item Press OK to create a new MagIC measurement file, which is saved in your \href{#Project_Directory}{\it ThisProject} directory.
 
-\item Repeat the previous step for all the three files in your MyFiles.
 
 \customlink{Combine}
 
-\item After converting all  files to MagIC, press the [Next Step] Button. Press the [add all files with Ã”.magicÃ• suffix] . You should see a list of the three magic files:
+\item After converting all  files to MagIC, press the [Next Step] button in the `convert magnetometer files' dialog box. All files with the .magic suffix will be added to the list.  [You can edit the list by deleting unwanted files or adding additional MagIC formatted files.]   You should see a list of the three magic files:
 
 \includegraphics[width=15cm]{EPSfiles/FigCombineMagic.eps}
 
-\item Click the OK button. The three files will be combined to a single file,  named {\it magic\_measurements.txt} and also stored  in the MagIC Project Directory.
+\item Click the OK button. The three files will be combined to a single file,  named {\it magic\_measurements.txt} and also stored  in your \href{#Project_Directory}{\it ThisProject} directory.
 \end{itemize}
 
 \customlink{orient}
@@ -192,7 +204,7 @@ or paleointensity data:
 \item press the OK button.
 \end{itemize}
 \item In the next dialog window add the additional information: 
-\end{itemize}. 
+\end{itemize}
 
 \includegraphics[width=15cm]{EPSfiles/FigOrientMagicCodes.eps}
 
@@ -201,33 +213,33 @@ or paleointensity data:
 Filling in the Earth Ref data is a critical part of building a MagIC Project Directory. The Earth-Ref data relevant to this example are arranged in five er\_* tables: er\_specimens, er\_samples, er\_sites, er\_locations, er\_ages. To complete the  ER data, click the button, and follow the directions in the help window in order:
 
 \begin{itemize}
-\item Step 0: choose the appropriate headers for each of your er\_* tables.  Required headers (or headers already present in your er\_* tables) show up in the top box, optional headers in the bottom.  Once you have added all needed headers, click the OK button to proceed to the next step.
+\item Step 0: Choose the appropriate headers for each of your er\_* tables.  Required headers (or headers already present in your er\_* tables) show up in the top box, optional headers in the bottom.  Once you have added all needed headers, click the OK button to proceed to the next step.
 
-\item \includegraphics[width=30cm]{EPSfiles/FigErMagicStep0.eps}
+ \includegraphics[width=30cm]{EPSfiles/FigErMagicStep0.eps}
 
- \item The next 6 steps contain editable grids.  For many columns, you can edit using drop-down menus that provide controlled vocabularies.  For others, you must manually enter data into the cell.  A single left click will bring up a drop-down menu; a double-left click will call up the cell editor.  With both types of data entry, it is possible to select a single value for the entire column. Simply click on the column label.  If that column has a drop-down menu, the menu will pop up, and the value you select will be applied to every cell in the column.  Otherwise, a text entry dialog will pop up, and the value you provide will be applied to the column.
+ \item The next six steps contain editable grids.  For many columns, you can edit using drop-down menus that provide \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies}.  For others, you must manually enter data into the cell.  A single left click will bring up a drop-down menu; a double-left click will call up the cell editor.  With both types of data entry, it is possible to select a single value for the entire column. Simply click on the column label.  If that column has a drop-down menu, the menu will pop up, and the value you select will be applied to every cell in the column.  Otherwise, a text entry dialog will pop up, and the value you provide will be applied to the column.
  
- \item Step 1: update the relationship between specimens and samples.  You may not rename specimens, but you may reassign them to a different sample.  It is also possible to add additional samples, using the 'Add new sample' button.  Note that specimen\_type, specimen\_lithology, and specimen\_class columns do not show up.  They will propagate down when you select sample\_type, sample\_lithology, and sample\_class in step 4.
+ \item Step 1: Update the relationship between specimens and samples.  You may not rename specimens, but you may reassign them to a different sample.  It is also possible to add additional samples, using the 'Add new sample' button.  Note that specimen\_type, specimen\_lithology, and specimen\_class columns do not show up.  They will propagate down when you select sample\_type, sample\_lithology, and sample\_class in step 4.
  
-\item \includegraphics[width=30cm] {EPSfiles/ER_Builder_Step1.eps}
+ \includegraphics[width=16cm] {EPSfiles/ER_Builder_Step1.eps}
 
-\item Step 2:  update the relationship between samples and sites.  You may rename samples, or you can reassign them to a different site.  You can also add additional sites using the "Add a new site" button.  You will be able to update other columns in the er\_samples file in step 4. You must choose a legal entry from the controlled vocabularies for the following headers: Òsite\_classÓ, Òsite\_lithologyÓ, Òsite\_typeÓ. You may combine more than one controlled vocabulary. In this example: site\_class=Exstrusive:igneous; site\_lithology=Basaltic Lava; site\_type=Lava Flow
+\item Step 2:  Update the relationship between samples and sites.  You may rename samples, or you can reassign them to a different site.  You can also add additional sites using the ``Add a new site`` button.  You will be able to update other columns in the er\_samples file in step 4. You must choose a legal entry from the \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies} for the following headers: ``site\_class'', ``site\_lithology'', ``site\_type''. You may combine more than one controlled vocabulary by making them a colon delimited list. In this example,  site\_class=Extrusive:Igneous; site\_lithology=Basaltic Lava; site\_type=Lava Flow
 
-\item \includegraphics[width=16cm] {EPSfiles/ER_Builder_Step2.eps}
+ \includegraphics[width=16cm] {EPSfiles/ER_Builder_Step2.eps}
 
-\item Step 3: update the relationship between sites and locations.  You may rename sites, or you can reassign them to a different location.  You can add additional locations using the "Add a new location" button.  If you select a value in these categories: class, lithology, type, longitude, or latitude, the values will propagate to the samples table.
+\item Step 3: Update the relationship between sites and locations.  You may rename sites, or you can reassign them to a different location.  You can add additional locations using the ``Add a new location'' button.  If you select a value in these categories: class, lithology, type, longitude, or latitude, the values will propagate to the samples table.
 
 \includegraphics[width=32cm] {EPSfiles/ER_Builder_Step3.eps}
 
-\item Step 4: some data from sites in step 3 has propagated into the samples table.  You may update and fill in all columns in the samples table here.  
+\item Step 4: Some data from sites in Step 3 has propagated into the samples table.  You may update and fill in all columns in the samples table here.  
 
 \includegraphics[width=32cm] {EPSfiles/ER_Builder_Step4.eps}
 
-\item Step 5: fill in information for locations.  If you have provided site latitudes and longitudes, the columns for beginning and ending latitudes and longitudes should be filled in already. You must choose a legal entry from the controlled vocabularies for the  Òlocation\_typeÓ. In this example: location\_type = outcrop.
+\item Step 5: Fill in information for locations.  If you have provided site latitudes and longitudes, the columns for beginning and ending latitudes and longitudes should be filled in already. You must choose a legal entry from the \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies} for the  ``location\_type''. In this example: location\_type = outcrop.
 
 \includegraphics[width=32cm] {EPSfiles/ER_Builder_Step5.eps}
 
-\item Step 6: fill in columns with any necessary information.  This is the last step. In this example: age=3.4; age\_sigma=0.03 (not a default header); age\_unit=Ma (from controlled vocabularies), magic\_method\_codes  = GM-ARAR-AP (from controlled vocabularies). It means "40Ar/39Ar age determination: Age plateau.Ó
+\item Step 6: Fill in columns with any necessary information.   In this example, age=3.4; age\_sigma=0.03 (not a default header); age\_unit=Ma (from controlled vocabularies), magic\_method\_codes  = GM-ARAR-AP (from \href{http://earthref.org/MAGIC/shortlists.htm}{controlled vocabularies}). It means ``40Ar/39Ar age determination: Age plateau.''
 
 \includegraphics[width=32cm] {EPSfiles/ER_Builder_Step6.eps}
 
@@ -237,14 +249,14 @@ Filling in the Earth Ref data is a critical part of building a MagIC Project Dir
 
 \end{itemize}
  
-  \customlink{#DemagGUI}
+  \customlink{DemagGUI}
   
  \section{Demag GUI tool}
  \label{sect:demag_gui}
  
 This is  the main panel of Demag GUI:
 
-\includegraphics[width=15cm]{EPSfiles/FigDemagGui.eps}
+\includegraphics[width=30cm]{EPSfiles/FigDemagGui.eps}
 
 
 To analyze the data in the example follow these steps for each specimen:
@@ -254,21 +266,21 @@ To analyze the data in the example follow these steps for each specimen:
 \item Click `save' so the program remembers the interpretations (the interpretation is not saved to a file yet!).
 \item Click the `next' button to analyze the next specimen.
 \item To calculate  Fisher mean for the site: choose from the `higher level mean' dropdown menus: show=specimens; mean=Fisher.
-After all specimens interpretations are saved in memory, choose from the menubar [File] $\rightarrow$ [Save MagIC pmag tables]. This save all the interpretations in MagIC formatted pmag\_* files in you MagIC Project Directory.
+After all specimens interpretations are saved in memory, choose from the menubar [File] $\rightarrow$ [Save MagIC pmag tables]. This saves all the interpretations in MagIC formatted pmag\_* files in your \href{#Project_Directory}{\it ThisProject} directory.
 \item Click OK on the message dialog box.
 \item Click OK on the MagIC results table dialog box.
 \item Click OK on the message dialog box.
 \item  Close the Demag GUI. 
 \end{itemize}
 
-Now, all directional interpretations are saved in MagIc Project Directory. 
+Now, all directional interpretations are saved in your \href{#Project_Directory}{\it ThisProject} directory. 
 
 \section{Thellier GUI tool}
 This is main panel of \href{#thellier_gui}{Thellier GUI}:
 
-\includegraphics[width=15cm]{EPSfiles/FigThellierGui.eps}
+\includegraphics[width=30cm]{EPSfiles/FigThellierGui.eps}
 
- To analyze the data in the example follow these steps for each specimen:
+ To analyze the data in the example, follow these steps for each specimen:
  \begin{itemize}
 \item Choose temperature bounds from the temperatures dropdown menus.
 \item  Click `save' so the program remembers the interpretations (the interpretation is not saved to a file yet!).
@@ -278,20 +290,34 @@ This is main panel of \href{#thellier_gui}{Thellier GUI}:
 \item  Close the Thellier GUI. 
 \end{itemize}
 
+\customlink{magic_upload}
+
 \section{Upload to the database }
 
-For this, you just click the green {\it prepare upload txt file} button on the main page of the GUI. A file name `upload.txt' will be created in MagIC Project Directory.  Go to the  \href{http://earthref.org/MAGIC/search}{MagIC search interface}.      Click on the `create' button and find or create your reference. 
+For this, you first click on the green {\it prepare upload txt file} button on the main page of the {\bf QuickMagic} GUI. A file named `upload.txt' will be created in your \href{#Project_Directory}{\it ThisProject} directory.  Now, go to the  \href{http://earthref.org/MAGIC/search}{MagIC search interface}.      Click on the `create' button and find or create your reference. 
 
-\includegraphics[width=15cm]{EPSfiles/upload2MagIC.eps}
+\includegraphics[width=30cm]{EPSfiles/upload2MagIC.eps}
 
-Click on `upload' in the Actions column and   drag and drop the {\it upload.txt}   file onto the  `Drop a MagIC Text File' window. 
-Congratulations. Your data are now in the database but are not yet activated.  Once you activate it (only for published papers), it will be publicly available.   
+Click on `Upload' in the Actions column and   drag and drop the {\it upload.txt}   file onto the  `Drop a MagIC Text File' window. 
+Congratulations. Your data are now in the database.  But, they are not yet activated which you can do by clicking on the `Activate' button in the Actions column.  Once you activate an uploaded dataset (only for published papers), it will be publicly available.   
+
+\customlink{magic_download}
+
+\section{Downloading data from {\bf MagIC}}
+
+Data can be downloaded from the {\bf MagIC} database and examined with {\bf PmagPy} tools.   The \href{http://earthref.org/MAGIC/search/}{\bf MagIC} search interface provides a rich variety of search filters available by clicking on the `Filter the MagIC Search Results' text box.    To locate data from a particular reference,  simply substitute the digital object identifier (DOI) in your browser window:
+
+\href{http://earthref.org/MAGIC/doi/10.1029/2003GC000661}{http://earthref.org/MAGIC/doi/10.1029/2003GC000661}
+
+\noindent The above DOI will find the data for the paper by \cite{tauxe04b}.  [This may fail in Safari; if so, use an alternative browser like Firefox or Chrome.]     To download the data, simply click on the file icon below the column labeled `data'.  This will save a file to your downloads folder.  
+ To unpack this file after downloading it from the database click the ``unpack downloaded txt file button`` in the \href{#QuickMagIC.py}{QuickMagIC.py}  panel.   
+ 
 
 
 
 %
 %  
-\customlink{MagIC.py}
+%\customlink{MagIC.py}
 %
 %\chapter{MagIC.py}
 %\label{chap:MagIC} \href{#MagICDatabase}{[MagIC}]
@@ -300,35 +326,18 @@ Congratulations. Your data are now in the database but are not yet activated.  O
 %It is an umbrella program that links many MagIC related functions of the \href{#PmagPy}{PmagPy} Software Package in a user-friendly  graphical user interface (GUI).  While it is invoked with a command line call, this  can be done from any directory (with no spaces in the path).  It generates calls to the programs described in Chapter~\ref{chap:PmagPy} so you don't have to.    It allows importing of many lab and instrument formats, plotting of a variety of data and doing the data processing and book-keeping required to create files ready for uploading into the MagIC Console software.  
  
 
- \customlink{Project_Directory}
  
- \section{Preparing for MagIC}
-\subsection{Project Directory}
-\label{sect:ProjectDirectory}
 
+\section{Preparing for MagIC}
 
- When you invoke {\bf QuickMagIC.py}, the first step change directories into a  `Project Directory'. For each study, create a directory with a name that relates to that study. Here we will call it {\it ThisProject}.  This is where you will collect  and process all the rock and paleomagnetic data for a given study, usually a publication.   The project directory name should have NO SPACES and be placed on the hard drive in a place that has NO spaces in the path. Under certain Windows versions, this means you should not use your home directory, but create a directory called for example: D:$\backslash$MyPmagProjects and put {\it ThisProject} there.
-
-Inside the  {\it ThisProject} directory, create two additional directories: {\it MyFiles} and {\it MagIC}. All the files that you want to convert to the MagIC format should be placed in {\it MyFiles}.  The {\it Project Directory} that {\bf QuickMagIC.py} seeks is that {\it MagIC} directory.
-
-Your Directory tree might look like this now:
-
-\includegraphics[width=15cm]{EPSfiles/ProjectDirectory.eps}
-
-
-
-
-
-\subsection{What goes in {\it MyFiles}}
 
 \customlink{field_info}
 
-\subsubsection{Field  and sampling information}
-\label{sect:field_info}
+\subsection{Field  and sampling information}
 
- There is an astounding number of different ways that paleomagnetists document data in the field and in the lab. This variety is met with a large number  of method codes that describe sampling and orientation procedures (see \url{http://earthref.org/MAGIC/methods.htm} for a complete description).   The MagIC database expects sample orientations to be the azimuth and plunge of the fiducial arrow used for measurement (see  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#ch2}{[Essentials, Chapter 9]} )  and the orientation of the bedding to be dip direction and downward dip so no matter what your own preference is, it must be translated into the standard MagIC convention for use with the PmagPy programs and with the {\bf QuickMagIC.py}  GUI.  
+ There is an astounding number of different ways that paleomagnetists document data in the field and in the lab. This variety is met with a large number  of method codes that describe sampling and orientation procedures (see \url{http://earthref.org/MAGIC/methods.htm} for a complete description).   The MagIC database expects sample orientations to be the azimuth and plunge of the fiducial arrow used for measurement (see  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch2.html#ch2}{[Essentials, Chapter 9]} )  and the orientation of the bedding to be dip direction and downward dip so no matter what your own preference is, it must be translated into the standard MagIC convention for use with the PmagPy programs and with the \href{#QuickMagIC.py}{QuickMagIC.py}  GUI.  
 
- {\bf QuickMagIC} supports two different ways of getting orientation and other sampling related information into a MagIC usable format.  The first way is through \href{#orient}{step 2 on the GUI front panel} and filling in the data from within the GUI.  That way will work for many applications, but it may be desirable to fill the spreadsheet in separately from the GUI by using  a tab delimited file (orient.txt format).   By clicking on  \href{#orient}{step 2 on the GUI front panel}  you create a file named {\it demag\_orient.txt}  which has all of your sample names in it.   should have all the information for a single location {\it sensu MagIC}.  [A location is a stratigraphic section,  a sampling region,  an drill core, and so on.]  MagIC doesn't really care what your location name is, but use the same location name every time you are asked for it, because it really ties your dataset together.   
+\href{#QuickMagIC.py}{QuickMagIC.py}  supports two different ways of getting orientation and other sampling related information into a MagIC usable format.  The first way is through \href{#orient}{step 2 on the GUI front panel} and filling in the data from within the GUI.  That way will work for many applications, but it may be desirable to fill the spreadsheet in separately from the GUI by using  a tab delimited file (orient.txt format).   By clicking on  \href{#orient}{step 2 on the GUI front panel}  you create a file named {\it demag\_orient.txt}  which has all of your sample names in it.   Each {\it orient.txt} file should  have all the information for a single location {\it sensu MagIC}. 
 
  
   \includegraphics[width=15cm]{EPSfiles/orient.eps}
@@ -356,14 +365,14 @@ Your Directory tree might look like this now:
   There are options for 
  different orientation conventions (drill direction with the Pomeroy orientation device  [drill azimuth and hade] is the default), different naming conventions and a choice of whether to automatically calculate the IGRF value for magnetic declination correction, supply your own or ignore the correction.  The program generates {\it er\_samples.txt} and {er\_sites.txt} files.  Be warned that existing files with these names will be overwritten.   
  
- All images, for example outcrop photos are supplied as a separate zip file. image\_name is the name of the picture you will import, image\_look is the "look direction" and image\_photographer is the person who took the picture. This information will be put in a file named er\_images.txt and will ultimately be read into the er\_image table in the console where additional information must be entered (keywords, etc.).
+ All images, for example outcrop photos are supplied as a separate zip file. image\_name is the name of the picture you will import, image\_look is the ``look direction`` and image\_photographer is the person who took the picture. This information will be put in a file named er\_images.txt and will ultimately be read into the er\_image table in the console where additional information must be entered (keywords, etc.).
 
 Often, paleomagnetists note when a sample orientation is suspect in the field. To indicate that a particular sample may have an uncertainty in its orientation that is greater than about 5$^{\circ}$, enter SO-GT5 in the method\_codes column and any other special codes pertaining to a particular sample from the method codes table. Other general method codes can be entered later. Note that unlike date and sample\_class, the method codes entered in orient.txt pertain only to the sample on the same line.
 
 
 
 
-Samples are oriented in the field with a "field arrow" and measured in the laboratory with a "lab arrow". The lab arrow is the positive X direction of the right handed coordinate system of the specimen measurements. The lab and field arrows may not be the same. In the MagIC database, we require the orientation (azimuth and plunge) of the X direction of the measurements (lab arrow). Here are some popular conventions that convert the field arrow azimuth (mag\_azimuth in the orient.txt file) and dip (field\_dip in orient.txt) to the azimuth and plunge of the laboratory arrow (sample\_azimuth and sample\_dip in er\_samples.txt). The two angles, mag\_azimuth and field\_dip are explained below.
+Samples are oriented in the field with a ``field arrow`` and measured in the laboratory with a ``lab arrow``. The lab arrow is the positive X direction of the right handed coordinate system of the specimen measurements. The lab and field arrows may not be the same. In the MagIC database, we require the orientation (azimuth and plunge) of the X direction of the measurements (lab arrow). Here are some popular conventions that convert the field arrow azimuth (mag\_azimuth in the orient.txt file) and dip (field\_dip in orient.txt) to the azimuth and plunge of the laboratory arrow (sample\_azimuth and sample\_dip in er\_samples.txt). The two angles, mag\_azimuth and field\_dip are explained below.
 
 {\parindent 0pt
 [1] Standard Pomeroy convention of azimuth and hade (degrees from vertical down) of the drill direction (field arrow). sample\_azimuth = mag\_azimuth; sample\_dip =-field\_dip.
@@ -433,7 +442,7 @@ When you are finished with editing the {\it orient.txt} file,  return to  \href{
 
 There are two types of files that help in plotting of IODP paleomagnetic data sets: the core summaries with depth to core top information and the sample information that contains lists of samples taken.  
 Visiting the IODP science query website at \url{http://web.iodp.tamu.edu/WTR/html/sci-data.html} allows you to 
-select 'SRM - Remanence of magnetization' under the Analysis scroll down menu.  By picking the expedition, site, hole, etc. you can download a  .csv format (comma separated values) for the expedition data.  (Be aware that this is the rawest form of the data, including disturbed intervals, bad measurements, core ends, etc. and may not be exactly what ended up getting published!).   First click on the ``Show Report" button, then, ``Expand Table'', then ``Get File'':
+select 'SRM - Remanence of magnetization' under the Analysis scroll down menu.  By picking the expedition, site, hole, etc. you can download a  .csv format (comma separated values) for the expedition data.  (Be aware that this is the rawest form of the data, including disturbed intervals, bad measurements, core ends, etc. and may not be exactly what ended up getting published!).   First click on the ``Show Report`` button, then, ``Expand Table'', then ``Get File'':
 
 \includegraphics[width=15cm]{EPSfiles/WebTabular_srm.eps}
 
@@ -515,10 +524,9 @@ Now you've collected together all the files you need, we can start importing the
 %\section{Using the MagIC.py GUI}
 %The MagIC.py graphical user interface is a Python program that facilitates importing of measurement data and sample information (location, orientation, etc.) into the MagIC format and interpretation thereof. It will help prepare all the files into a text format that can be imported directly into a \href{http://earthref.org/cgi-bin/help.cgi?lib=magic\qquad &id=140}{MagIC smartbook}. MagIC.py copies files to be uploaded into a special project MagIC directory, translates them into the MagIC format and keeps track of things in various log files.  Note that when it does this, it  will translate them into a Unix file format (from MacOS and Windows file formats) so you don't have to.  Once the \href{#Project_Directory} {MagIC project directory} has been created, you should just leave it alone.  Assuming you have placed all the needed files (orient.txt formatted files for each location and the measurement data files) in the {\it MyFiles} directory, open up a \href{#command_line }{terminal window} and type MagIC.py on the command line. Select the MagIC directory in your \href{#Project_Directory}{Project Directory} when prompted.
 %
-\customlink{FileMenu}
 %
 %\subsection{The File menu}
-%Different operating systems will have a different look, but all versions will put up a Welcome window when you have fired up the program MagIC.py. When you pull down the "File" menu, you will see these options either on the top of your Desktop (Mac OS) or on the top of the window itself (Windows version):
+%Different operating systems will have a different look, but all versions will put up a Welcome window when you have fired up the program MagIC.py. When you pull down the ``File`` menu, you will see these options either on the top of your Desktop (Mac OS) or on the top of the window itself (Windows version):
 %
 %\includegraphics[width=15cm]{EPSfiles/FileMenu.eps}
 %
@@ -561,216 +569,318 @@ Now you've collected together all the files you need, we can start importing the
 % er\_site\_name   model\_lat   model\_lon, where the model\_lat is the model latitude and the (optional) model\_lon is the model longitude.  This will be copied into the project directory under the name {\it model\_lat.txt}.  
 %\end{itemize}
 % 
+%%%
+%%% \subsection{Importing magnetometer data}
+%%% 
+%%%When you click on `convert magnetometer files',  you will find a variety of  file formats described in the section on
+%%%\href{#magnetometer_files}{magnetometer files}.
+%%%\includegraphics[width=15cm]{EPSfiles/ImportMagnetometer.eps}
+%%%Each of these has an idiosyncratic interface.  Some allow importing of entire directories at once, while others import data file by file.   Be sure to \href{#combine_measurements}{combine your measurements} after you finish importing all your measurements, before proceeding to data analysis. 
+%%%
+%%%
+%%%\customlink{SIO}
+%%%
+%%%\begin{itemize}
+%%%\item SIO format:   This option will generate a command line call to the program \href{#sio_magic.py}{sio\_magic.py}.  There are many options for laboratory procedures, naming conventions and so on and the {\bf QuickMagIC.py} GUI attempts to walk you through the process with as little pain as possible.  
+%%%	\begin{itemize}
+%%%	\item Select \href{#naming_schemes}{naming convention}:  Here you explain the relationship between your sample name and the site name.  	
+%%%	\item Fill in the following information:  Ylou should really really fill in the \href{location_name}{location name} for this file - it will save you time later if you want to upload your data into the MagIC database.  If your specimen/sample relationship is simply to add some characters to te end of your sample name (for example specimen mc144a1 belongs to sample mc144a), fill in the number of characters you use (unless it is '1' as in this case, because that is the default).  If you have some complicated system (for example specimen `\@\#\#\$\%\&\%` belongs to sample `Harry', we can't help you here and you'll have to fill out all the sample names later by hand.  (That should teach you a lesson).   
+%%%	
+%%%		\includegraphics[width=15cm]{EPSfiles/make_sio.eps}
+%%%		
+%%%		You should also check one of the lab protocols you used. 
+%%%		\begin{itemize}
+%%%		\item  If these data were ARMs,  check the AF box and fill in the peak AF and dc field values to the right.  If the lab field direction was not along -Z, then fill in what it was.  
+%%%		\item  If the data included TRMs from a Thellier or TRM anisotropy experiment, fill in the DC field and orientation (but not the peak AF field.) 
+%%%		\item If the data were for a TRM acquisition experiment, check the TRM box (but not the 'T' box).
+%%%		\item  If these data were part of an anisotropy experiment, check the 'ANI' box and the appropriate AF, T, I box for the type of remanence anisotropy experiment it was.  
+%%%		\item If the data were IRMs check that box.  If the treatment values were in volts on an ASC impulse coil, give the coil number (1,2, or 3) in the appropriate box.  
+%%%		\item If the data were part of a Lowrie 3D-IRM experiment (Lowrie, 1990),  \nocite{lowrie90} then check that box.
+%%%		\end{itemize}
+%%%	\end{itemize}
+%%%	\item 2G format:   This import procedure generates calls to \href{#2G_bin_magic.py}{2G\_bin\_magic.py}.  It  differs from that for \href{#SIO}{SIO} formatted in several ways:
+%%%	\begin{itemize}
+%%%	\item Because 2G  files contain measurements for single specimens, there is usually a directory with many files.  Importing each file individually is painful, so {\bf QuickMagIC.py}  asks for the directory name and imports ALL files with file endings of .dat or .DAT.   
+%%%	\item No lab protocol need be specified.
+%%%	\item You create an {\it er\_samples.txt} file from the magnetometer file.  For that you should specify at least the orientation method used (e.g., magnetic, sun or sighting), otherwise it is assumed that these are unoriented samples.  The {\it er\_sample.txt} file is very minimalist, having no lithology information, required for a MagIC database contribution.  So after importing the files, you should use the \href{#samp2orient}{Convert samples =$>$ orient.txt} option, file in the required information following the instructions \href{#field_info}{here}, then re-import it into your Project Directory.
+%%%	\end{itemize}
+%%%
+%%%\item LDEO format:  This import procedure is identical to that for \href{#SIO}{SIO} formatted files but generates calls for \href{#LDEO_magic.py}{LDEO\_magic.py}. 
+%%%\item CIT format:   This format is the `CIT' format used by Craig Jone's {\bf PaleoMag} software package (\url{http://cires.colorado.edu/people/jones.craig/PMag3.html}).   {\bf QuickMagIC.py} generates calls to the program \href{#CIT_magic.py}{CIT\_magic.py}.       The GUI import option behaves in a similar fashion to the \href{#SIO}{SIO format} import, but you don't specify lab protocol and you can specify method codes.  In the absence of method codes, it is assumed the samples were oriented with magnetic compass.  
+%%%\item UU format
+%%%\item UB format
+%%%
+%%%\item UCSC formats
+%%%\item LIV-MW format
+%%%\item HUJI format:  This import procedure is identical to that for \href{#SIO}{SIO} formatted files  but generates calls for \href{#HUJI_magic.py}{HUJI\_magic.py}. 
+%%%\item IODP format:    This is a pretty simple operation.  Select the file downloaded from the  \href{#LIMS} {LIMS} database and choose whether you want to average replicate measurements or not.  This makes a call to \href{#IODP_csv_magic.py}{IODP\_csv\_magic.py} to do the dirty work.  
+%%%
+%%%\item PMD (Enkin) format:  This import procedure is identical to that for \href{#2G-bin}{2G binary files} except it makes calls to \href{#PMD_magic.py}{PMD\_magic.py}.
+%%%
+%%%\item UMICH (Gee) format
+%%%\item TDT format:  This import procedure is similar to that for \href{#SIO}{SIO} formatted files, generating calls to \href{#TDT_magic.py}{TDT\_magic.py}.  Obviously, you would check the box labelled T and none of the others!   If you want to specify the lab field direction (which may not be parallel to -Z as in the SIO lab, you also have to specify the lab field strength in $\mu$T, even though it is in the file.  
+%%%\item JR6 format
+%%%
+%%%\end{itemize}
+%%%
+%%%
+%%%\section{Import menu option}
+%%%
+%%%Under the Import menu  on the top menu bar, you will find the option of  importing several different kinds of anisotropy data files and hysteresis data.  
+%%%
+%%%\customlink{ImportAnisotropy}
+%%%
+%%%\subsection{Importing Anisotropy of magnetic susceptibility data}
+%%%
+%%%
+%%%
+%%%
+%%%\begin{itemize}
+%%%\item \href{#s_magic.py}{The 6 tensor element format (.s)}  
+%%%\item \href{#KLY4S_magic.py}{LabView program} of Gee et al. 2008: \nocite{gee08}   
+%%%You first select the KLY4S format input file then the  \href{#naming_schemes}{naming convention}.  After that, input your \href{#location_name}{location name} (strongly encouraged), the measurer (optional), the number of characters to distinguish specimen from sample and the instrument used (optional).    \href{#Combining_measurement_files}{Combine} your measurement files when your are through, to plot versus depth  file or as equal area projections (suitable sample \href{#ImportOrient}{orientation} required).  
+%%%\item \href{#k15\_magic.py}{15 measurement file format of Tauxe 1998: \nocite{tauxe98}} This import procedure is the same as for the KLY4S file format.
+%%%\item \href{#susar4-asc\_magic.py}{SUSAR 4.0 ascii output for Kappabridge}
+%%%\item \href{#SUFAR4-asc\_magic.py}{SUFAR 4.0 ascii output for Kappabridge}: This import procedure is the same as for the KLY4S file format.
+%%%
+%%%\end{itemize}
+%%%
+%%%\customlink{ImportHysteresis}
+%%%
+%%%\subsection{Importing hysteresis data}
+%%%
+%%%
+%%%There are two different modes for importing hysteresis/backfield data:  by file or by directory.  For the former:
+%%%\begin{enumerate}
+%%%\item Select the file.
+%%%\item Select the  \href{#naming_schemes}{naming convention}.
+%%%\item Enter the location name, optional measurer, and instrument name, and the specimen name and number of characters to delineate the specimen from the sample.
+%%%\item Indicate whether the file is in cgs or SI units and whether this was an IRM backfield experiment
+%%%\end{enumerate}
+%%%
+%%%For importing whole directories:   Your file names must follow the convention described in the section on \href{#Hysteresis_file_formats}{hysteresis file formats}.   Follow the same steps as before, but you will not be asked for a specimen name or whether the data are from backfield experiments as these are supplied by the file names.  
+%%%
+%%%When you are finished importing all the measurement data you need, choose ``Next step''  \href{#Combine}{Step 1. of   QuickMagIC GUI}.    
+%%%
+%%%
+%%%
+%%%\customlink{Combining_measurement_files}
+%%%
+%%%\subsubsection{Combining measurement files}
+%%%Each time you import a measurement file, you create a MagIC version of the imported data file with the same name, but a .magic appended to the end.  These filenames are stored in the file {\it measurements.log}.  After you have completed importing all your measurement files, you must combine them together into a single {\it magic\_measurements.txt} file in order to use the other functions in MagIC.py.  Just select this option and everything will be done for you. 
+%%%
+%%%
+%%%\customlink{samp2orient}
+%%%
+%%%\subsubsection{Creating an orient.txt file from er\_samples}
+%%%
+%%%
+%%%This option makes a call to \href{#convert_samples.txt}{convert\_samples.txt} to convert the {\it er\_samples.txt} file created by some import procedures into an {\it orient.txt} file which can be filled in as desired.  It can be re-imported by \href{#ImportOrient}{importing orientation} information.   After re-importing the orient.txt file, you should update your measurements.  
+%%%
+%%%\customlink{updatemeas}
+%%%
+%%%\subsubsection{Update measurements:}
+%%%
+%%%Update your {\it magic\_measurements.txt} file with new site/location information by calling the program \href{#update_measurements.py}{update\_measurements.py}.  This should be done after \href{#ImportOrient}{importing a new {\it orient.txt} file}.  
+%%%
+%%%
+%%%\subsubsection{Importing prior interpretations}
+%%%Many people prefer to use the software package that they are familiar with (e.g., \href{#PMD_magic.py}{PaleoMac software of Cogn\'e, 2003)}, \nocite{cogne03}  \href{#CIT_magic.py}{Craig Jones' {\bf PaleoMag} software},  or even previously processed Pmag (Tauxe, 1998) or PmagPy (Tauxe et al., 2010) softare and have generated files containing favorite interpretations of the paleomagnetic data.  MagIC.py can import these interpretation files, allowing the user to skip re-analysis and proceed directly to preparation of files for uploading, or re-interpretation of data files using PmagPy starting with the prior interpretations as a basis.    In any case, the following interpretation files are supported (or could be): 
+%%%
+%%%\customlink{import_redo}
+%%%
+%%%\begin{itemize}
+%%%\item {PmagPy redo file}:   This option copies the files used by \href{#zeq_redo.py}{zeq\_magic\_redo.py}, \href{#thellier_gui.py}{thellier\_gui.py}  and \href{#thellier_magic_redo.py}{thellier\_magic\_redo.py} and then runs them (see documentation in \href{#mk_redo.py}{mk\_redo.py} for file formats.  This will overwrite any existing interpretation files ({\it zeq\_specimen.txt} or {\it thellier\_specimens.txt}) files you may have created already, so be careful!  Also, this is the main way that the  \href{#thellier_gui.py}{thellier\_gui.py} shares information with the MagIC.py GUI, so import the redo file generated by the auto-interpreter (e.g., {\it thellier\_interpreter\_STDEV-OPT\_redo}  with this option and you will be able to use them within the MagIC.py GUI.  
+%%%\item DIR:  Not supported at this time $=>$ if desired send example file to {ltauxe@ucsd.edu}
+%%%\item LSQ:  Not supported at this time $=>$ if desired send example file to {ltauxe@ucsd.edu}{ltauxe@ucsd.edu}
+%%%\item PMM: Not supported at this time  $=>$if desired send example file to {ltauxe@ucsd.edu}
+%%%
+%%%\end{itemize}
+%%%
+%%%
+%%%\customlink{ImportMagIC}
+%%%
+%%%\subsubsection{Copying over your MagIC formatted files}
+%%%If you have already some MagIC tables ready,  you can import them into your MagIC folder with this option.  For example, you might have a previous set of specimen interpretations in a {\it pmag\_specimen.txt} file, or age information (in an {\it er\_ages.txt} file.  All age information specific to a give sample or site can be documented in an {\it er\_ages.txt} file (see \url{http://earthref.org/MAGIC/metadata.htm}).  These will be assembled with the respective site/samples in the results table when you \href{#PrepareMagicConsole}{assemble your results}. Other examples might be a location table ({\it er\_locations.txt}) or a citation table ({\it er\_citations.txt}).  
+%%%
+%%% This option will copy your \href{#DataTables}{MagIC} formatted file into the MagIC Project Directory.  Be sure to use the standard file names or the MagIC GUI will ignore them.  
+%%%
+%%%\customlink{AnalysisPlotsMenu}
+%%%
+%%%\subsection{Analysis and Plots Menu}
+%%%
+%%%After you have imported your various datafiles, you can process them using the tools in the \href{#AnalysisPlotsMenu}{Analysis and Plots menu}.    All of these options generate and execute command line calls for various \href{#PmagPy}{PmagPy} programs.  The {\bf MagIC.py} GUI uses default options because it ``knows'' the names of the files it has created, saving you from having to figure that out.   Many of these options require you to type things in on the command line, such as 'a' to s[a]ve plots, 'q' to quit, or simply return to increment the specimen name.  Follow the instructions for the specific program that are printed  in the terminal window   (see also the documentation in the section on \href{#PmagPy}{PmagPy} programs). Once the program has exited, control will be returned to the MagIC.py GUI.  
+%%%
+%%%\customlink{customize_criteria}
+%%%
+%%%\begin{itemize}
+%%%\item Customize Criteria: here you can change your criteria for acceptance or rejection of data.
+%%%		\item Demagnetization Data:  allows you to call  the programs \href{#zeq_magic.py}{zeq\_magic.py} or \href{#demag_gui.py}.  These reads in the {\it magic\_measurements.txt} file created when you \href{#Combining_measurement_files}{combine} your imported  measurement files.  If you have \href{#ImportOrient }{imported orientation} information, it will make the plots using the geographic coordinate system. 
+%%%		\item Thellier-type experiments:  There are two options here.  The first calls the program \href{#thellier_magic.py}{thellier\_magic.py} and the second calls \href{#thellier_gui.py}{thellier\_gui.py}.  Both  read in the {\it magic\_measurements.txt} file created when you \href{#Combining_measurement_files}{combine} your imported  measurement files.   The {\bf thellier\_gui.py} program works a little differently than the other {\bf PmagPy} programs in that the output interpretations are   not immediately  available to {\bf MagIC.py} when you quit {\bf thellier\_gui.py}.  To use the interpretations, for example from  the auto-interpreter function, you must \href{#import_redo}  import the redo file as described under the Import menu.  You will find the auto-interpreter redo file in the  with the {\it thellier\_interpreter} folder.  
+%%%		 %\item Microwave experiments
+%%%                  \item Equal area: 
+%%%		\begin{itemize}
+%%%			\item Quick look - NRM directions:  This option first fishes out all the NRM measurements from the {\it magic\_measurements.txt} file and stores them in a file called {\it nrm\_measurments.txt}.  The measurement format is then converted to the {\it pmag\_specimen.txt} format using \href{#nrm_specimens_magic.py}{nrm\_specimens\_magic.py}, which also looks for an {\it er\_samples.txt} file and  performs geographic and stratigraphic rotations as available. The GUI will ask for desired coordinate system and level of plotting (by location, site, sample, etc. and then  call the program \href{#eqarea_magic.py}{eqarea\_magic.py} to plot the NRM directions. 
+%%%			\item General remanence directions:  You are given a choice of tables from {\it pmag\_specimens.txt} up to {\it pmag\_results.txt}, depending on the desired level. You may also choose from among the available coordinate systems and scope of the plot(s) (e.g., location, site, sample).   There are several methods available for estimated confidence bounds for the data set including Fisher, Bingham, Kent or bootstrap.  Plots are made with \href{#eqarea_magic.py}{eqarea\_magic.py}.   
+%%%			\item Anisotropy data - equal area plots: makes plots with the \href{#aniso_magic.py}{aniso\_magic.py} program.  You can choose the scope of the plot and the method for estimating confidence intervals.  
+%%%
+%%%		\item Hysteresis data:   calls \href{#hysteresis_magic.py}{hysteresis\_magic.py} to plot the data that you  \href{#ImportHysteresis}{imported} and \href{#Combining_measurement_files}{combined} into a {\it magic\_measurements.txt} file.  It generates a file {\it rmag\_hysteresis.txt} with all the hysteresis parameters calculated by the program.  These can be plotted using the 'Hysteresis ratio plots' command.  
+%%%		\item Hysteresis ratio plots: This calls \href{#dayplot_magic.py}{dayplot\_magic.py} to make plots of hysteresis ratios and the like in the {\it rmag\_hysteresis.txt} file created by \href{#hysteresis_magic.py}{hysteresis\_magic.py}. 
+%%%		\item IRM acquisition: This calls \href{#irmaq_magic.py}{irmaq\_magic.py} to make plots of IRM acquisition and back field curves.  It uses the {\it magic\_measurements.txt} file created when you \href{#Combining_measurement_files}{combine} your imported  IRM data.
+%%%		\item 3D-IRM experiment:   makes plots of the \nocite{lowrie90} 3D-IRM experiment of Lowrie (1990),  \nocite{lowrie90} using the program \href{#lowrie_magic.py}{lowrie\_magic.py}.   It uses the {\it magic\_measurements.txt} file created when you \href{#Combining_measurement_files}{combine} your imported  3D-IRM data and allows the option to normalize the intensity data by the NRM.
+%%%		\item Remanence versus depth/height:   makes plots using a call to \href{#core_depthplot.py}{core\_depthplot.py}.  The GUI allows customization of the plot with choice of data type (inclination, declination, etc.), time scale, depth scale, and customization of plot symbols.  If you have imported a \href{#IODP_core_summary}{core summary file}, you can plot the core tops as well.  There is a choice of depth scales with a common depth scale (mcd) as an option.   
+%%%		\item Anisotropy data versus depth/height:  makes plots using a call to \href{#ANI_depthplot.py}{ANI\_depthplot.py}, reading the {\it rmag\_anisotropy.txt} and {\it magic\_measurements.txt} files in the Project Directory.  
+%%%		\end{itemize}
+%%%		\item Reversals test: performs a bootstrap reversals test with the \href{#revtest_magic.py}{revtest\_magic.py} program.  You can choose coordinate system and selection criteria.  
+%%%		\item Fold test: performs a fold test with \href{#foldtest_magic.py}{foldtest\_magic.py} and allows choice of selection critieria.  Note - it takes a while so be patient and you need to have \href{#ImportMenu}{imported} structural corrections. 
+%%%
+%%%\end{itemize}
+%%%
+%%%\customlink{PrepareMagic}
+%%%
+%%%\subsection{Prepare for MagIC}
+%%%Once all your data have been imported and interpreted using one of the interpretation tools outlined in the section on \href{#AnalysisPlotsMenu}{Analysis and Plots}, you can assemble the results into the various \href{#DataTables}{tables} expected by MagIC, e.g., the {\it pmag\_specimens, pmag\_samples, pmag\_sites} and {\it pmag\_results} tables (also various rock magnetic tables, if available).  
+%%%\begin{itemize}
+%%%		\item Assemble specimens: The various programs for interpreting measurement data like \href{#zeq_magic.py}{zeq\_magic.py} or \href{#thellier_magic.py}{thellier\_magic.py} produce {\it pmag\_specimens.txt} formatted files with names like {\it zeq\_specimens.txt} or {\it thellier\_specimens.txt}.  The directional data should be recalculated for various coordinate systems and the intensity data corrected for anisotropy corrections and the like.  All of these data need to be assembled into a single {\it pmag\_specimens.txt} file, which is what this option does.  
+%%%		
+%%%		\customlink{AssembleResults} 
+%%%		
+%%%		\item Assemble results:   After assembling the specimen data into a single {\it pmag\_specimens.txt} file, data must be averaged by sample and/or by site and stored in {\it pmag\_sample.txt} and {\it pmag\_site.txt} tables.  The directional data can be converted to VGPs and intensities into V[A]DMs, which are kept in the {\it pmag\_results.txt} table. Study level averages such as paleomagnetic pole positions can be calculated.  All of these operations are carried out by the program \href{#specimens_results_magic.py}{specimens\_results\_magic.py}.  
+%%%		\begin{itemize}  
+%%%			\item You have a choice of selection criteria (default, existing (created with the \href{#customize_criteria}{customize criteria} option, and none). 					
+%%%			\item For many applications, data are normally averaged first by sample, then by site and this is the default.  But and argument could be made that in certain circumstances (e.g.,  with intensity data in which each specimen is independent of the other), site averages could be made using all the specimen data together and not averaging by sample.  Choose  -aD to average directions by site and not by sample and -aI to average intensities by site and not by sample. Also, choose -sam to calculate sample level VGPs and VADMs if desired. Otherwise, the program will do this for site level data onlly. 
+%%%			\item For calculating VDMs, you need oriented inclinations and for VADMs, you need a latitude.  The latitude can be the present latitude or a reconstructed paleolatitude (model latitude).  To choose the present latitude, select '-lat' or \href{#ImportMenu}{import} a model latitude file and choose that option.
+%%%			\item  The -p option lets you  look at the data site by site to check if there are terrible errors.  If you want to reconsider some of the sample orientations, for example, you should use the option in the \href{#Utitlities}{Utitlities menu} to check the sample orientations for common mistakes.  
+%%%			\item You can just skip the directional (-xD) or intensity (-xI) calculations if they are not relevant (this speeds things up a bit). 
+%%%			\item If you want to calculate normal and reverse means for the study, select -pol. 
+%%%			\item You can choose which coordinate systems you want to include in the MagIC tables. The GUI sniffs through the options and presents them to you.  
+%%%			\item The MagIC database wants all non-synthetic data to have ages associated with them.  Site/sample specific ages are entered using the {\it er\_ages.txt} table (imported in the {Import er\_ages option} in the \href{#er_ages}{Import Menu}, but age bounds for the study must be entered so that \href{#specimens_results_magic.py}{specimens\_results\_magic.py} can assign age bounds for every result.   The GUI therefore asks for these age bounds.   Age units are a controlled vocabulary, so choose from this list:  [Ga, ka, Ma, years AD (+/-), Years BP, Years Cal AD (+/-) Years Cal BP].   If you enter nothing, the default age bounds will be 0 to 4.5 Ga.  
+%%%		\end{itemize}
+%%%		\item Prepare upload txt file:  The \href{http:earthref.org/MAGIC/search-beta}{MagIC Website} will import a specially formatted ascii file, parsing all the tables into their niches.  Choosing this option will create an {\it er\_locations.txt} file for you based on what is in the {\it er\_sites.txt} file.  It will ask you for the missing required information.  Then the GUI prepares a file called {\it upload.txt} which can be directly imported into the MagIC database and attached to the associated reference.  
+%%%\end{itemize}
+%%%
+%%%
+%%%
+%%%
+%%%\customlink{Utilities}
+%%%
+%%%\subsection{Utilities Menu}
+%%%
+%%%\begin{itemize}
+%%%		\item Check sample orientations:  This program calls the program \href{#site_edit_magic.py}{site\_edit\_magic.py}.  It steps through the data site by site and allows you to evaluate orientation information, testing outliers against specific, common field mistakes (arrow wrong direction, wrong scratch mark, etc.) 
+%%%		\item Extract Results to table for publication:  After assembling your results, you can extract information from the {\it pmag\_results.txt} file as an tab delimited (excel ready) file or as a (my favorite) LaTex formatted table.  That way, the data in your publication will be identical to the data in the MagIC database (what a concept!).  This option allows you to do that using the program \href{#pmag_results_extract.py}{pmag\_results\_extract.py}.  It will create two files:  {\it Intensities.txt} and {\it Directions.txt}.  
+%%%		\item Map of VGPs:  makes plots using \href{#vgpmap_magic.py}{vgpmap\_magic.py}, which reads from the {\it pmag\_results.txt} file (where VGPs are stored).  To get VGPs, you need to \href{#AssembleResults}{assemble} your results first.   If you \href{#ImportMenu}{imported} orientation data, you can select the coordinate system.  You can also choose whether or not to `flip' the reverse VGPs and the location of the 'eye' in the orthographic plot.  
+%%%		\item Map of site locations: makes plots using \href{#basemap_magic.py}{basemap\_magic.py} which reads from the {\it er\_sites.txt} file.  Choosing high resolution requires that the  \href{#HighRes}{high resolution} datafiles be installed.  There are many more options available if you use the program on the command line - this is just for a `quick look'.
+%%%
+%%%\item Make IZZI exp. chart: The IZZI paleointensity experiment (Tauxe and Staudigel, 2004) \nocite{tauxe04} is a complicated protocol which requires some concentration to get the order of heating steps in the right order.  This utility calls \href{#chartmaker.py}{chartmaker.py} to make a chart to facilitate the laboratory procedure.  
+%%%\item Expected directions/paleolatitudes:  calls \href{#apwp.py}{apwp.py} to calculate paleodirectiions and paleolatitudes for a give location at a specified time, after assigning it a tectonic plate.  
+%%%\end{itemize}
+%%%
+%%%\subsection{Help Menu}
+%%%
+%%%Takes you to this Cookbook.
+\customlink{survival_skills}
 
- \subsection{Importing magnetometer data}
- 
-When you click on `convert magnetometer files',  you will find a variety of  file formats described in the section on
-\href{#magnetometer_files}{magnetometer files}.
-%\includegraphics[width=15cm]{EPSfiles/ImportMagnetometer.eps}
-Each of these has an idiosyncratic interface.  Some allow importing of entire directories at once, while others import data file by file.   Be sure to \href{#combine_measurements}{combine your measurements} after you finish importing all your measurements, before proceeding to data analysis. 
+\chapter{Survival computer skills}
+\label{ex:unix}
+
+The `Py' part of  `PmagPy' stands for Python, the language in which all the code is written.   It is not essential, but it is helpful to understand a bit about computer operating systems and the Python language when using PmagPy because no one should be using programs as black boxes without understanding what they are doing. As all the programs are open source, you have the opportunity to look into them.  If you understand a bit  about how computers work yourself, you will be able to follow along what they are doing and even modify them to work better for you.   So in this chapter you will find a brief introduction to the computer skills necessary for using the programs properly.  We have tried very hard to make this tutorial operating system independent.  All the examples should work equally well on Mac OS, Windows and Unix-type operating systems.  For a more complete explanation of the marvelous world of UNIX, refer to the website at \url{http://www.tutorialspoint.com/unix/unix-quick-guide.htm}.  For handy tricks in DOS, try this link:  \url{http://www.c3scripts.com/tutorials/msdos}.   
+For an introduction to programming in Python, see the  Chapter on \href{#Python}{Python Programming}.   For now, we're just interested in getting started with \href{#PmagPy}{PmagPy}.   
 
 
-\customlink{SIO}
+\customlink{command_line}
+\section{Finding your command line}
+If you are not using a Unix-like computer (*NIX), you may never have encountered a command line. While the \href{#QuickMagIC.py}{QuickMagIC.py} Graphical User Interface (GUI) is an attempt to make life as easy for you by constructing commands for you, you still need to find the command line to start it up.  Under the MacOS X operating system look for the Terminal application in the Utilities folder within the Applications folder. When it is launched, you will get a terminal window as shown below.  The Unix (and Mac OS) Bash shell has a \$ sign as a prompt.  I (LT) use the antiquated `C-shell'  (don't ask) with a \% for a prompt and  will use the \% prompt in the examples here, but any of these command line prompts will work.   
 
-\begin{itemize}
-\item SIO format:   This option will generate a command line call to the program \href{#sio_magic.py}{sio\_magic.py}.  There are many options for laboratory procedures, naming conventions and so on and the {\bf QuickMagIC.py} GUI attempts to walk you through the process with as little pain as possible.  
-	\begin{itemize}
-	\item Select \href{#naming_schemes}{naming convention}:  Here you explain the relationship between your sample name and the site name.  	
-	\item Fill in the following information:  Ylou should really really fill in the location name for this file - it will save you time later if you want to upload your data into the MagIC database.  If your specimen/sample relationship is simply to add some characters to te end of your sample name (for example specimen mc144a1 belongs to sample mc144a), fill in the number of characters you use (unless it is '1' as in this case, because that is the default).  If you have some complicated system (for example specimen `\@\#\#\$\%\&\%` belongs to sample `Harry', we can't help you here and you'll have to fill out all the sample names later by hand.  (That should teach you a lesson).   
-	
-		\includegraphics[width=15cm]{EPSfiles/make_sio.eps}
-		
-		You should also check one of the lab protocols you used. 
-		\begin{itemize}
-		\item  If these data were ARMs,  check the AF box and fill in the peak AF and dc field values to the right.  If the lab field direction was not along -Z, then fill in what it was.  
-		\item  If the data included TRMs from a Thellier or TRM anisotropy experiment, fill in the DC field and orientation (but not the peak AF field.) 
-		\item If the data were for a TRM acquisition experiment, check the TRM box (but not the 'T' box).
-		\item  If these data were part of an anisotropy experiment, check the 'ANI' box and the appropriate AF, T, I box for the type of remanence anisotropy experiment it was.  
-		\item If the data were IRMs check that box.  If the treatment values were in volts on an ASC impulse coil, give the coil number (1,2, or 3) in the appropriate box.  
-		\item If the data were part of a Lowrie 3D-IRM experiment (Lowrie, 1990),  \nocite{lowrie90} then check that box.
-		\end{itemize}
-	\end{itemize}
-	\item 2G format:   This import procedure generates calls to \href{#2G_bin_magic.py}{2G\_bin\_magic.py}.  It  differs from that for \href{#SIO}{SIO} formatted in several ways:
-	\begin{itemize}
-	\item Because 2G  files contain measurements for single specimens, there is usually a directory with many files.  Importing each file individually is painful, so {\bf QuickMagIC.py}  asks for the directory name and imports ALL files with file endings of .dat or .DAT.   
-	\item No lab protocol need be specified.
-	\item You create an {\it er\_samples.txt} file from the magnetometer file.  For that you should specify at least the orientation method used (e.g., magnetic, sun or sighting), otherwise it is assumed that these are unoriented samples.  The {\it er\_sample.txt} file is very minimalist, having no lithology information, required for a MagIC database contribution.  So after importing the files, you should use the \href{#samp2orient}{Convert samples =$>$ orient.txt} option, file in the required information following the instructions in Section~\ref{sect:field_info}, then re-import it into your Project Directory.
-	\end{itemize}
+  \includegraphics[width=15cm]{EPSfiles/terminal.eps}
 
-\item LDEO format:  This import procedure is identical to that for \href{#SIO}{SIO} formatted files but generates calls for \href{#LDEO_magic.py}{LDEO\_magic.py}. 
-\item CIT format:   This format is the `CIT' format used by Craig Jone's {\bf PaleoMag} software package (\url{http://cires.colorado.edu/people/jones.craig/PMag3.html}).   {\bf QuickMagIC.py} generates calls to the program \href{#CIT_magic.py}{CIT\_magic.py}.       The GUI import option behaves in a similar fashion to the \href{#SIO}{SIO format} import, but you don't specify lab protocol and you can specify method codes.  In the absence of method codes, it is assumed the samples were oriented with magnetic compass.  
-%\item UU format
-%\item UB format
+Under the Windows operating system, if you followed the instructions in the  \href{#quick_start}{Installing PmagPy} section, you will have a shortcut to the PmagPy command window on your desktop.  Double clicking on that will give you a window in which you can type {\bf PmagPy} commands.  
 
-%\item UCSC formats
-%\item LIV-MW format
-\item HUJI format:  This import procedure is identical to that for \href{#SIO}{SIO} formatted files  but generates calls for \href{#HUJI_magic.py}{HUJI\_magic.py}. 
-\item IODP format:    This is a pretty simple operation.  Select the file downloaded from the  \href{#LIMS} {LIMS} database and choose whether you want to average replicate measurements or not.  This makes a call to \href{#IODP_csv_magic.py}{IODP\_csv\_magic.py} to do the dirty work.  
-
-\item PMD (Enkin) format:  This import procedure is identical to that for \href{#2G-bin}{2G binary files} except it makes calls to \href{#PMD_magic.py}{PMD\_magic.py}.
-
-%\item UMICH (Gee) format
-\item TDT format:  This import procedure is similar to that for \href{#SIO}{SIO} formatted files, generating calls to \href{#TDT_magic.py}{TDT\_magic.py}.  Obviously, you would check the box labelled T and none of the others!   If you want to specify the lab field direction (which may not be parallel to -Z as in the SIO lab, you also have to specify the lab field strength in $\mu$T, even though it is in the file.  
-%\item JR6 format
-
-\end{itemize}
+  \includegraphics[width=15cm]{EPSfiles/cmd.eps}
+  
+  Note that the location of this program varies on different computers, so you may have to hunt around a little to find yours. Also, the actual  ``prompt'' will vary for different machines. 
+  
+  
+  
+\section{File systems}
+\label{sect:file_systems}
+    When you open one of these terminal windows,  you are in your  ``home'' directory.   
+Fundamental to all  operating systems is the concept of
+directories and files.  On windows-based operating systems (MacOS or Windows), directories are depicted
+as ``folders'' and moving about is accomplished by clicking on the different icons.
+In the world of terminal windows, the directories have names and are arranged in a hierarchical sequence with
+the top directory being the ``root'' directory, known as  ``/'' (or C:'backslash' in Windows) and the file system looks something like this:
 
 
-\section{Import menu option}
+  \includegraphics[width=15cm]{EPSfiles/filesys.eps}
 
-Under the Import menu  on the top menu bar, you will find the option of  importing several different kinds of anisotropy data files and hysteresis data.  
+ Within the root directory, there are subdirectories
+(e.g. {\bf Applications} and {\bf Users} in bold face).  In any directory, there can also be ``files''
+(e.g. {\it dir\_cart\_example.dat} in italics).   To
+refer to directories,  the operating system relies on what is called a ``pathname''. Every object
+has an ``absolute'' pathname which is valid from anywhere on the computer.  The
+absolute pathname in *NIX always begins from the root directory {\bf /} and in DOS (the operating system working in the Windows command line window), it is C:'backslash'. 
 
-\customlink{ImportAnisotropy}
-
-\subsection{Importing Anisotropy of magnetic susceptibility data}
+The absolute pathname to the home directory {\bf lisa} in the figure is {\bf /Users/lisa}.  
+Similarly, the absolute pathname to the directory containing {\bf PmagPy}  
+scripts  would be  {\bf /Users/lisa/PmagPy}.  There is also a ``relative'' pathname,
+which is in reference to the  current directory (the one you are `sitting' in).  If user ``lisa'' is sitting in 
+her home directory, the relative pathname for the file {\it dir\_cart\_example.dat} in the directory
+{\bf Datafiles\_2.0} would be {\it Datafiles\_2.0/dir\_cart/dir\_cart\_example.dat}.  When using relative
+pathnames, it is useful to remember that {\bf ./} refers to the current
+directory and {\bf ../} refers to the directory  ``above''.     Also, lisa's home directory would be $\sim$lisa, or if you are logged in as lisa yourself, then it is just $\sim$. 
 
 
 
+\section{Moving around in the file system}
 
-\begin{itemize}
-%\item \href{#s_magic.py}{The 6 tensor element format (.s)}  
-\item \href{#KLY4S_magic.py}{LabView program} of Gee et al. 2008: \nocite{gee08}   
-You first select the KLY4S format input file then the  \href{#naming_schemes}{naming convention}.  After that, input your Location name (strongly encouraged), the measurer (optional), the number of characters to distinguish specimen from sample and the instrument used (optional).    \href{#Combining_measurement_files}{Combine} your measurement files when your are through, to plot versus depth  file or as equal area projections (suitable sample \href{#ImportOrient}{orientation} required).  
-\item \href{#k15\_magic.py}{15 measurement file format of Tauxe 1998: \nocite{tauxe98}} This import procedure is the same as for the KLY4S file format.
-%\item \href{#susar4-asc\_magic.py}{SUSAR 4.0 ascii output for Kappabridge}
-\item \href{#SUFAR4-asc\_magic.py}{SUFAR 4.0 ascii output for Kappabridge}: This import procedure is the same as for the KLY4S file format.
-
-\end{itemize}
-
-\customlink{ImportHysteresis}
-
-\subsection{Importing hysteresis data}
-
-
-There are two different modes for importing hysteresis/backfield data:  by file or by directory.  For the former:
-\begin{enumerate}
-\item Select the file.
-\item Select the  \href{#naming_schemes}{naming convention}.
-\item Enter the location name, optional measurer, and instrument name, and the specimen name and number of characters to delineate the specimen from the sample.
-\item Indicate whether the file is in cgs or SI units and whether this was an IRM backfield experiment
-\end{enumerate}
-
-For importing whole directories:   Your file names must follow the convention described in the section on \href{#Hysteresis_file_formats}{hysteresis file formats}.   Follow the same steps as before, but you will not be asked for a specimen name or whether the data are from backfield experiments as these are supplied by the file names.  
-
-When you are finished importing all the measurement data you need, choose ``Next step''  \href{#Combine}{Step 1. of   QuickMagIC GUI}.    
+Now that you have found your command line and are comfortable in your home directory, you can view the contents of your directory with the Unix command {\bf ls} or the DOS command {\bf dir}.  
+\customlink{mkdir}
+You can make a new directory with the command 
+\begin{verbatim}
+%mkdir NEW_DIRECTORY_NAME 
+\end{verbatim}
+This works in both Unix and DOS environments) and you can move into your new directory with the command 
+\begin{verbatim}
+% cd NEW_DIRECTORY_NAME
+\end{verbatim}
+   To move back up into the home directory, just type {\bf cd ..} remembering that .. refers to the directory above.  Also, {\bf cd} by itself will transport you home from where ever you are (there's no place like home....).     You can also change to any arbitrary directory by specifying the full path of the destination directory. 
 
 
+%\section {Wildcards}
 %
-\customlink{Combining_measurement_files}
+%Unix and DOS have the ability to refer to a number of files and/or directories using
+%``wildcards''.  The  wildcard for a  single character is ``?'' and for any number of
+%characters is ``*''.  For example, to refer to all the files with ``.py'' in their name in the PmagPy directory in my home directory, 
+%I would type:
 %
-%\subsubsection{Combining measurement files}
-%Each time you import a measurement file, you create a MagIC version of the imported data file with the same name, but a .magic appended to the end.  These filenames are stored in the file {\it measurements.log}.  After you have completed importing all your measurement files, you must combine them together into a single {\it magic\_measurements.txt} file in order to use the other functions in MagIC.py.  Just select this option and everything will be done for you. 
-%
-%
-\customlink{samp2orient}
-%
-%\subsubsection{Creating an orient.txt file from er\_samples}
-%
-%
-%This option makes a call to \href{#convert_samples.txt}{convert\_samples.txt} to convert the {\it er\_samples.txt} file created by some import procedures into an {\it orient.txt} file which can be filled in as desired.  It can be re-imported by \href{#ImportOrient}{importing orientation} information.   After re-importing the orient.txt file, you should update your measurements.  
-%
-\customlink{updatemeas}
-%
-%\subsubsection{Update measurements:}
-%
-%Update your {\it magic\_measurements.txt} file with new site/location information by calling the program \href{#update_measurements.py}{update\_measurements.py}.  This should be done after \href{#ImportOrient}{importing a new {\it orient.txt} file}.  
-%
-%
-%\subsubsection{Importing prior interpretations}
-%Many people prefer to use the software package that they are familiar with (e.g., \href{#PMD_magic.py}{PaleoMac software of Cogn\'e, 2003)}, \nocite{cogne03}  \href{#CIT_magic.py}{Craig Jones' {\bf PaleoMag} software},  or even previously processed Pmag (Tauxe, 1998) or PmagPy (Tauxe et al., 2010) softare and have generated files containing favorite interpretations of the paleomagnetic data.  MagIC.py can import these interpretation files, allowing the user to skip re-analysis and proceed directly to preparation of files for uploading, or re-interpretation of data files using PmagPy starting with the prior interpretations as a basis.    In any case, the following interpretation files are supported (or could be): 
-%
-\customlink{import_redo}
-%
-%\begin{itemize}
-%\item {PmagPy redo file}:   This option copies the files used by \href{#zeq_redo.py}{zeq\_magic\_redo.py}, \href{#thellier_gui.py}{thellier\_gui.py}  and \href{#thellier_magic_redo.py}{thellier\_magic\_redo.py} and then runs them (see documentation in \href{#mk_redo.py}{mk\_redo.py} for file formats.  This will overwrite any existing interpretation files ({\it zeq\_specimen.txt} or {\it thellier\_specimens.txt}) files you may have created already, so be careful!  Also, this is the main way that the  \href{#thellier_gui.py}{thellier\_gui.py} shares information with the MagIC.py GUI, so import the redo file generated by the auto-interpreter (e.g., {\it thellier\_interpreter\_STDEV-OPT\_redo}  with this option and you will be able to use them within the MagIC.py GUI.  
-%\item DIR:  Not supported at this time $=>$ if desired send example file to {ltauxe@ucsd.edu}
-%\item LSQ:  Not supported at this time $=>$ if desired send example file to {ltauxe@ucsd.edu}{ltauxe@ucsd.edu}
-%\item PMM: Not supported at this time  $=>$if desired send example file to {ltauxe@ucsd.edu}
-%
-%\end{itemize}
-%
-%
-\customlink{ImportMagIC}
-%
-%\subsubsection{Copying over your MagIC formatted files}
-%If you have already some MagIC tables ready,  you can import them into your MagIC folder with this option.  For example, you might have a previous set of specimen interpretations in a {\it pmag\_specimen.txt} file, or age information (in an {\it er\_ages.txt} file.  All age information specific to a give sample or site can be documented in an {\it er\_ages.txt} file (see \url{http://earthref.org/MAGIC/metadata.htm}).  These will be assembled with the respective site/samples in the results table when you \href{#PrepareMagicConsole}{assemble your results}. Other examples might be a location table ({\it er\_locations.txt}) or a citation table ({\it er\_citations.txt}).  
-%
-% This option will copy your \href{#DataTables}{MagIC} formatted file into the MagIC Project Directory.  Be sure to use the standard file names or the MagIC GUI will ignore them.  
-%
-\customlink{AnalysisPlotsMenu}
-%
-%\subsection{Analysis and Plots Menu}
-%
-%After you have imported your various datafiles, you can process them using the tools in the \href{#AnalysisPlotsMenu}{Analysis and Plots menu}.    All of these options generate and execute command line calls for various \href{#PmagPy}{PmagPy} programs.  The {\bf MagIC.py} GUI uses default options because it ``knows'' the names of the files it has created, saving you from having to figure that out.   Many of these options require you to type things in on the command line, such as 'a' to s[a]ve plots, 'q' to quit, or simply return to increment the specimen name.  Follow the instructions for the specific program that are printed  in the terminal window   (see also the documentation in the section on \href{#PmagPy}{PmagPy} programs). Once the program has exited, control will be returned to the MagIC.py GUI.  
-%
-\customlink{customize_criteria}
-%
-%\begin{itemize}
-%\item Customize Criteria: here you can change your criteria for acceptance or rejection of data.
-%		\item Demagnetization Data:  allows you to call  the programs \href{#zeq_magic.py}{zeq\_magic.py} or \href{#demag_gui.py}.  These reads in the {\it magic\_measurements.txt} file created when you \href{#Combining_measurement_files}{combine} your imported  measurement files.  If you have \href{#ImportOrient }{imported orientation} information, it will make the plots using the geographic coordinate system. 
-%		\item Thellier-type experiments:  There are two options here.  The first calls the program \href{#thellier_magic.py}{thellier\_magic.py} and the second calls \href{#thellier_gui.py}{thellier\_gui.py}.  Both  read in the {\it magic\_measurements.txt} file created when you \href{#Combining_measurement_files}{combine} your imported  measurement files.   The {\bf thellier\_gui.py} program works a little differently than the other {\bf PmagPy} programs in that the output interpretations are   not immediately  available to {\bf MagIC.py} when you quit {\bf thellier\_gui.py}.  To use the interpretations, for example from  the auto-interpreter function, you must \href{#import_redo}  import the redo file as described under the Import menu.  You will find the auto-interpreter redo file in the  with the {\it thellier\_interpreter} folder.  
-%		 %\item Microwave experiments
-%                  \item Equal area: 
-%		\begin{itemize}
-%			\item Quick look - NRM directions:  This option first fishes out all the NRM measurements from the {\it magic\_measurements.txt} file and stores them in a file called {\it nrm\_measurments.txt}.  The measurement format is then converted to the {\it pmag\_specimen.txt} format using \href{#nrm_specimens_magic.py}{nrm\_specimens\_magic.py}, which also looks for an {\it er\_samples.txt} file and  performs geographic and stratigraphic rotations as available. The GUI will ask for desired coordinate system and level of plotting (by location, site, sample, etc. and then  call the program \href{#eqarea_magic.py}{eqarea\_magic.py} to plot the NRM directions. 
-%			\item General remanence directions:  You are given a choice of tables from {\it pmag\_specimens.txt} up to {\it pmag\_results.txt}, depending on the desired level. You may also choose from among the available coordinate systems and scope of the plot(s) (e.g., location, site, sample).   There are several methods available for estimated confidence bounds for the data set including Fisher, Bingham, Kent or bootstrap.  Plots are made with \href{#eqarea_magic.py}{eqarea\_magic.py}.   
-%			\item Anisotropy data - equal area plots: makes plots with the \href{#aniso_magic.py}{aniso\_magic.py} program.  You can choose the scope of the plot and the method for estimating confidence intervals.  
-%
-%		\item Hysteresis data:   calls \href{#hysteresis_magic.py}{hysteresis\_magic.py} to plot the data that you  \href{#ImportHysteresis}{imported} and \href{#Combining_measurement_files}{combined} into a {\it magic\_measurements.txt} file.  It generates a file {\it rmag\_hysteresis.txt} with all the hysteresis parameters calculated by the program.  These can be plotted using the 'Hysteresis ratio plots' command.  
-%		\item Hysteresis ratio plots: This calls \href{#dayplot_magic.py}{dayplot\_magic.py} to make plots of hysteresis ratios and the like in the {\it rmag\_hysteresis.txt} file created by \href{#hysteresis_magic.py}{hysteresis\_magic.py}. 
-%		\item IRM acquisition: This calls \href{#irmaq_magic.py}{irmaq\_magic.py} to make plots of IRM acquisition and back field curves.  It uses the {\it magic\_measurements.txt} file created when you \href{#Combining_measurement_files}{combine} your imported  IRM data.
-%		\item 3D-IRM experiment:   makes plots of the \nocite{lowrie90} 3D-IRM experiment of Lowrie (1990),  \nocite{lowrie90} using the program \href{#lowrie_magic.py}{lowrie\_magic.py}.   It uses the {\it magic\_measurements.txt} file created when you \href{#Combining_measurement_files}{combine} your imported  3D-IRM data and allows the option to normalize the intensity data by the NRM.
-%		\item Remanence versus depth/height:   makes plots using a call to \href{#core_depthplot.py}{core\_depthplot.py}.  The GUI allows customization of the plot with choice of data type (inclination, declination, etc.), time scale, depth scale, and customization of plot symbols.  If you have imported a \href{#IODP_core_summary}{core summary file}, you can plot the core tops as well.  There is a choice of depth scales with a common depth scale (mcd) as an option.   
-%		\item Anisotropy data versus depth/height:  makes plots using a call to \href{#ANI_depthplot.py}{ANI\_depthplot.py}, reading the {\it rmag\_anisotropy.txt} and {\it magic\_measurements.txt} files in the Project Directory.  
-%		\end{itemize}
-%		\item Reversals test: performs a bootstrap reversals test with the \href{#revtest_magic.py}{revtest\_magic.py} program.  You can choose coordinate system and selection criteria.  
-%		\item Fold test: performs a fold test with \href{#foldtest_magic.py}{foldtest\_magic.py} and allows choice of selection critieria.  Note - it takes a while so be patient and you need to have \href{#ImportMenu}{imported} structural corrections. 
-%
-%\end{itemize}
-%
-\customlink{PrepareMagic}
-%
-%\subsection{Prepare for MagIC}
-%Once all your data have been imported and interpreted using one of the interpretation tools outlined in the section on \href{#AnalysisPlotsMenu}{Analysis and Plots}, you can assemble the results into the various \href{#DataTables}{tables} expected by MagIC, e.g., the {\it pmag\_specimens, pmag\_samples, pmag\_sites} and {\it pmag\_results} tables (also various rock magnetic tables, if available).  
-%\begin{itemize}
-%		\item Assemble specimens: The various programs for interpreting measurement data like \href{#zeq_magic.py}{zeq\_magic.py} or \href{#thellier_magic.py}{thellier\_magic.py} produce {\it pmag\_specimens.txt} formatted files with names like {\it zeq\_specimens.txt} or {\it thellier\_specimens.txt}.  The directional data should be recalculated for various coordinate systems and the intensity data corrected for anisotropy corrections and the like.  All of these data need to be assembled into a single {\it pmag\_specimens.txt} file, which is what this option does.  
-%		
-%		\customlink{AssembleResults} 
-%		
-%		\item Assemble results:   After assembling the specimen data into a single {\it pmag\_specimens.txt} file, data must be averaged by sample and/or by site and stored in {\it pmag\_sample.txt} and {\it pmag\_site.txt} tables.  The directional data can be converted to VGPs and intensities into V[A]DMs, which are kept in the {\it pmag\_results.txt} table. Study level averages such as paleomagnetic pole positions can be calculated.  All of these operations are carried out by the program \href{#specimens_results_magic.py}{specimens\_results\_magic.py}.  
-%		\begin{itemize}  
-%			\item You have a choice of selection criteria (default, existing (created with the \href{#customize_criteria}{customize criteria} option, and none). 					
-%			\item For many applications, data are normally averaged first by sample, then by site and this is the default.  But and argument could be made that in certain circumstances (e.g.,  with intensity data in which each specimen is independent of the other), site averages could be made using all the specimen data together and not averaging by sample.  Choose  -aD to average directions by site and not by sample and -aI to average intensities by site and not by sample. Also, choose -sam to calculate sample level VGPs and VADMs if desired. Otherwise, the program will do this for site level data onlly. 
-%			\item For calculating VDMs, you need oriented inclinations and for VADMs, you need a latitude.  The latitude can be the present latitude or a reconstructed paleolatitude (model latitude).  To choose the present latitude, select '-lat' or \href{#ImportMenu}{import} a model latitude file and choose that option.
-%			\item  The -p option lets you  look at the data site by site to check if there are terrible errors.  If you want to reconsider some of the sample orientations, for example, you should use the option in the \href{#Utitlities}{Utitlities menu} to check the sample orientations for common mistakes.  
-%			\item You can just skip the directional (-xD) or intensity (-xI) calculations if they are not relevant (this speeds things up a bit). 
-%			\item If you want to calculate normal and reverse means for the study, select -pol. 
-%			\item You can choose which coordinate systems you want to include in the MagIC tables. The GUI sniffs through the options and presents them to you.  
-%			\item The MagIC database wants all non-synthetic data to have ages associated with them.  Site/sample specific ages are entered using the {\it er\_ages.txt} table (imported in the {Import er\_ages option} in the \href{#er_ages}{Import Menu}, but age bounds for the study must be entered so that \href{#specimens_results_magic.py}{specimens\_results\_magic.py} can assign age bounds for every result.   The GUI therefore asks for these age bounds.   Age units are a controlled vocabulary, so choose from this list:  [Ga, ka, Ma, years AD (+/-), Years BP, Years Cal AD (+/-) Years Cal BP].   If you enter nothing, the default age bounds will be 0 to 4.5 Ga.  
-%		\end{itemize}
-%		\item Prepare upload txt file:  The \href{http:earthref.org/MAGIC/search-beta}{MagIC Website} will import a specially formatted ascii file, parsing all the tables into their niches.  Choosing this option will create an {\it er\_locations.txt} file for you based on what is in the {\it er\_sites.txt} file.  It will ask you for the missing required information.  Then the GUI prepares a file called {\it upload.txt} which can be directly imported into the MagIC database and attached to the associated reference.  
-%\end{itemize}
-%
-%
-%
-%
-\customlink{Utilities}
-%
-%\subsection{Utilities Menu}
-%
-%\begin{itemize}
-%		\item Check sample orientations:  This program calls the program \href{#site_edit_magic.py}{site\_edit\_magic.py}.  It steps through the data site by site and allows you to evaluate orientation information, testing outliers against specific, common field mistakes (arrow wrong direction, wrong scratch mark, etc.) 
-%		\item Extract Results to table for publication:  After assembling your results, you can extract information from the {\it pmag\_results.txt} file as an tab delimited (excel ready) file or as a (my favorite) LaTex formatted table.  That way, the data in your publication will be identical to the data in the MagIC database (what a concept!).  This option allows you to do that using the program \href{#pmag_results_extract.py}{pmag\_results\_extract.py}.  It will create two files:  {\it Intensities.txt} and {\it Directions.txt}.  
-%		\item Map of VGPs:  makes plots using \href{#vgpmap_magic.py}{vgpmap\_magic.py}, which reads from the {\it pmag\_results.txt} file (where VGPs are stored).  To get VGPs, you need to \href{#AssembleResults}{assemble} your results first.   If you \href{#ImportMenu}{imported} orientation data, you can select the coordinate system.  You can also choose whether or not to `flip' the reverse VGPs and the location of the 'eye' in the orthographic plot.  
-%		\item Map of site locations: makes plots using \href{#basemap_magic.py}{basemap\_magic.py} which reads from the {\it er\_sites.txt} file.  Choosing high resolution requires that the  \href{#HighRes}{high resolution} datafiles be installed.  There are many more options available if you use the program on the command line - this is just for a `quick look'.
-%
-%\item Make IZZI exp. chart: The IZZI paleointensity experiment (Tauxe and Staudigel, 2004) \nocite{tauxe04} is a complicated protocol which requires some concentration to get the order of heating steps in the right order.  This utility calls \href{#chartmaker.py}{chartmaker.py} to make a chart to facilitate the laboratory procedure.  
-%\item Expected directions/paleolatitudes:  calls \href{#apwp.py}{apwp.py} to calculate paleodirectiions and paleolatitudes for a give location at a specified time, after assigning it a tectonic plate.  
-%\end{itemize}
-%
-%\subsection{Help Menu}
-%
-%Takes you to this Cookbook.
+%\begin{verbatim}
+%% ls PmagPy/*.py
+%apwp.py bootams.py fishrot.py.....
+%\end{verbatim}
+
+\customlink{standard_IO}
+
+\section {Redirecting input and output}
+
+Programs that operate at the command line level print  output to the screen and read input
+from the keyboard. This is
+known as ``standard input and output'' or ``standard I/O''.
+One of the nicest things about working at the command line level is the ability to redirect input and output.
+For example, instead of typing input to a program with the keyboard, it can
+be read from a file using the symbol {\bf $<$}.   Output can either be printed to the screen (standard output), redirected into a file using the symbol {\bf $>$}, appended to the end of a file with {\bf $>>$} or 
+used as input to another program with the pipe operator ({\bf$ |$}).
+
+
+
+\section{Text editors}
+
+There are many ways of
+editing text and the subject is beyond the scope of this documentation. Text editing is a blessing and a curse.  You either love it or
+hate it and in the beginning, and if you are used to programs like Word, you will certainly hate it. (And if you are used to a decent text editor, you will hate Word!).      But you can't use Word because the output is in a weird format that no scripting languages read easily.  So you have to use an editor that will produce a plain (ascii) file, like Notepad,  TextWrangler or Sublime Text.  \href{http://textwrangler.onfreedownload.com}{TextWrangler}  is freeware available for Macs and the notepad comes standard in the Windows operating system.   Fortunately for Mac users, Enthought Python's Canopy programming environment comes with its own text editor.   
+
+
+
 
 \customlink{PmagPy}
 
@@ -779,11 +889,9 @@ When you are finished importing all the measurement data you need, choose ``Next
 
 
 
-The {\bf PmagPy} software package is a comprehensive set of programs for paleomagnetists and rock magnetists.  For installation,  follow the instructions in the \href{#QuickStart}{Quick Start} Chapter in this cookbook.   
+The {\bf PmagPy} software package is a comprehensive set of programs for paleomagnetists and rock magnetists.  For installation,  follow the instructions in the \href{#quick_start}{Installing PmagPy} Chapter in this cookbook.   
 
-When you type something on your \href{#command_line}{command line}, your operating system looks for programs of the same name in special places.  These are special ``paths'' so the directory with your Python scripts has to ``be in your path''.  To inform the operating system of the new directory, you need to ``set your path''.    Follow the instructions on the website:
-\url{http://earthref.org/PmagPy/set_path.html} for your particular system.  
-
+When you type something on your \href{#command_line}{command line}, your operating system looks for programs of the same name in special places.  These are special ``paths'' so the directory with your Python scripts has to ``be in your path''.  To inform the operating system of the new directory, you need to ``set your path''.    It should have been set when you installed {\bf PmagPy}.    
 
  
  \section{General characteristics of PmagPy programs}
@@ -830,13 +938,8 @@ A link to these source code/help menu files is provided for each program listed 
 \label{ex:PmagPyEx}
 
 In all examples, the '\%' prompt stands for whatever command line prompt you have. 
-Download the package containing example data files  from: 
+The example datafiles referred to in the following are located in the {\it Datafiles} directory bundled with the {\bf PmagPy} software distribution. 
 
-\customlink{Datafiles}
-
- \url{https://github.com/ltauxe/PmagPy-Cookbook/blob/master/Datafiles_2.0.zip} 
- 
-\noindent right click on the 'Raw' tab to download the zip file to your downloads folder, then double click on it  to unzip the file.   Data files for the following examples can be found in the directory with the name of the program (except for measurement input files which are all in the {\it Measurement\_Import} folder.  
 
 
 \customlink{aarm_magic.py}
@@ -945,7 +1048,7 @@ Download the text file by clicking on the icon under the red arrow in:
 
   \includegraphics[width=15cm]{EPSfiles/tauxe12-magic.eps}
 
-Unpack the data using the program \href{#download_magic.py}{download\_magic.py}.  This will unpack the data into the different holes.  Change directories into Location\_2 (which contains the data for Hole U1359A).  Or, you can use the data in the {\bf ANI\_depthplot} directory of the \href{#Examples}{example data files}.
+Unpack the data using the program \href{#download_magic.py}{download\_magic.py}.  This will unpack the data into the different holes.  Change directories into Location\_2 (which contains the data for Hole U1359A).  Or, you can use the data in the {\bf ANI\_depthplot} directory of the \href{#Datafiles}{example data files}.
 
 
 \begin{verbatim}
@@ -1097,7 +1200,7 @@ use the direction of the $X$ coordinate of the specimen measurement system.  To 
 
 \begin{verbatim}
 % azdip_magic.py -f azdip_magic_example.dat -ncn 1 -mcd FS-FD:SO-POM
-      -loc "Northern Iceland"
+      -loc ``Northern Iceland``
 
 Data saved in  er_samples.txt
 \end{verbatim}
@@ -1320,6 +1423,8 @@ The chart allows you to fill in the file name in which the data were stored and 
 infield steps.  The designations `Z', `I', 'T', 'and 'P'  are for zero-field, in-field, pTRM tail checks and pTRM checks respectively.  There are fields for the date of the runs, the fields measured in different zones in the oven prior to the start of the experiment, and the start and stop times.  The numbers, e.g., 100.1 are the treatment temperatures (100) followed by the code for each experiment type.  These get entered in the treatment fields in the SIO formatted magnetometer files (see \href{#SIO_magic}{sio\_magic.py}).
 
 \customlink{chi_magic.py}
+
+
 \subsection{chi\_magic.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch8.html#ch8}{[Essentials Chapter 8]} \& \href{#MagICDatabase}{[MagIC Database]}\label{ex:chi_magic}
 \href{https://github.com/ltauxe/PmagPy/blob/master/chi_magic.py}{[chi\_magic docs]}
@@ -1343,7 +1448,9 @@ enter s[a]ve to save files,  [return] to quit
 
 You can see the dependence on temperature, frequency and applied field.  These data support the suggestion that there is a strong superparamagnetic component in these specimens.   
 
-\customlink{combine_magic}
+\customlink{combine_magic.py}
+
+
 \subsection {combine\_magic.py} \href{#MagICDatabase}{[MagIC Database]}
 \label{ex:combine_magic}
 \href{https://github.com/ltauxe/PmagPy/blob/master/combine_magic.py}{[combine\_magic docs]}
@@ -1353,6 +1460,8 @@ MagIC tables have many columns only some of which are used in a particular insta
 
 
 \customlink{common_mean.py}
+
+
 \subsection{common\_mean.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch12.html#ch12}{[Essentials Chapter 12]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/common_mean.py}{[common\_mean docs]}
@@ -1409,6 +1518,8 @@ S[a]ve plots, <Return> to quit
 Apparently the data (cumulative distribution functions) are entirely consistent with the expected direction (dashed lines are the cartesian coordinates of that).   
 
 \customlink{cont_rot.py}
+
+
 \subsection{cont\_rot.py} 
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch16.html#ch16}{[Essentials Chapter 16 }and \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ap1.html#polerot}{Essentials Appendix A.3.5.]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/cont_rot.py}{[cont\_rot docs]}
@@ -1556,12 +1667,12 @@ Note that the default place for the PmagPy programs to look for criteria is in {
   \includegraphics[width=15cm]{EPSfiles/dayplot.eps}}
   
   
-\customlink{demag_gui.py}
+
 \subsection{demag\_gui.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch7.html}{[Essentials Chapter 7]}
 \href{https://github.com/ltauxe/PmagPy/blob/master/demag_gui.py}{[demag\_gui docs]}
 
-HERE WE NEED A QUICKY TUTORIAL!!!!   
+The program \href{#DemagGUI}{demag\_gui.py} is used by \href{#QuickMagIC.py}{Quick\_MagIC.py} for interpreting demagnetization experimental data.   See \href{#DemagGUI}{demag\_gui.py} {this link} for guidances. 
 
 
 \customlink{di_eq.py}
@@ -2523,7 +2634,7 @@ tr245i1    68.00   -26.0 204 25
   The 15 measurements for each specimen, along with orientation information and the specimen name were saved in the file {\it k15\_example.dat}.    Convert these to the MagIC format using the program {\bf k15\_magic.py}:
 
 \begin{verbatim}
-% k15_magic.py -spc 0 -f k15_example.dat -loc "Troodos Ophiolite"
+% k15_magic.py -spc 0 -f k15_example.dat -loc ``Troodos Ophiolite``
 Data saved to:  ./er_samples.txt ./rmag_anisotropy.txt ./rmag_results.txt ./k15_measurements.txt
  \end{verbatim}
 
@@ -2826,10 +2937,10 @@ Because this program imports data into the MagIC database, specimens need also t
 Someone named Lima Tango has measured a  synthetic specimen named {\it myspec}  for hysteresis and saved the data in a file named {\it agm\_magic\_example.agm}.   The backfield IRM curve for the same specimen was saved in {\it agm\_magic\_example.irm}.  Use the program {\bf AGM\_magic.py} to import the data into a magic\_measurements formatted output file.  These were measured using cgs units, so be sure to set the units switch properly.   Combine the two output files together using \href{#combine_magic.py}{combine\_magic.py}.    [This can be plotted using {\bf hysteresis\_magic.py} or {\bf quick\_hyst.py}.]    {\bf hysteresis\_magic.py} will calculate various hysteresis parameters and put them in the relevant magic tables for you.  ]   
 s
 \begin{verbatim}
-% AGM_magic.py -spn myspec --usr "Lima Tango" -f agm_magic_example.agm -u cgs 
+% AGM_magic.py -spn myspec --usr ``Lima Tango`` -f agm_magic_example.agm -u cgs 
 
 results put in  ./agm_measurements.txt
-% AGM_magic.py -spn myspec --usr "Lima Tango" -f agm_magic_example.irm -u cgs  -bak
+% AGM_magic.py -spn myspec --usr ``Lima Tango`` -f agm_magic_example.irm -u cgs  -bak
 
 results put in  ./irm_measurements.txt
 % combine_magic.py -F magic_measurements.txt -f agm_measurements.txt irm_measurements.txt
@@ -2883,10 +2994,10 @@ The first line is a comment, the second is the latitude and longitude followed b
 
 For detailed description of the file format, check \href{http://cires.colorado.edu/people/jones.craig/PMag3.html}{the PaleoMag} home page.   
 
-Use the program {\bf CIT\_magic.py} to import the data files from the example data files in the {\it CIT\_magic} directory of the {\it Measurement\_Import} directory of the \href{#Datafiles}{Datafiles\_2.0} directory.   The location name was ``Mamainse Point'', the \href{#naming_schemes}{naming convention} was \#2 and they were collected by drilling and with a magnetic compass.  
+Use the program {\bf CIT\_magic.py} to import the data files from the example data files in the {\it CIT\_magic} directory of the {\it Measurement\_Import} directory of the \href{#Datafiles}{Datafiles} directory.   The location name was ``Mamainse Point'', the \href{#naming_schemes}{naming convention} was \#2 and they were collected by drilling and with a magnetic compass.  
 
 \begin{verbatim} 
- CIT_magic.py  -f bMP.sam -loc "Mamainse Point" -spc 0 -ncn 2 -mcd 'FS-FD:SO-MAG'
+ CIT_magic.py  -f bMP.sam -loc ``Mamainse Point`` -spc 0 -ncn 2 -mcd 'FS-FD:SO-MAG'
 Mamainse Point first run (samples collected 10/05, samples run 04/06)
 
 specimens stored in  ./er_specimens.txt
@@ -3059,7 +3170,7 @@ results put in  magic_measurements.txt
 \customlink{IODP_csv_magic.py}
 \subsubsection{IODP\_csv\_magic.py}
 
-Just for fun, download the whole core data from IODP expedition 318, Site U1359, Hole A. (Section Half set to 'A') from the \href{#LIMS}{IODP LIMS database} using WebTabular.    These data were used in Tauxe et al. (2012) \nocite{tauxe12} after some editing (removal core ends and disturbed intervals).   Convert them into the MagIC format using {\bf ODP\_csv\_magic.py}:
+Just for fun, download the whole core data from IODP expedition 318, Site U1359, Hole A. (Section Half set to 'A') from the \href{#LIMS}{IODP LIMS database} using WebTabular.    These data were used in \href{http://dx.doi.org/10.1029/2012PA002308}{Tauxe et al. (2012)} \nocite{tauxe12} after some editing (removal core ends and disturbed intervals).   Convert them into the MagIC format using {\bf ODP\_csv\_magic.py}:
 
 \begin{verbatim}
 % IODP_csv_magic.py -f SRM_318_U1359_A_A.csv 
@@ -3073,7 +3184,8 @@ data stored in  ./magic_measurements.txt
 
 This takes a while so be patient....   
 
-If you also downloaded the \href{#IODP_core_summary}{core summary} data from the \href{#LIMS} {LIMS} database, you can plot the data and the core tops using \href{#core_depthplot.py}{core\_depthplot.py} 
+You can also downloaded the {core summary} data from the \href{#LIMS} {LIMS} database and convert it to the MagIC format using \href{#QuickMagIC.py}{QuickMagIC.py}.  
+Now you can plot the data and the core tops using \href{#core_depthplot.py}{core\_depthplot.py} 
 
 
 \customlink{PMD_magic.py}
@@ -3107,7 +3219,7 @@ The first line is a comment line.  The second line has the specimen name, the co
 Use {\bf PMD\_magic.py} to convert the file {\it ss0101a.pmd} in the directory 'PMD' in the 'PMD\_magic' folder of the {\it Measurement\_import} directory in the example \href{#Datafiles}{datafiles} directory.  These were taken at a location named 'Summit Springs' and have a naming convention of the type XXXX[YYY], where  YYY is sample designation with Z characters from site XXX, or \customlink{naming_schemes}naming convention \# 4-2.  A single character distinguishes the specimen from the sample (-spc 1).  All samples were oriented with a magnetic compass.  
 
 \begin{verbatim}
-% PMD_magic.py -f ss0101a.pmd -loc "Summit Springs" -ncn 4-2 -spc 1 -mcd SO-MAG -F ss0101a.magic
+% PMD_magic.py -f ss0101a.pmd -loc ``Summit Springs`` -ncn 4-2 -spc 1 -mcd SO-MAG -F ss0101a.magic
  results put in  ./magic_measurements.txt
 sample orientations put in  ./er_samples.txt
 \end{verbatim}
@@ -3115,14 +3227,14 @@ sample orientations put in  ./er_samples.txt
 Because each file must be imported separately, you should use a different name for the output file for each input file (otherwise you will overwrite the default each time) and set the switch  for sample file to append for subsequent imports:
 
 \begin{verbatim}
-% PMD_magic.py -f ss0102a.pmd -loc "Summit Springs" -ncn 4-2 -spc 1 -mcd SO-MAG -F ss0102a.magic-Fsa er_samples.txt 
+% PMD_magic.py -f ss0102a.pmd -loc ``Summit Springs`` -ncn 4-2 -spc 1 -mcd SO-MAG -F ss0102a.magic-Fsa er_samples.txt 
 sample information will be appended to  ./er_samples.txt
 results put in  ./magic_measurements.txt
 sample orientations put in  ./er_samples.txt
 \end{verbatim}
 After you finish importing all the data, combine the individual files together with \href{#combine_magic.py}{combine\_magic.py} and look at them with, for example, \href{#zeq_magic.py}{zeq\_magic.py}.  
 
-(see also \href{#PMM_redo.py}{PMM\_redo.py}  for importing interpretations made on these files using the UCSC (Jarboe)   software).  
+%(see also \href{#PMM_redo.py}{PMM\_redo.py}  for importing interpretations made on these files using the UCSC (Jarboe)   software).  
 
 \customlink{sio_magic.py}
 \subsubsection {sio\_magic.py}
@@ -3355,7 +3467,7 @@ sr01e2 SO-SUN   333.7    67.0
  \href{https://github.com/ltauxe/PmagPy/blob/master/orientation_magic.py}{[orientation\_magic docs]}
  
      
-  Try to import the file {\it orientation\_example.txt} into the {\it er\_samples.txt} and {\it er\_sites.txt} files using {\bf orientation\_magic.py}.  See Section~\ref{sect:field_info} for details about the {\it orient.txt} file format.  It has field information for a few sites.  The samples were oriented with a Pomeroy orientation device  (the default) and it is desirable to calculate the magnetic declination from the IGRF at the time of sampling (also the default).  Sample names follow the rule that the sample is designated by a letter at the end of the site name (convention \#1 - which is the default).  So we do this by:
+  Try to import the file {\it orientation\_example.txt} into the {\it er\_samples.txt} and {\it er\_sites.txt} files using {\bf orientation\_magic.py}.  Click \href{#field_info}{here}  for details about the {\it orient.txt} file format.  It has field information for a few sites.  The samples were oriented with a Pomeroy orientation device  (the default) and it is desirable to calculate the magnetic declination from the IGRF at the time of sampling (also the default).  Sample names follow the rule that the sample is designated by a letter at the end of the site name (convention \#1 - which is the default).  So we do this by:
   
   \begin{verbatim}
 orientation_magic.py -f orient_example.txt 
@@ -3528,7 +3640,7 @@ data saved in:  ./Directions.txt ./Intensities.txt ./SiteNfo.txt
 This creates tab delimited files that can be incorporated into a paper, for example.   You can also export the information in LaTeX format if you prefer. 
 
 
-\customlink{PMM_redo.py}
+%\customlink{PMM_redo.py}
 %\subsection{PMM\_redo.py}
 
 %ADD
@@ -3713,7 +3825,7 @@ Results of Watson V test:
 
 Watson's V:           2.7
 Critical value of V:  6.0
-"Pass": Since V is less than Vcrit, the null hypothesis that the
+``Pass``: Since V is less than Vcrit, the null hypothesis that the
  two populations are drawn from distributions that share a 
  common mean direction (antipodal to one another) cannot be rejected.
 
@@ -4069,43 +4181,38 @@ In any case, the declination is 154.2$^{\circ}$.
 %
 \customlink{thellier_GUI.py}
 
-\subsection{thellier\_GUI.py}
+\subsection{thellier\_gui.py}
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch10.html#ch10}{[Essentials Chapter 10]} and \href{#MagIC}{[MagIC}]
 \href{https://github.com/ltauxe/PmagPy/blob/master/Thellier_GUI_tutorial.pdf}{[Thellier\_GUI\_tutorial.pdf]}
 
-The program {\bf thellier\_gui.py}  combines functions from \href{#thellier_magic.py}{thellier\_magic.py} and new tools described by  \href{http://magician.ucsd.edu/~ltauxe/CV/open/shaar12.pdf}{Shaar and Tauxe (2012)} in a user-friendly graphical user interface (GUI).  It can also be called from within \href{#QuickMagIC.py}{QuickMagIC.py}, using files already prepared in the MagIC Project Directory and the interpretations from {\bf thellier\_gui.py} are part of the workflow of  \href{#QuickMagIC.py}.   This section is a brief introduction on how to use {\bf thellier\_gui.py} as a stand alone application.  For complete documentation, see:
-
- \url{https://github.com/ltauxe/PmagPy/blob/master/Thellier_GUI_tutorial.pdf}
+The program {\bf thellier\_gui.py}  combines functions from \href{#thellier_magic.py}{thellier\_magic.py} and new tools described by  \href{http://dx.doi.org/10.1002/ggge.20062}{Shaar and Tauxe (2013)} \nocite{shaar13} in a user-friendly graphical user interface (GUI).  It can also be called from within \href{#QuickMagIC.py}{QuickMagIC.py}, using files already prepared in a  \href{#ThisProject}{This Project} directory and the interpretations from {\bf thellier\_gui.py} are part of the workflow of the  \href{#QuickMagIC.py}{QuickMagIC} GUI.   This section is a brief introduction on how to use {\bf thellier\_gui.py} as a stand alone application.  
  
-\noindent  A complete list of the definitions for paleointensity statistics used by Thellier\_GUI.py is available here:
+\noindent  A complete list of the definitions for paleointensity statistics used by Thellier\_GUI.py is available as a supplement to the article by \href{#http://dx.doi.org/10.1002/2013GC005135}{Paterson et al., 2014}  \nocite{paterson14} and available for download here:
  
-  \url{https://github.com/ltauxe/PmagPy/blob/master/Thellier_GUI_Paleointensity_Statistics_Definitions.pdf}
-
+  \url{http://onlinelibrary.wiley.com/store/10.1002/2013GC005135/asset/supinfo/ggge20412-sup-0001-suppinfoCORRECTED.pdf?v=1&s=e1c3ab0a86c942d1039f6d2e15496aa172dc86ec}
+  
 
 \subsubsection{Starting the GUI}
-The GUI can be opened by typing in the  \href{#command_line}{Terminal}  window:
+The GUI can be opened by typing {\bf thellier\_gui.py}  on the  \href{#command_line}{command line}.
 
-\begin{verbatim}
-% thellier_gui.py
-\end{verbatim}
 \customlink{choose_directory}
 A ``choose project directory'' dialog window will appear as soon as the GUI is started.
-
-	\includegraphics[width=15cm]{EPSFiles/Screenshot_choose_directory.eps}
-	
-
- The \href{#Project_Directory}{Project Directory} should include a file named ``magic\_measurements.txt'' .  To make this use the \href{#QuickMagIC.py} {QuickMagIC.py} GUI to convert your data files to the MagIC format.  Also, if a file named "rmag\_anistropy.txt" exists, then the program reads the anisotropy data from {\it rmag\_anistropy.txt }. Reading and processing the measurements files may take several seconds, depending on the number of the specimens.
+%
+%	\includegraphics[width=15cm]{EPSFiles/Screenshot_choose_directory.eps}
+%	
+%
+Your  \href{#Project_Directory}{ThisProject} directory should include a file named {\it magic\_measurements.txt} (created for example by \href{#QuickMagIC.py}{\bf QuickMagIC.py}.   If a file named {\it rmag\_anisotropy.txt} is in the project directory, then the program reads in the anisotropy data. Reading and processing the measurements files may take several seconds, depending on the number of the specimens.
 
 
 \subsubsection{Reading and compiling measurements data}
-When the MagIC project directory is selected, the program  reads all the measurement data, checks them, processes them and sorts them. If Non-linear-TRM (NLT) data exist in {\it magic\_measurement.txt}  then the program tries to process the data using Equations (1)-(3) in \citet{shaar10}.  The program reads {\it magic\_measurement.txt}, and processes the measurements for presentation as Arai  and Zijderveld plots. 
-We recommend that you check all the warnings and errors in {\it Thellier\_GUI.log} before starting to interpret the data.  For details about warnings and error messages during these steps, consult the tutorial document:  \href{https://github.com/ltauxe/PmagPy/blob/master/Thellier_GUI_tutorial.pdf}{Thellier\_GUI\_tutorial.pdf}.  Also, consult the Preferences to change certain plotting options. 
+When your \href{#Project_Directory}{ThisProject}  project directory is selected, the program  reads all the measurement data, checks them, processes them and sorts them. If non-linear-TRM (NLT) data exist in {\it magic\_measurement.txt}  then the program tries to process the data using Equations (1)-(3) in \href{#http://dx.doi.org/MAGIC/doi/10.1016/j.epsl.2009.12.022}{Shaar et al., 2010}. \nocite{shaar10}  The program reads {\it magic\_measurement.txt}, and processes the measurements for presentation as Arai  and Zijderveld plots. 
+We recommend that you check all the warnings and errors in {\it Thellier\_GUI.log} before starting to interpret the data.  For details about warnings and error messages during these steps, consult the tutorial document in the {\it thellier\_GUI} folder in  \href{#Datafiles}{Datafiles}.  Also, consult the Preferences to change certain plotting options. 
 
 \subsubsection{Main panel}
 
 This figure shows a snapshot of the main panel. 
 
-	\includegraphics[width=15cm]{EPSFiles/Screenshot_main_panel.eps}
+	\includegraphics[width=30cm]{EPSFiles/Screenshot_main_panel.eps}
 	
 \noindent
 	The top field in the  panel includes the following buttons/controls (from left to right):
@@ -4125,7 +4232,7 @@ This figure shows a snapshot of the main panel.
 The center of the main panel has these elements:
 
 \begin{itemize}
-\item {\bf measurements text panel:} Four columns of the measurement data: Step is "N" for NRM, "Z" for zero field step, "I" for infield step, "P" for pTRM check, and "T" for tail check. The temperature of each step is given in C. Also shown  declination, inclination and moment (in units of $Am^2$) 
+\item {\bf measurements text panel:} Four columns of the measurement data: Step is ``N`` for NRM, ``Z`` for zero field step, ``I`` for infield step, ``P`` for pTRM check, and ``T`` for tail check. The temperature of each step is given in C. Also shown  declination, inclination and moment (in units of $Am^2$) 
 \item {\bf Arai plot:}  Arai plot normalized by $NRM_0$. blue circles are zero field steps, red circles are infield steps, triangles are pTRM checks, blue squares are tail checks. Temperatures are displayed near data points. Temperature bounds and best fit line are marked in green. 'SCAT box' is marked with dashed lines (only if SCAT is True). 
 \item {\bf Zijderveld plot:}  A Zijderveld plot of the NRM step.  The x axis is rotated to the direction of the NRM, blue is the x-y  projection, and red is x-z projection.
 \item {\bf Equal area plot:}  An equal area projections  of the NRM steps. solid circles are positive inclination. open circles are negative inclinations.  
@@ -4133,87 +4240,85 @@ The center of the main panel has these elements:
 \item {\bf sample data:}  If at least two specimens have a saved interpretation, then their values are displayed on this plot. The mean $\pm$ standard deviation of the mean are marked as  horizontal lines. 
 \end{itemize}
 
-The bottom of the main panel include paleointensity statistics. The first line has  the threshold values (empty if N/A). The second line is the specimen's statistics. For details see Appendix A1 in \href{http://magician.ucsd.edu/~ltauxe/CV/open/shaar12.pdf}{Shaar and Tauxe (2012)}. \nocite{shaar12}
-
-
-\subsubsection{ Tutorial by example}
- If you have not already done so, download  the example data files for PmagPy from\\  \url{http://earthref.org/PmagPy/Datafiles_2.0.zip}\\ 
- There are two folder located under the folder  {\it thellier\_gu}: SU1\_example and Tauxe\_2006\_example.
-
-
-{Case study 1: SU1\_example:}
-
-Open a new \href{#command_line}{Terminal window} and fire up the program on the command line:
-\begin{verbatim}
+The bottom of the main panel include paleointensity statistics. The first line has  the threshold values (empty if N/A). The second line is the specimen's statistics. For details see Appendix A1 in \href{http://dx.doi.org/10.1002/ggge.20062}{Shaar and Tauxe (2013)}. \nocite{shaar13}
+%
+%\subsubsection{ Tutorial by example}
+% If you have not already done so, locate  the example data files for PmagPy in the \href{#Datafiles}{Datafiles} directory bundled with the {\bf PmagPy} software package.   There are two folders located in the{\it thellier\_gui} example foler: SU1\_example and Tauxe\_2006\_example.
+%
+%
+%{Case study 1: SU1\_example:}
+%
+%Find your \href{#command_line}{ command line} and launch the program:
+%\begin{verbatim}
 %thellier_gui.py
-\end{verbatim}
-A \href{#choose_directory} {choose directory} dialog window will appear. Select the SU\_1 project directory and click on the ``choose'' button.
-
-\begin{itemize}
-\item{Manual interpretation}
-Manual interpretation is the conventional approach of selecting temperature bounds for each specimen. Here, as example, we will interpret one sample, su100601,  manually.
-\customlink{acceptance_criteria}
-
-\begin{itemize}
-\item Set acceptance criteria: From the menu-bar choose  Analysis $\rightarrow$ Acceptance criteria $\rightarrow$ Change acceptance criteria. A criteria dialog box will appear.
-\item In the first line (specimen's statistics) set the following values: n=3, int\_ptrm\_n=2, SCAT=false (unchecked), gap\_max=0.5, f\_vds=0.75, beta=0.1, MAD=6, DRATS=20. delete the values in the other boxes (empty boxes). 
-\item In the second line (Sample's acceptance criteria) set the following values: int\_n=3. delete the value in the other boxes.
-\item In the third line (Sample mean calculation method: STDEV-OPT) check the Enable/Disable box, and set the following values: int\_sigma=6, int\_sigma\_perc=10. Delete values in the other boxes. Figure 3 shows how it should look. Click on the OK button. A message dialog will appear telling you the criteria that you chose are saved in a file name pmag\_criteria.txt. The next time you will open the GUI in this project directory, these criteria will automatically be chosen. Click OK on the message box.
-\item Manual interpretation of sample su100601: choose specimens su100601a from the specimen list. choose temperature bounds from the Tmin/Tmax windows: 200 and 580. B\_anc shows 61.7 in green, which means that this interpretation passes the specimen's acceptance criteria. Now, change Tmax to 530.  B\_anc window change color to red, and also the fvds window (the row on the bottom of the GUI). This is an indication that the interpretation did not meet the criterion for fvds. Change  Tmax to 580 (as before) and press "save" button. The interpretation in saved. 
-\item Click on the next button to choose the next specimen (su100601b). Before analyzing this specimen, press on the "previous" button, so you can see that your previous interpretation was saved. click on "next" to return again to specimen su100601b. Find  temperature bounds that pass the criteria (for example 200,580). Make sure that all colors are green, and click on the "save" button. Go over all the other specimens in the sample (su10060a to su100601g). you will find that three specimens can pass: a,c, and g. Look at the Sample data figure (top right) it shows the saved interpretation for all the specimens in the sample, and the mean $\pm$  standard deviation of the mean. 
-\item To save all your interpretation into files, choose from the menubar Analysis $\rightarrow$ Save current interpretation. Three files will be generated in the project directory:
-\begin{itemize}
-\item thellier\_GUI.redo (the temperature bounds for each specimen):
-\begin{verbatim}
-su100601a 473 853
-su100601c 473 853
-su100601g 473 853
-\end{verbatim}
-Note that the temperature bounds are in Kelvin. 
-\item {\it thellier\_GUI.specimens.txt}: (the paleointensity statistics for each specimen - according to the headers. It is easy to view the content of this file using Excel):
-\begin{verbatim}
-su100601a	su100601	61.7	200	580	40.0	1.07	1.01	15	8	0.77	0.87	0.89	0.14	0.02	N/A	0.63	N/A	5.11	4.14	PASS
-su100601c	su100601	54.4	200	580	40.0	0.94	N/A	15	8	0.60	0.78	0.79	0.23	0.01	N/A	5.19	N/A	2.51	1.33	PASS
-su100601g	su100601	58.4	200	580	40.0	1.00	1.01	15	8	0.70	0.83	0.85	0.19	0.02	N/A	2.80	N/A	3.12	1.96	PASS
-\end{verbatim}
-\item {\it thellier\_GUI.samples.txt:} (the paleointensity statistics of the samples):
-\end{itemize}
-\begin{tabular}{cccccc}
-\hline
-er\_sample\_name &sample\_int\_n&sample\_int\_uT&sample\_int\_sigma\_uT&sample\_int\_sigma\_perc\\
-su100601 &	3&	58.2&	3.0&	5.1\\
-\hline
-\end{tabular}
-
-
-\item You can save the Arai plot (or any other plots) from the File menu. Choose  file  $\rightarrow$ Save Plot $\rightarrow$ Save Arai plot. A file dialog window will appear. You can change the format of the figure in the bottom tab (pdf, svg, or png), but you can also save as other format by adding the appropriate suffix to the file name.
-\item close the GUI: File  $\rightarrow$ Quit.
-\item Re-open the GUI as before (by writing the command  ``thellier\_gui.py''  in the terminal window) and choose the same working directory (SU1\_example). Notice now that the criteria that you set before are automatically used. To import your previous interpretations and continue working on this dataset choose from the menu bar Analysis $\rightarrow$ import previous interpretation. Choose thellier\_GUI.redo and click on the 'open' button.
-\end{itemize}
-
-\item{Automatic interpretation - \it{thellier\_auto\_interpreter:}}
-Instead of trying to find manually the most appropriate temperature bounds, the  {\bf thellier\_auto\_interpreter.py} program allows a fast and consistent way to choose the temperature bounds for the specimens. For details see \href{http://magician.ucsd.edu/~ltauxe/CV/open/shaar12.pdf}{Shaar and Tauxe (2012)}.  \nocite{shaar12}
-\begin{itemize}
-\item We will use the same \href{#acceptance_criteria }{acceptance criteria}.
-\item Choose from the menu bar Auto interpreter $\rightarrow$ Run Thellier auto interpreter. The interpreter will run approximately 30 seconds. When its done, a message window will appear saying that the interpreter finished successfully (if not, check for errors in the terminal window, or in a file name {\it thellier\_interpreter.log}  located in a folder named {\it thellier\_interpreter}. If the issue cannot be resolved send an e-mail with the description of the problem to rshaar@ucsd.edu). Click OK in the message window.
-\item The automatic interpretations are automatically saved, and we can review them on the Arai plots.  Let's look, for example, at the sample we interpreted  manually: su100601. Choose specimen su100601a from the specimens list. At first glance, the choice seems strange because the automatic interpretation chose temperature bounds 0 and 580. A choice between 200 and 580 may seem more reasonable as it provides an nearly straight line. The sample data figure explains this issue. The {\bf thellier\_auto\_interpreter.py} program chooses the interpretations that minimize the standard deviation of the sample's mean. Six specimens from this sample passed the criteria, and the value of su100601a is much higher than the remaining five. So, the thellier\_auto\_interpreter chose the 'acceptable' interpretation with the shallowest  slope. Go over the other specimens in the sample, and review the automatic interpretations. If you want, you can change the automatic interpretation, and save your own ``manual'' interpretation by choosing Analysis $\rightarrow$ Save current interpretation. Note that the output of {\bf thellier\_auto\_interpreter.py} is sensitive to the choice of the acceptance criteria, and different criteria may lead to significantly different final results. 
-\end{itemize}
-\item{Choosing the optimal criteria - \it{thellier\_optimizer\_2d:}}
-\href{http://magician.ucsd.edu/~ltauxe/CV/open/shaar12.pdf}{Shaar and Tauxe (2012)} \nocite{shaar12} discuss a method to choose the optimal specimen's acceptance criteria. Here, we follow the example given in this paper. \href{http://magician.ucsd.edu/~ltauxe/CV/open/shaar12.pdf}{Shaar and Tauxe (2012)} suggested using  seven statistics for specimen's acceptance criteria. The choice of four of which is trivial, and the remaining three are MAD, FRAC and $\beta$. The thellier\_optimizer\_2D helps finding the optimal values for FRAC and $\beta$.  The thellier\_optimizer\_2D  required three types of inputs: 'fixed\_criteria", "test\_groups", and "test\_samples", as described below:  
-\begin{itemize}
-\item The test groups are defined in an "er\_sample" file. An example for this file is given in working folder SU-1 named  "optimizer\_test\_groups.txt". Open this file in Excel to understand its syntax. The first line is a general header. The rest of the file include sample name, group name, and comments. 
-\item To run the optimizer choose from the menu bar Optimizer $\rightarrow$ Run Thellier optimizer. click OK in the  message dialog. The first step is setting the 'fixed\_criteria". We choose for the specimen's criteria: n=3, int\_ptrm\_n=2,SCAT=checked, gap\_max=0.6, MAD=5.0. We choose for the sample's criteria:int\_n=3, int\_n\_outlier\_check=6, EnableSTDEV-OPT, int\_sigme\_uT=5, int\_sigma\_perc=6. The rest of the boxes should be empty. click OK. click OK on the message window that will appear.
-\item The thellier\_optimizer\_2D dialog window will appear. The first two rows of controls for choosing the range for $\beta$ and FRAC. choose beta from 0.05 to 0.15 in steps of 0.1 and FRAC from 0.7 to 0.9 in step of 0.02. \\
-Inert the following functions to the text panel:\\
-study\_sample\_n\\
-max\_group\_int\_sigma\_uT\\
-((max\_group\_int\_sigma\_uT $<$= 5) or (max\_group\_int\_sigma\_perc $<$= 6)) and  int(study\_sample\_n) \\
-click on the "Check function syntax" button. If there are no typos, then the text box below the button should be PASS.\\
-click on the "Choose optimizer group file" button. A file dialog window will appear. choose the file "optimizer\_test\_groups.txt". Click the button "Run Optimizer" to start. The runtime using these parameter is about 8 minutes. `
-\item All the output files of the optimizer are saved in a folder named "optimizer" (see section 4.4). Compare the figures in the 'pdf' folder with Figure 7 in \href{http://magician.ucsd.edu/~ltauxe/CV/open/shaar12.pdf}{Shaar and Tauxe (2012)}.  
-\item The figure in optimization\_function\_2.pdf suggest using $\beta \leq$0.10 and FRAC  $ \geq $0.79. Set these values as acceptance criteria, and run thellier\_auto\_interpreter.  
-\end{itemize}
-\end{itemize}
+%\end{verbatim}
+%A \href{#choose_directory} {choose directory} dialog window will appear. Select the SU\_1 project directory and click on the ``choose'' button.
+%
+%\begin{itemize}
+%\item{Manual interpretation}
+%Manual interpretation is the conventional approach of selecting temperature bounds for each specimen. Here, as example, we will interpret one sample, su100601,  manually.
+%\customlink{acceptance_criteria}
+%
+%\begin{itemize}
+%\item Set acceptance criteria: From the menu-bar choose  Analysis $\rightarrow$ Acceptance criteria $\rightarrow$ Change acceptance criteria. A criteria dialog box will appear.
+%\item In the first line (specimen's statistics) set the following values: n=3, int\_ptrm\_n=2, SCAT=false (unchecked), gap\_max=0.5, f\_vds=0.75, beta=0.1, MAD=6, DRATS=20. delete the values in the other boxes (empty boxes). 
+%\item In the second line (Sample's acceptance criteria) set the following values: int\_n=3. delete the value in the other boxes.
+%\item In the third line (Sample mean calculation method: STDEV-OPT) check the Enable/Disable box, and set the following values: int\_sigma=6, int\_sigma\_perc=10. Delete values in the other boxes. Figure 3 shows how it should look. Click on the OK button. A message dialog will appear telling you the criteria that you chose are saved in a file name pmag\_criteria.txt. The next time you will open the GUI in this project directory, these criteria will automatically be chosen. Click OK on the message box.
+%\item Manual interpretation of sample su100601: choose specimens su100601a from the specimen list. choose temperature bounds from the Tmin/Tmax windows: 200 and 580. B\_anc shows 61.7 in green, which means that this interpretation passes the specimen's acceptance criteria. Now, change Tmax to 530.  B\_anc window change color to red, and also the fvds window (the row on the bottom of the GUI). This is an indication that the interpretation did not meet the criterion for fvds. Change  Tmax to 580 (as before) and press ``save`` button. The interpretation in saved. 
+%\item Click on the next button to choose the next specimen (su100601b). Before analyzing this specimen, press on the ``previous`` button, so you can see that your previous interpretation was saved. click on ``next`` to return again to specimen su100601b. Find  temperature bounds that pass the criteria (for example 200,580). Make sure that all colors are green, and click on the ``save`` button. Go over all the other specimens in the sample (su10060a to su100601g). you will find that three specimens can pass: a,c, and g. Look at the Sample data figure (top right) it shows the saved interpretation for all the specimens in the sample, and the mean $\pm$  standard deviation of the mean. 
+%\item To save all your interpretation into files, choose from the menubar Analysis $\rightarrow$ Save current interpretation. Three files will be generated in the project directory:
+%\begin{itemize}
+%\item thellier\_GUI.redo (the temperature bounds for each specimen):
+%\begin{verbatim}
+%su100601a 473 853
+%su100601c 473 853
+%su100601g 473 853
+%\end{verbatim}
+%Note that the temperature bounds are in Kelvin. 
+%\item {\it thellier\_GUI.specimens.txt}: (the paleointensity statistics for each specimen - according to the headers. It is easy to view the content of this file using Excel):
+%\begin{verbatim}
+%su100601a	su100601	61.7	200	580	40.0	1.07	1.01	15	8	0.77	0.87	0.89	0.14	0.02	N/A	0.63	N/A	5.11	4.14	PASS
+%su100601c	su100601	54.4	200	580	40.0	0.94	N/A	15	8	0.60	0.78	0.79	0.23	0.01	N/A	5.19	N/A	2.51	1.33	PASS
+%su100601g	su100601	58.4	200	580	40.0	1.00	1.01	15	8	0.70	0.83	0.85	0.19	0.02	N/A	2.80	N/A	3.12	1.96	PASS
+%\end{verbatim}
+%\item {\it thellier\_GUI.samples.txt:} (the paleointensity statistics of the samples):
+%\end{itemize}
+%\begin{tabular}{cccccc}
+%\hline
+%er\_sample\_name &sample\_int\_n&sample\_int\_uT&sample\_int\_sigma\_uT&sample\_int\_sigma\_perc\\
+%su100601 &	3&	58.2&	3.0&	5.1\\
+%\hline
+%\end{tabular}
+%
+%
+%\item You can save the Arai plot (or any other plots) from the File menu. Choose  file  $\rightarrow$ Save Plot $\rightarrow$ Save Arai plot. A file dialog window will appear. You can change the format of the figure in the bottom tab (pdf, svg, or png), but you can also save as other format by adding the appropriate suffix to the file name.
+%\item close the GUI: File  $\rightarrow$ Quit.
+%\item Re-open the GUI as before (by writing the command  ``thellier\_gui.py''  in the terminal window) and choose the same working directory (SU1\_example). Notice now that the criteria that you set before are automatically used. To import your previous interpretations and continue working on this dataset choose from the menu bar Analysis $\rightarrow$ import previous interpretation. Choose thellier\_GUI.redo and click on the 'open' button.
+%\end{itemize}
+%
+%\item{Automatic interpretation - \it{thellier\_auto\_interpreter:}}
+%Instead of trying to find manually the most appropriate temperature bounds, the  {\bf thellier\_auto\_interpreter.py} program allows a fast and consistent way to choose the temperature bounds for the specimens. For details see \href{http://magician.ucsd.edu/~ltauxe/CV/open/shaar12.pdf}{Shaar and Tauxe (2012)}.  \nocite{shaar12}
+%\begin{itemize}
+%\item We will use the same \href{#acceptance_criteria }{acceptance criteria}.
+%\item Choose from the menu bar Auto interpreter $\rightarrow$ Run Thellier auto interpreter. The interpreter will run approximately 30 seconds. When its done, a message window will appear saying that the interpreter finished successfully (if not, check for errors in the terminal window, or in a file name {\it thellier\_interpreter.log}  located in a folder named {\it thellier\_interpreter}. If the issue cannot be resolved send an e-mail with the description of the problem to rshaar@ucsd.edu). Click OK in the message window.
+%\item The automatic interpretations are automatically saved, and we can review them on the Arai plots.  Let's look, for example, at the sample we interpreted  manually: su100601. Choose specimen su100601a from the specimens list. At first glance, the choice seems strange because the automatic interpretation chose temperature bounds 0 and 580. A choice between 200 and 580 may seem more reasonable as it provides an nearly straight line. The sample data figure explains this issue. The {\bf thellier\_auto\_interpreter.py} program chooses the interpretations that minimize the standard deviation of the sample's mean. Six specimens from this sample passed the criteria, and the value of su100601a is much higher than the remaining five. So, the thellier\_auto\_interpreter chose the 'acceptable' interpretation with the shallowest  slope. Go over the other specimens in the sample, and review the automatic interpretations. If you want, you can change the automatic interpretation, and save your own ``manual'' interpretation by choosing Analysis $\rightarrow$ Save current interpretation. Note that the output of {\bf thellier\_auto\_interpreter.py} is sensitive to the choice of the acceptance criteria, and different criteria may lead to significantly different final results. 
+%\end{itemize}
+%\item{Choosing the optimal criteria - \it{thellier\_optimizer\_2d:}}
+%\href{http://magician.ucsd.edu/~ltauxe/CV/open/shaar12.pdf}{Shaar and Tauxe (2012)} \nocite{shaar12} discuss a method to choose the optimal specimen's acceptance criteria. Here, we follow the example given in this paper. \href{http://magician.ucsd.edu/~ltauxe/CV/open/shaar12.pdf}{Shaar and Tauxe (2012)} suggested using  seven statistics for specimen's acceptance criteria. The choice of four of which is trivial, and the remaining three are MAD, FRAC and $\beta$. The thellier\_optimizer\_2D helps finding the optimal values for FRAC and $\beta$.  The thellier\_optimizer\_2D  required three types of inputs: 'fixed\_criteria``, ``test\_groups``, and ``test\_samples``, as described below:  
+%\begin{itemize}
+%\item The test groups are defined in an ``er\_sample`` file. An example for this file is given in working folder SU-1 named  ``optimizer\_test\_groups.txt``. Open this file in Excel to understand its syntax. The first line is a general header. The rest of the file include sample name, group name, and comments. 
+%\item To run the optimizer choose from the menu bar Optimizer $\rightarrow$ Run Thellier optimizer. click OK in the  message dialog. The first step is setting the 'fixed\_criteria``. We choose for the specimen's criteria: n=3, int\_ptrm\_n=2,SCAT=checked, gap\_max=0.6, MAD=5.0. We choose for the sample's criteria:int\_n=3, int\_n\_outlier\_check=6, EnableSTDEV-OPT, int\_sigme\_uT=5, int\_sigma\_perc=6. The rest of the boxes should be empty. click OK. click OK on the message window that will appear.
+%\item The thellier\_optimizer\_2D dialog window will appear. The first two rows of controls for choosing the range for $\beta$ and FRAC. choose beta from 0.05 to 0.15 in steps of 0.1 and FRAC from 0.7 to 0.9 in step of 0.02. \\
+%Inert the following functions to the text panel:\\
+%study\_sample\_n\\
+%max\_group\_int\_sigma\_uT\\
+%((max\_group\_int\_sigma\_uT $<$= 5) or (max\_group\_int\_sigma\_perc $<$= 6)) and  int(study\_sample\_n) \\
+%click on the ``Check function syntax`` button. If there are no typos, then the text box below the button should be PASS.\\
+%click on the ``Choose optimizer group file`` button. A file dialog window will appear. choose the file ``optimizer\_test\_groups.txt``. Click the button ``Run Optimizer`` to start. The runtime using these parameter is about 8 minutes. `
+%\item All the output files of the optimizer are saved in a folder named ``optimizer`` (see section 4.4). Compare the figures in the 'pdf' folder with Figure 7 in \href{http://magician.ucsd.edu/~ltauxe/CV/open/shaar12.pdf}{Shaar and Tauxe (2012)}.  
+%\item The figure in optimization\_function\_2.pdf suggest using $\beta \leq$0.10 and FRAC  $ \geq $0.79. Set these values as acceptance criteria, and run thellier\_auto\_interpreter.  
+%\end{itemize}
+%\end{itemize}
 
 
 
@@ -4223,10 +4328,12 @@ click on the "Choose optimizer group file" button. A file dialog window will app
 \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch10.html#ch10}{ [Essentials Chapter 10]} and \href{#MagIC}{[MagIC}]
 \href{https://github.com/ltauxe/PmagPy/blob/master/thellier_magic.py}{[thellier\_magic docs]}
 
-To see how this works, download the text file from a recent paper by Shaar et al. (2011) from the MagIC database:
+NB:  This program is no longer maintained.  You should try \href{#thellier_GUI.py}{thellier\_GUI.py} instead.  
+
+To see how {\bf thellier\_magic.py}  works, download the text file from a recent paper by Shaar et al. (2011) from the MagIC database:
 
 \nocite{shaar11}
-\url{http://earthref.org/MAGIC/m006899dt20120629115216/}
+\url{http://earthref.org/MAGIC/doi/0.1016/j.epsl.2010.11.013}
 
 Unpack the data with \href{#download_magic.py}{download\_magic.py}.   The original interpretations are stored in a file called {\it pmag\_specimens.txt}, but {\bf thellier\_magic.py} looks for a specimen file called {\it thellier\_specimens.txt}.  To create such a file, use the program \href{#mk_redo.py}{mk\_redo.py} followed by \href{#thellier_magic_redo.py}{thellier\_magic\_redo.py}.  Then you can take a look  at the data using \href{#thellier_magic.py}{thellier\_magic.py} and change some of the interpretations, for example adding one for the specimen s2s0-01 which was rejected by Shaar et al. (2011).   This has both non-linear TRM acquisition and ATRM anisotropy data, so the corrections will have to be applied using {\bf thellier\_magic\_redo.py} after exiting the \href{thellier_magic.py}{thellier\_magic.py} program.   
 
@@ -4648,7 +4755,7 @@ g: 9    500.0  C  1.704e-05   326.0    63.9
 g: 10    525.0  C  1.200e-05   326.5    63.7 
 g: 11    550.0  C  5.619e-06   325.5    64.4 
 
- g/b: indicates  good/bad measurement.  "bad" measurements excluded from calculation
+ g/b: indicates  good/bad measurement.  ``bad`` measurements excluded from calculation
 
   set s[a]ve plot, [b]ounds for pca and calculate, [p]revious, [s]pecimen, 
    change [h]orizontal projection angle,   change [c]oordinate systems, 
@@ -4696,24 +4803,26 @@ The best way to raise issues with any of the software or its documentation is to
 
 A number of the programs in {\bf PmagPy} were  developed to take advantage of the MagIC database and aid getting data in and out of it.   So, we need some basic understanding of what MagIC is and how it is structured.  
 MagIC  is an Oracle  database that is part of the EarthRef.org collection of databases and digital reference material.  
-Anyone interested in the MagIC database should first become a registered EarthRef.org user.  To do this, go to \url{http://earthref.org} and click on the {\bf Register} link in the {\bf Topmenu}.   Registration is not required for access to data or browsing around, but is required for uploading of data into the MagIC database, something which we sincerely hope you will have a chance to do.  By registering, you will also be kept informed of our progress through bi-monthly newsletters and other email alerts.    After you register, go to \url{http://earthref.org/MAGIC}.
+Anyone interested in the MagIC database should first become a registered EarthRef.org user.  To do this, go to \url{http://earthref.org} and click on the {\bf Register} link in the {\bf Topmenu}.   Registration is not required for access to data or browsing around, but is required for uploading of data into the MagIC database, something which we sincerely hope you will have a chance to do.  
+%By registering, you will also be kept informed of our progress through bi-monthly newsletters and other email alerts.    
+After you register, go to \url{http://earthref.org/MAGIC/search}.
 
 
-\section {Perusing the existing data}
+You can \href{#magic_download}{download data} using the \href{http://earthref.org/MAGIC/search}{MagIC search} website.   
+%Data from a particular reference can be found by typing the digital by typing in the author's name in the ``Reference Text Search'' box, or search by any column with a little magnifying glass icon.   If you click on the   You can show or hide columns  and look at data at various levels (location, site, sample, and so on to retrieve the data you want.  
+%  Once the data you want have been identified, you can download the data by clicking on the `Save Results' button.     
+%  
+%    \includegraphics[width=15cm]{EPSfiles/MagIC_search.eps}
+%  
+%  
+       After downloading, the data can be unpacked and examined using various tools in the {\bf PmagPy}  package, for example using \href{#QuickMagIC.py}{QuickMagIC.py}.   
 
-The MagIC database is designed to have two web portals, one for paleomagnetic data (PMAG) and one for rock magnetic data (RMAG).  If you click on the PMAG PORTAL link,  you will be taken  to the main MagIC search engine.  You can look for data from a particular reference by typing in the author's name in the ``Reference Text Search'' box, or search by any column with a little magnifying glass icon.   If you click on the   You can show or hide columns  and look at data at various levels (location, site, sample, and so on to retrieve the data you want.  
-  Once the data you want have been identified, you can download the data by clicking on the `Save Results' button.     
-  
-    \includegraphics[width=15cm]{EPSfiles/MagIC_search.eps}
-  
-  
-       After downloading, the data can be unpacked and examined using various tools in the {\bf PmagPy}  programs described later.   
+%\customlink{Uploading}
+%
+%\section{Uploading data to the database}
 
-\customlink{Uploading}
-
-\section{Uploading data to the database}
-
-Paleomagnetic and rock magnetic data are collected and analyzed in a wide variety of ways with different objectives.  Data sets can be extremely large or can be the barest boned data summaries published in legacy data tables.   The goal of MagIC has been to have the flexibility to allow a whole range of data including legacy data from publications or other databases to new studies which include all the measurements, field photos, methodology, and so on.  The general procedure for the future will be to archive the data at the same time that they are published.    So, to smooth the path, it is advisable to put your data into the MagIC format as early in the process as possible.  All data that enters the database must be converted to the standard MagIC format either as a set of MagIC tables, or as one combined text file.    These can then be uploaded into the MagIC database.   Here,  we illustrate the use of  a number of programs (the \href{#PmagPy}{PmagPy}  package in Python) to facilitate the `behind the scenes' process of making MagIC formatted tables.     
+Paleomagnetic and rock magnetic data are collected and analyzed in a wide variety of ways with different objectives.  Data sets can be extremely large or can be the barest boned data summaries published in legacy data tables.   The goal of MagIC has been to have the flexibility to allow a whole range of data including legacy data from publications or other databases to new studies which include all the measurements, field photos, methodology, and so on.  The general procedure for the future will be to archive the data at the same time that they are published.    So, to smooth the path, it is advisable to put your data into the MagIC format as early in the process as possible.  All data that enters the database must be converted to the standard MagIC format either as a set of MagIC tables, or as one combined text file.    These can then be uploaded into the MagIC database.   
+%Here,  we illustrate the use of  a number of programs (the \href{#PmagPy}{PmagPy}  package in Python) to facilitate the `behind the scenes' process of making MagIC formatted tables.     
 
 \customlink{DataTables}
 
@@ -4741,11 +4850,9 @@ table\qquad &Brief description\\
     {\bf er\_ages}\qquad &age information.\\
     {\bf er\_images}\qquad & images associated with the study (field shots, sample\\ 
     \qquad &photos, photomicrographs, SEM images, etc.\\
-   {\bf er\_citations*}\qquad &citation information\\
    {\bf er\_mailinglist}\qquad &contact information for people involved in the study\\
    \hline
    {\bf magic\_measurements} \qquad & \hskip 1em measurement data used in the study\\
-    {\bf magic\_methods*}\qquad & methods used in the study\\
     {\bf magic\_instruments}\qquad & instruments used in the study\\
        \hline
     {\bf pmag\_specimens}\qquad & interpretations of best-fit lines, planes, paleointensity, etc. \\
@@ -4780,10 +4887,11 @@ AZ01\qquad &Azores \qquad & basalt \qquad &lava flow \qquad & 37.80\qquad &-25.8
 }
 
 Although data can be entered directly into Excel spreadsheets by hand, it is easier to generate the necessary tables as a by-product of ordinary data processing without having to know details of the meta-data and method codes. 
-Section~\ref{chap:MagIC} describes how to use the {\bf PmagPy} software for  data analysis and generate the MagIC data tables automatically for the most common paleomagnetic studies involving directions and/or paleointensities.    
+The section on \href{#PmagPy}{PmagPy} describes how to use the {\bf PmagPy} software for  data analysis and generate the MagIC data tables automatically for the most common paleomagnetic studies involving directions and/or paleointensities.    See also \href{#QuickMagIC.py}{QuickMagIC.py}.
  
   
 \customlink{method_codes}
+
   \section{A word about  method codes}
   
   The MagIC database tags records with ``method codes'' which are short codes that describe various methods associated with a particular data record.  The complete list is available here:  \url{http://earthref.org/MAGIC/methods.htm}.      Most of the time, you do not need to know what these are (there are over a hundred!), but it is helpful to know something about them.  These are divided into several general categories like `geochronology methods' and  `field sampling methods'.   Method codes start with a few letters which designate the category (e.g., GM or FS  for geochronogy and field sampling respectively).   Then there is a second part and possibly also a third part to describe methods with lesser or greater detail.   
@@ -4840,115 +4948,18 @@ Drill Site	This study	19	156	801	19	156
 >>>>>>>>>>
 tab 	er_samples
 er_citation_names	sample_lithology	er_site_name	er_sample_name	sample_type	er_location_name	sample_lat	sample_lon	sample_class
-This study	Submarine Basaltic Glass	16r5113	16r5113	Lava Flow	801C	19	156	Igneous: Extrusive
-This study	Submarine Basaltic Glass	17r1026	17r1026	Lava Flow	801C	19	156	Igneous: Extrusive
+This study	 Submarine Basaltic Glass	16r5113	16r5113	Lava Flow	801C	19	156	Igneous: Extrusive
+This study	 Submarine Basaltic Glass	17r1026	17r1026	Lava Flow	801C	19	156	Igneous: Extrusive
 .
 .
 .
 \end{verbatim}
 
-If you construct data tables `by hand', they can be assembled using the program \href{#upload_magic.py}{upload\_magic.py} which reads in all MagIC tables in a given directory and puts them together as in the above example.  {\bf upload\_magic.py} is called by  \href{#QuickMagIC.py}{QuickMagIC.py},  which  creates a file called {\it upload\_magic.txt} which can be uploaded into the MagIC database, by dragging and dropping on the upload window at \url{http://earthref.org/MAGIC/search}.   After uploading the data file, you can create or select a reference and activate your contribution.   
-
-
-\customlink{survival_skills}
-\chapter{Survival computer skills}
-\label{ex:unix}
-
-The `Py' part of  `PmagPy' stands for Python, the language in which all the code is written.   It is not essential, but it is helpful to understand a bit about computer operating systems and the Python language when using PmagPy because no one should be using programs as black boxes without understanding what they are doing. As all the programs are open source, you have the opportunity to look into them.  If you understand a bit  about how computers work yourself, you will be able to follow along what they are doing and even modify them to work better for you.   So in this chapter you will find a brief introduction to the computer skills necessary for using the programs properly.  We have tried very hard to make this tutorial operating system independent.  All the examples should work equally well on Mac OS, Windows and Unix-type operating systems.  For an introduction to programming in Python, see Chapter~\ref{chap:python}. For now, we're just interested in getting started with \href{#PmagPy}{PmagPy}.   
-
-
-\customlink{command_line}
-\section{Finding your command line}
-If you are not using a Unix-like computer (*NIX), you may never have encountered a command line. While the \href{#QuickMagIC.py}{QuickMagIC.py} Graphical User Interface (GUI) is an attempt to make life as easy for you by constructing commands for you, you still need to find the command line to start it up.  Under the MacOS X operating system look for the Terminal application in the Utilities folder within the Applications folder. When it is launched, you will get a terminal window as shown below.  The Unix (and Mac OS) Bash shell has a \$ sign as a prompt.  I (LT) use the antiquated `C-shell'  (don't ask) with a \% for a prompt and  will use the \% prompt in the examples here, but any of these command line prompts will work.   
-
-  \includegraphics[width=15cm]{EPSfiles/terminal.eps}
-
-Under the Windows operating system, if you followed the instructions in the  \href{#quick_start}{Quick Start} section, you will have a shortcut to the PmagPy command window on your desktop.  Double clicking on that will give you a window in which you can type {\bf PmagPy} commands.  
-
-  \includegraphics[width=15cm]{EPSfiles/cmd.eps}
-  
-  Note that the location of this program varies on different computers, so you may have to hunt around a little to find yours. Also, the actual  ``prompt'' will vary for different machines. 
-  
-  
-  
-\section{File systems}
-\label{sect:file_systems}
-    When you open one of these terminal windows,  you are in your  ``home'' directory.   
-Fundamental to all  operating systems is the concept of
-directories and files.  On windows-based operating systems (MacOS or Windows), directories are depicted
-as ``folders'' and moving about is accomplished by clicking on the different icons.
-In the world of terminal windows, the directories have names and are arranged in a hierarchical sequence with
-the top directory being the ``root'' directory, known as  ``/'' (or C:'backslash' in Windows) and the file system looks something like this:
-
-
-  \includegraphics[width=15cm]{EPSfiles/filesys.eps}
-
- Within the root directory, there are subdirectories
-(e.g. {\bf Applications} and {\bf Users} in bold face).  In any directory, there can also be ``files''
-(e.g. {\it dir\_cart\_example.dat} in italics).   To
-refer to directories,  the operating system relies on what is called a ``pathname''. Every object
-has an ``absolute'' pathname which is valid from anywhere on the computer.  The
-absolute pathname in *NIX always begins from the root directory {\bf /} and in DOS (the operating system working in the Windows command line window), it is C:'backslash'. 
-
-The absolute pathname to the home directory {\bf lisa} in the figure is {\bf /Users/lisa}.  
-Similarly, the absolute pathname to the directory containing {\bf PmagPy}  
-scripts  would be  {\bf /Users/ltauxe/PmagPy}.  There is also a ``relative'' pathname,
-which is in reference to the  current directory (the one you are `sitting' in).  If user ``lisa'' is sitting in 
-her home directory, the relative pathname for the file {\it dir\_cart\_example.dat} in the directory
-{\bf Datafiles\_2.0} would be {\it Datafiles\_2.0/dir\_cart/dir\_cart\_example.dat}.  When using relative
-pathnames, it is useful to remember that {\bf ./} refers to the current
-directory and {\bf ../} refers to the directory  ``above''.     Also, lisa's home directory would be $\sim$lisa, or if you are logged in as lisa yourself, then it is just $\sim$. 
-
-\section{Moving around in the file system}
-
-Now that you have found your command line and are comfortable in your home directory, you can view the contents of your directory with the Unix command {\bf ls} or the DOS command {\bf dir}.  
-\customlink{mkdir}
-You can make a new directory with the command 
-\begin{verbatim}
-%mkdir NEW_DIRECTORY_NAME 
-\end{verbatim}
-This works in both Unix and DOS environments) and you can move into your new directory with the command 
-\begin{verbatim}
-% cd NEW_DIRECTORY_NAME
-\end{verbatim}
-   To move back up into the home directory, just type {\bf cd ..} remembering that .. refers to the directory above.  Also, {\bf cd} by itself will transport you home from where ever you are (there's no place like home....).     You can also change to any arbitrary directory by specifying the full path of the destination directory. 
-
-
-\section {Wildcards}
-
-Unix and DOS have the ability to refer to a number of files and/or directories using
-``wildcards''.  The  wildcard for a  single character is ``?'' and for any number of
-characters is ``*''.  For example, to refer to all the files with ``.py'' in their name in the PmagPy directory in my home directory, 
-I would type:
-
-\begin{verbatim}
-% ls PmagPy/*.py
-apwp.py bootams.py fishrot.py.....
-\end{verbatim}
+Correctly formatted MagIC data tables can be assembled into a suitable upload text file by using the program \href{#upload_magic.py}{upload\_magic.py} which reads in all MagIC tables in a given directory and puts them together as in the above example.  You can invoke \href{#upload_magic.py}{upload\_magic.py} on the \href{#command_line}{command line} or call it within  \href{#QuickMagIC.py}{QuickMagIC.py}.     \href{#upload_magic.py}{upload\_magic.py} creates a file called {\it upload\_magic.txt} which can be \href{#magic_upload}{uploaded into the MagIC database}.   
 
 
 
-\section {Redirecting input and output}
-
-Programs that operate at the command line level print  output to the screen and read input
-from the keyboard. This is
-\customlink{standard_IO}
-known as ``standard input and output'' or ``standard I/O''.
-One of the nicest things about working at the command line level is the ability to redirect input and output.
-For example, instead of typing input to a program with the keyboard, it can
-be read from a file using the symbol {\bf $<$}.   Output can either be printed to the screen (standard output), redirected into a 
-file using the symbol {\bf $>$}, appended to the end of a file with {\bf $>>$} or 
-used as input to another program with the pipe operator ({\bf$ |$}).
-
-
-
-\section{Text editors}
-
-Text editing is a blessing and a curse.  You either love it or
-hate it and in the beginning, and if you are used to programs like Word, you will certainly hate it. (And if you are used to a decent text editor, you will hate Word!).   There are many ways of
-editing text and the subject is beyond the scope of this documentation.   But you can't use Word because the output is in a weird format that no scripting languages read easily.  So you have to use an editor that will produce a plain (ascii) file, like Notepad or TextWrangler.   The latter is freeware available for Macs and the former comes standard in the Windows operating system.   Fortunately, Enthought Python's Canopy programming environment comes with its own text editor, so we recommend that you just use that.   
 %
-\customlink{installing_python}
 %\section{Installing Python and PmagPy}
 %\label{sect:python}
 %
@@ -4971,9 +4982,9 @@ editing text and the subject is beyond the scope of this documentation.   But yo
 %
 %Python 2.7.2 |EPD 7.1-2 (32-bit)| (default, Jul 27 2011, 13:29:32) 
 %[GCC 4.0.1 (Apple Inc. build 5493)] on darwin
-%Type "packages", "demo" or "enthought" for more information.
+%Type ``packages``, ``demo`` or ``enthought`` for more information.
 %>>> import matplotlib
-%>>> matplotlib.use("TkAgg")
+%>>> matplotlib.use(``TkAgg``)
 %>>> import pylab
 %>>> pylab.plot([1,2,3,4])
 %[<matplotlib.lines.Line2D object at 0x64eb270>]
@@ -5268,10 +5279,10 @@ Numbers are numbers. While there are more kinds of numbers (complex, etc.),
 strings can be  more interesting. Unlike in some languages, they can be denoted with single, double or triple quotes:  e.g.,
 `spam',  ``Sam's spam'', or
 { \color{blue} \begin{verbatim}
-"""  
+``````  
 Hi there we can type as
 many lines as we want
-"""
+``````
 \end{verbatim}}
 
 Strings can be added together ({\color{blue}newstring = 'spam' + 'alot'}).  They  can be sliced ({\color{blue}newerstring = newstring[0:3]}). 
@@ -5520,7 +5531,7 @@ array([[  6.,   8.,  10.],
 
 \section{Pandas} 
 
-Now that you have fallen in love with Python and Numpy, we have a new treat for you:  pandas.  Pandas is a powerful module available with the Python distribution that you should have installed in the \href{#quick_start}{Quick Start} section.  It supports elegant data structures and tools for wrangling the data which allow fast and user-friendly data analysis.  There are two basic data structures:  the Series (a one-dimensional array like object that is a data array with an associated array of indices which can be numbers or text) and the DataFrame (a spreadsheet like data table).   
+Now that you have fallen in love with Python and Numpy, we have a new treat for you:  pandas.  Pandas is a powerful module available with the Python distribution that you should have installed in the \href{#quick_start}{Installing PmagPy} section.  It supports elegant data structures and tools for wrangling the data which allow fast and user-friendly data analysis.  There are two basic data structures:  the Series (a one-dimensional array like object that is a data array with an associated array of indices which can be numbers or text) and the DataFrame (a spreadsheet like data table).   
 
 First, invoke pandas by importing it, then create some data Series using several approaches:  
 
@@ -5615,8 +5626,8 @@ and quote marks by using single quotes, i.e.,
 { \color{blue} \begin{verbatim}
 #! /usr/bin/env python
 # simple Python test program 2 (printmess2.py)
-print "The pump don't work 'cuz the vandals took the handles"
-print 'She said "I know what it\'s like to be dead"'
+print ``The pump don't work 'cuz the vandals took the handles``
+print 'She said ``I know what it\'s like to be dead``'
 \end{verbatim}}
 
 \noindent
@@ -5625,7 +5636,7 @@ produces:
 { \color{blue} \begin{verbatim}
 % ./printmess2.py
 The pump don't work 'cuz the vandals took the handles
-She said "I know what it's like to be dead"
+She said ``I know what it's like to be dead``
 %
 \end{verbatim}}
 
@@ -5650,7 +5661,7 @@ you run the program, you get an error message:
 
 { \color{blue} \begin{verbatim}
 Traceback (most recent call last):
-  File "./undeclared.py", line 4, in <module>
+  File ``./undeclared.py``, line 4, in <module>
     adif = aend - abge
 NameError: name 'abge' is not defined
 \end{verbatim}}
@@ -5886,7 +5897,7 @@ if 'susie' not in mylist:
 elif 'george' in mylist: # if first statement is false, try this one
     print 'susie and george both in list' 
 else: # if both statements are false, do this:
-   print "susie in list but george isn't"
+   print ``susie in list but george isn't``
 \end{verbatim}}
 
 \subsubsection{While loops}
@@ -5900,7 +5911,7 @@ a=1
 while a < 10:
     print a
     a+=1
-print "I'm done counting!"
+print ``I'm done counting!``
 \end{verbatim}}
 
 \subsubsection{Code blocks in interactive Python}
@@ -5933,7 +5944,7 @@ If you are using Python interactively or want interactivity in a script,  use th
 
 { \color{blue} \begin{verbatim}
 X=[] # make a list to put the data in
-ans=float(raw_input("Input numeric value for X:  ")) 
+ans=float(raw_input(``Input numeric value for X:  ``)) 
 X.append(ans) # append the value to X
 print X[-1] # print the last item in the list
 \end{verbatim}}
@@ -5946,7 +5957,7 @@ To open a file we use the command {\color{blue}open()}, one of Python's built-in
 \url{http://docs.python.org/library/functions.html}
 
 \noindent  The  {\color{blue}open()} function returns an object,  complete with methods, like {\color{blue}readlines()} which, yes, reads all the lines.   Suppose you have a file containing the coordinates of some
-seismic stations which you want to plot on a map or something. (In fact, it is in the \href{#Datafiles}{Datafiles\_2.0/LearningPython} directory of the Datafiles\_2.0 package you can download).   The file
+seismic stations which you want to plot on a map or something. (In fact, it is in the \href{#Datafiles}{Datafiles/LearningPython} directory.   The file
 is called {\color{blue}   station.list} and its first five lines are:
 
 {\color{blue}\begin{verbatim}
@@ -6196,9 +6207,9 @@ So far you have learned how to use functions from program modules like {\color{b
 #!/usr/bin/env python
 
 def FUNCNAME(in_args):  
-    """
+    ``````
     DOC STRING
-    """
+    ``````
     some code that the functions does something
     return out_args
     
@@ -6219,9 +6230,9 @@ FUNCNAME(in_args) # this calls the function
  { \color{blue} \begin{verbatim}
  #!/usr/bin/env python
 def gimmepi():  
-    """
+    ``````
     returns pi
-    """
+    ``````
     return 3.141592653589793
 print gimmepi()
 \end{verbatim}}
@@ -6232,9 +6243,9 @@ print gimmepi()
 { \color{blue} \begin{verbatim}
 #!/usr/bin/env python
 def deg2rad(degrees):  
-    """
+    ``````
     converts degrees to radians
-    """
+    ``````
     return degrees*3.141592653589793/180.
 print '42 degrees in radians is: ',deg2rad(42.)
 \end{verbatim}}
@@ -6244,9 +6255,9 @@ print '42 degrees in radians is: ',deg2rad(42.)
 { \color{blue} \begin{verbatim}
 #!/usr/bin/env python
 def print_args(*args):
-    """
+    ``````
     prints argument list
-    """
+    ``````
     print 'You sent me these arguments: '
     for arg in args:
         print arg
@@ -6259,9 +6270,9 @@ print_args(42)
 { \color{blue} \begin{verbatim}
 #!/usr/bin/env python
 def print_kwargs(**kwargs):
-    """
+    ``````
     prints keyworded argument list
-    """
+    ``````
     for key in kwargs:
         print '%s  %s' %(key, kwargs[key])
      
@@ -6284,16 +6295,16 @@ print_kwargs(arg1='one',arg2=42,arg3='ocelot')
 { \color{blue} \begin{verbatim}
 #!/usr/bin/env python
 def print_kwargs(**kwargs):
-    """
+    ``````
     prints keyworded argument list
-    """
+    ``````
     for key in kwargs:
         print '%s  %s' %(key, kwargs[key])
      
 def main():
-    """
+    ``````
     calls function print_kwargs
-    """
+    ``````
     print_kwargs(arg1='one',arg2=42,arg3='ocelot')
 main()  # runs the main program
 \end{verbatim}}
@@ -6305,19 +6316,19 @@ So let's say we put all the above functions in a file called {\color{blue}myfunc
 
 { \color{blue} \begin{verbatim}
 def gimmepi():  
-    """
+    ``````
     returns pi
-    """
+    ``````
     return 3.141592653589793
 def deg2rad(degrees):  
-    """
+    ``````
     converts degrees to radians
-    """
+    ``````
     return degrees*3.141592653589793/180.
 def print_args(*args):
-    """
+    ``````
     prints argument list
-    """
+    ``````
     print 'You sent me these arguments: '
     for arg in args:
         print arg
@@ -6373,9 +6384,9 @@ Before we go any further, we need to learn some basic concepts about classes. Th
 
 { \color{blue} \begin{verbatim}
 class Circle:
-    """
+    ``````
     This is simple example of a class
-    """
+    ``````
     pi=3.141592653589793
     def __init__(self,r):
         self.r=r
@@ -6440,7 +6451,7 @@ Let's start by reviewing the   simple plot script ({\color{blue}matplotlib1.py})
 { \color{blue} \begin{verbatim}
 #!/usr/bin/env python
 import matplotlib
-matplotlib.use("TkAgg") # my favorite backend
+matplotlib.use(``TkAgg``) # my favorite backend
 import pylab # module with matplotlib
 pylab.plot([1,2,3])  # plot some numbers
 pylab.ylabel('Y') # label the y-axis
@@ -6457,7 +6468,7 @@ In the above example, we call the {\color{blue}plot} method with a list as an ar
 
 { \color{blue}\begin{verbatim}
 >>> import matplotlib
->>> matplotlib.use("TkAgg")
+>>> matplotlib.use(``TkAgg``)
 >>> import pylab
 >>> pylab.plot([1,2,3])
 [<matplotlib.lines.Line2D object at 0x4bd6eb0>]
@@ -6478,7 +6489,7 @@ If you find it annoying to always have to close figures with the little red butt
 { \color{blue}\begin{verbatim}
 #!/usr/bin/env python
 import matplotlib
-matplotlib.use("TkAgg") 
+matplotlib.use(``TkAgg``) 
 import pylab 
 pylab.ion()  # turn on interactivity
 pylab.plot([1,2,3]) 
@@ -6500,7 +6511,7 @@ As mentioned earlier, if  you give {\color{blue}plot()} a single sequence of val
 { \color{blue} \begin{verbatim}
 #!/usr/bin/env python
 import matplotlib
-matplotlib.use("TkAgg")
+matplotlib.use(``TkAgg``)
 import pylab,numpy
 x=numpy.arange(0,360,10)
 r=x*numpy.pi/180.
@@ -6549,7 +6560,7 @@ To illustrate these new concepts, consider the example code, {\color{blue}matplo
 { \color{blue} \begin{verbatim}
 #!/usr/bin/env python
 import matplotlib
-matplotlib.use("TkAgg")
+matplotlib.use(``TkAgg``)
 import pylab, numpy
 def f(t):
     return numpy.exp(-t)*numpy.cos(2.*numpy.pi*t)
@@ -6582,7 +6593,7 @@ Let's decorate one of our early examples to show how some of these things work:
 { \color{blue} \begin{verbatim}
 #!/usr/bin/env python
 import matplotlib
-matplotlib.use("TkAgg")
+matplotlib.use(``TkAgg``)
 import pylab,numpy
 x=numpy.arange(0,360,10)
 r=x*numpy.pi/180.
@@ -6624,19 +6635,19 @@ Data analysis in Python benefits from an increasingly robust ecosystem of packag
 
 Underlying the {\bf PmagPy}  programs that are accessible through the command line and the GUI interfaces (e.g., {\bf QuickMagIC.py}) are two main function libraries: {\bf pmag.py} and {\bf pmagplotlib.py}. The functions within these modules can  be imported and called upon within an IPython/Jupyter notebook. In addition to these functions, Nick Swanson-Hysell  created a module called {\bf ipmag.py} that is in active development and contains functions that replicate and extend some of the functionality that is found within the {\bf PmagPy}  command line programs for use in the notebook environment.
 
-To provide a glimpse of what is possible in terms of data analysis using {\bf PmagPy} in a notebook environment, we have created an example notebook that is available in the {\it IPmag\_notebook} folder in the Datafiles package downloaded as a part of  the {\bf PmagPy} package. This notebook imports a data set downloaded from the  MagIC database,  plots them  and conducts some statistical analyses.   
+To provide a glimpse of what is possible in terms of data analysis using {\bf PmagPy} in a notebook environment, we have created an example notebook that is available in the {\it IPmag\_notebook} folder in the Datafiles package downloaded as a part of  the {\bf PmagPy} package. This notebook (PmagPy\_notebook.ipynb} imports a data set downloaded from the  MagIC database,  plots them  and conducts some statistical analyses.   
 
- In the notebook, reversal tests are conducted using both the \cite{mcfadden90}  implementation of the \cite{watson83} $V_w$ statistic test for a common mean and the bootstrap reversal test (\cite{tauxe91} and Section 11.3.4 in the textbook \url{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html}). The notebook can be viewed as a static webpage at this link \url{https://nbviewer.jupyter.org/github/swanson-hysell/2015_Tauxe-et-al_PmagPy_Notebook/blob/master/PmagPy_notebook.ipynb} or downloaded as executable code as detailed below.  The notebook example is also in the PmagPy\_Tutorial folder that you downloaded as the Datafiles zip folder (see \href{#quick_start}{Quick Start Section}).
+ In the notebook, reversal tests are conducted using both the \cite{mcfadden90}  implementation of the \cite{watson83} $V_w$ statistic test for a common mean and the bootstrap reversal test (\cite{tauxe91} and Section 11.3.4 in the textbook \url{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html}). The notebook can be viewed as a static webpage at this link \url{https://nbviewer.jupyter.org/github/swanson-hysell/2015_Tauxe-et-al_PmagPy_Notebook/blob/master/PmagPy_notebook.ipynb} or downloaded as executable code as detailed below.  The notebook example is also in the PmagPy\_Tutorial folder that you downloaded as the \href{#Datafiles}{Datafiles}  folder (see \href{#quick_start}{Installing PmagPy}).
 
-To execute and edit the notebook code yourself,  find it in the Datafiles directory under PmagPy\_Tutorial.  If you installed the Enthought Canopy Python distribution you will have the IPython package installed. If you have another Python distribution you will want to make sure that you have IPython (installation instructions can currently be found here: \url{http://ipython.org/install.html}). The example notebook was created using IPython version 2.3. Now type {\bf ipython notebook} in the \href{#command_line}{command line}  which will open up a local IPython server in your default web browser within which you can use the directory to navigate to the folder where you downloaded the notebook and click on it to open. You will see something like this: 
+To execute and edit the notebook code yourself,  find it in the Datafiles directory under PmagPy\_Tutorial.  If you installed the Enthought Canopy Python distribution you will have the IPython package installed. If you have another Python distribution you will want to make sure that you have IPython (installation instructions can currently be found here: \url{http://ipython.org/install.html}). The example notebook was created using IPython version 2.3. To view and edit it,  type {\bf ipython notebook} on the \href{#command_line}{command line}.  This   will open up a local IPython server in your default web browser within which you can use the directory to navigate to the Datafiles folder. Click on it to open and edit. You will see something like this: 
 
 \includegraphics[width=15cm]{EPSfiles/notebook.eps}
 
-Notebooks are constructed as a series of `cells' which can be text or code among other things.  To view the `source' of a text cell, just click on it.  To render it, click on the `run' button (sideways triangle on the toolbar).  Similarly, to run the code in a code cell, click on the cell and then the `run' button.   To execute the entire notebook, click on the `Cell' button and choose 'Run All'. There are handy short-cuts for    
+Notebooks are constructed as a series of `cells' which can be text or code among other things.  To view the `source' of a text cell, just click on it.  To render it, click on the `run' button (sideways triangle on the toolbar).  Similarly, to run the code in a code cell, click on the cell and then the `run' button.   To execute the entire notebook, click on the `Cell' button and choose 'Run All'. 
 
-  The first step is to using the notebook is to let it  know where you put all the {\bf PmagPy} code. The default location for this is in a folder called {\it PmagPy} in your home directory,   so you must modify the line `sys.path.insert(0, `/Users/......') to reflect your own path.   After that is set, run the first code block.   Now the {\bf PmagPy} modules are available to use within the notebook.  The next  code block  imports several  Python modules useful for scientific computing (numpy),  data manipulation (pandas) and plotting (matplotlib).  Run this code block to make these functions available to the notebook.  
+  The first step  to using the notebook is to let it  know where you put all the {\bf PmagPy} code. The default location for this on  MacOS is in a folder called {\it PmagPy} in your home directory (e.g., /Users/YOUR\_NAME\_HERE/PmagPy) and on Windows is in the Documents folder (e.g., 'C:\\Users\\YOUR\_NAME\_HERE\\Documents\\PmagPy'. You must modify the line `sys.path.insert(0, `/Users/......') to reflect your own path.   After that is set, run the first code block.   Now the {\bf PmagPy} modules are available to use within the notebook.  The next  code block  imports several  Python modules useful for scientific computing (numpy),  data manipulation (pandas) and plotting (matplotlib).  Run this code block to make these functions available to the notebook.  
 
- Now you are ready to look at some data.  In the code block under the heading `Reading data from MagIC format results files',  data are read in from a file downloaded and unpacked from the MagIC database.   The notebook shows how to read in the data into a \href{#pandas}{pandas DataFrame}, and plot the directions on an equal area projection:  
+ Now you are ready to look at some data.  In the code block under the heading `Reading data from MagIC format results files',  data are read in from a file \href{#magic_download}{downloaded} and unpacked from the MagIC database.   The notebook shows how to read in the data into a \href{#pandas}{pandas DataFrame}, and plot the directions on an equal area projection:  
  
 \includegraphics[width=15cm]{EPSfiles/SnakeRiver.eps}
 
@@ -6644,7 +6655,213 @@ There are several other tricks shown off in the notebook, which should be enough
 
 Although there is much much more to do in Python, this documentation is aimed at getting and using {\bf PmagPy}, so that's it for this chapter. Congratulations if you made it to the end!
 
-\bibliography{UCPbook}
-\bibliographystyle{apalike2}
+\begin{thebibliography}{}
+
+\bibitem[Ben-Yosef et~al., 2008]{benyosef08}
+Ben-Yosef, E., Ron, H., Tauxe, L., Agnon, A., Genevey, A., Levy, T., Avner, U.,
+  \& Najjar, M. (2008).
+\newblock Application of copper slag in geomagnetic archaeointensity research.
+\newblock {\em J. Geophys. Res.}, 113, doi:10.1029/2007JB005235.
+
+\bibitem[Besse \& Courtillot, 2002]{besse02}
+Besse, J. \& Courtillot, V. (2002).
+\newblock Apparent and true polar wander and the geometry of the geomagnetic
+  field over the last 200 myr.
+\newblock {\em J. Geophys. Res}, 107, doi:10.1029/2000JB000050.
+
+\bibitem[Carter-Stiglitz et~al., 2006]{carterstiglitz06}
+Carter-Stiglitz, B., Solheid, P., Egli, R., \& Chen, A. (2006).
+\newblock Tiva canyon tuff (ii): Near single domain standard reference material
+  available.
+\newblock {\em The IRM Quarterly}, 16(1), 1.
+
+\bibitem[Cogn\'e, 2003]{cogne03}
+Cogn\'e, J. (2003).
+\newblock Paleomac: A macintosh application for treating paleomagnetic data and
+  making plate reconstructions.
+\newblock {\em Geochem. Geophys. Geosys.}, 4, 1007, doi:10.1029/2001GC000227.
+
+\bibitem[Day et~al., 1977]{day77}
+Day, R., Fuller, M.~D., \& Schmidt, V.~A. (1977).
+\newblock Hysteresis properties of titanomagnetites: grain size and composition
+  dependence.
+\newblock {\em Phys. Earth Planet. Inter.}, 13, 260--266.
+
+\bibitem[Gee et~al., 2008]{gee08}
+Gee, J.~S., Tauxe, L., \& Constable, C. (2008).
+\newblock Amsspin - a labview program for measuring the anisotropy of magnetic
+  susceptibility (ams) with the kappabridge kly-4s.
+\newblock {\em Geochem. Geophys. Geosyst.}, 9, Q08Y02,doi:10.1029/2008GC001976.
+
+\bibitem[Gradstein et~al., 2004]{gradstein04}
+Gradstein, F., Ogg, J., \& Smith, A. (2004).
+\newblock {\em Geologic Time Scale 2004}.
+\newblock Cambridge: Cambridge University Press.
+
+\bibitem[Jelinek, 1977]{jelinek77}
+Jelinek, V. (1977).
+\newblock The statistical theory of measuring anisotropy of magnetic
+  susceptibility of rocks and its application.
+\newblock {\em Brno, Geophyzika}, (pp.\ 1--88).
+
+\bibitem[Korte \& Constable, 2011]{korte11a}
+Korte, M. \& Constable, C. (2011).
+\newblock Improving geomagnetic field reconstructions for 0-3 ka.
+\newblock {\em Phys. Earth Planet. Int.}, 188, 247--259.
+
+\bibitem[Korte et~al., 2011]{korte11b}
+Korte, M., Constable, C., Donadini, F., \& Holme, R. (2011).
+\newblock Reconstructing the holocene geomagnetic field.
+\newblock {\em Earth and Planetary Science Letters}, 312, 497--505.
+
+\bibitem[Lawrence et~al., 2009]{lawrence09}
+Lawrence, K.~P., Tauxe, L., Staudigel, H., Constable, C., Koppers, A.,
+  McIntosh, W.~C., \& Johnson, C.~L. (2009).
+\newblock Paleomagnetic field properties near the southern hemisphere tangent
+  cylinder.
+\newblock {\em Geochem. Geophys. Geosyst.}, 10, Q01005,
+  doi:10.1029/2008GC00207.
+
+\bibitem[Leonhardt et~al., 2004]{leonhardt04}
+Leonhardt, R., Heunemann, C., \& Kra\'asa, D. (2004).
+\newblock Analyzing absolute paleointensity determinations: Acceptance criteria
+  and the software thelliertool4.0.
+\newblock {\em Geochem. Geophys. Geosys.}, 5, Q12016, doi:10.1029/2004GC000807.
+
+\bibitem[McFadden \& McElhinny, 1990]{mcfadden90}
+McFadden, P.~L. \& McElhinny, M.~W. (1990).
+\newblock Classification of the reversal test in palaeomagnetism.
+\newblock {\em Geophys. J. Int.}, 103, 725--729.
+
+\bibitem[Paterson et~al., 2014]{paterson14}
+Paterson, G., Tauxe, L., Biggin, A., Shaar, R., \& Jonestrask, L. (2014).
+\newblock On improving the selection of thellier-type paleointensity data.
+\newblock {\em Geochem. Geophys. Geosys.}, 15.
+
+\bibitem[P\'erez \& Granger, 2007]{perez07}
+P\'erez, F. \& Granger, B. (2007).
+\newblock {IP}ython: a system for interactive scientific computing.
+\newblock {\em Computing in Science and Engineering}, 9, 21--29.
+
+\bibitem[Sbarbori et~al., 2009]{sbarbori09}
+Sbarbori, E., Tauxe, L., Gogichaishvili, A., Urrutia-Fucugauchi, J., \&
+  Bohrson, W. (2009).
+\newblock Paleomagnetic behavior of volcanic rocks from isla socorro, mexico.
+\newblock {\em Earth Planets and Space}, (pp.\ in press).
+
+\bibitem[Shaar et~al., 2011]{shaar11}
+Shaar, R., Ben~Yosef, E., Ron, H., Tauxe, L., Agnon, A., \& Kessel, R. (2011).
+\newblock Geomagnetic field intensity: How high can it get? how fast can it
+  change? constraints from iron-age copper-slag.
+\newblock {\em Earth and Planetary Science Letters}, 301, 297--306.
+
+\bibitem[Shaar et~al., 2010]{shaar10}
+Shaar, R., Ron, H., Tauxe, L., Kessel, R., Agnon, A., Ben~Yosef, E., \&
+  Feinberg, J. (2010).
+\newblock Testing the accuracy of absolute intensity estimates of the ancient
+  geomagnetic field using copper slag material.
+\newblock {\em Earth and Planetary Science Letters}, 290, 201--213.
+
+\bibitem[Shaar \& Tauxe, 2013]{shaar13}
+Shaar, R. \& Tauxe, L. (2013).
+\newblock Thellier\_gui: An integrated tool for analyzing paleointensity data
+  from thellier-type experiments.
+\newblock {\em Geochem. Geophys. Geosys.}, 14.
+
+\bibitem[Swanson-Hysell et~al., 2009]{swansonhysell09}
+Swanson-Hysell, N., Maloof, A.~C., Weiss, B.~P., \& Evans, D. (2009).
+\newblock No asymmetry in geomagnetic reversals recorded by
+  1.1-billion-year-old keweenawan basalts.
+\newblock {\em Nature Geoscience}, 2, 713--717.
+
+\bibitem[Tauxe, 1998]{tauxe98}
+Tauxe, L. (1998).
+\newblock {\em Paleomagnetic Principles and Practice}.
+\newblock Dordrecht: Kluwer Academic Publishers.
+
+\bibitem[Tauxe et~al., 2010]{tauxe10}
+Tauxe, L., Banerjee, S.~K., Butler, R., \& van~der Voo, R. (2010).
+\newblock {\em Essentials of Paleomagnetism}.
+\newblock Berkeley: University of California Press.
+
+\bibitem[Tauxe et~al., 2002]{tauxe02}
+Tauxe, L., Bertram, H., \& Seberino, C. (2002).
+\newblock Physical interpretation of hysteresis loops: Micromagnetic modelling
+  of fine particle magnetite.
+\newblock {\em Geochem., Geophys., Geosyst.}, 3, DOI 10.1029/ 2001GC000280.
+
+\bibitem[Tauxe et~al., 2003]{tauxe03b}
+Tauxe, L., Constable, C., Johnson, C., Miller, W., \& Staudigel, H. (2003).
+\newblock Paleomagnetism of the southwestern u.s.a. recorded by 0-5 ma igneous
+  rocks.
+\newblock {\em Geochem., Geophys., Geosyst.}, (pp.\ DOI 10.1029/2002GC000343).
+
+\bibitem[Tauxe \& Hartl, 1997]{tauxe97}
+Tauxe, L. \& Hartl, P. (1997).
+\newblock 11 million years of oligocene geomagnetic field behaviour.
+\newblock {\em Geophys. J. Int.}, 128, 217--229.
+
+\bibitem[Tauxe \& Kent, 2004]{tauxe04d}
+Tauxe, L. \& Kent, D.~V. (2004).
+\newblock {\em A simplified statistical model for the geomagnetic field and the
+  detection of shallow bias in paleomagnetic inclinations: Was the ancient
+  magnetic field dipolar?}, volume 145, (pp.\ 101--116).
+\newblock American Geophysical Union: Washington, D.C.
+
+\bibitem[Tauxe et~al., 1991]{tauxe91}
+Tauxe, L., Kylstra, N., \& Constable, C. (1991).
+\newblock Bootstrap statistics for paleomagnetic data.
+\newblock {\em J. Geophys. Res}, 96, 11723--11740.
+
+\bibitem[Tauxe et~al., 2004]{tauxe04b}
+Tauxe, L., Luskin, C., Selkin, P., Gans, P.~B., \& Calvert, A. (2004).
+\newblock Paleomagnetic results from the snake river plain: Contribution to the
+  global time averaged field database.
+\newblock {\em Geochem., Geophys., Geosyst.}, Q08H13, doi:10.1029/2003GC000661.
+
+\bibitem[Tauxe \& Staudigel, 2004]{tauxe04}
+Tauxe, L. \& Staudigel, H. (2004).
+\newblock Strength of the geomagnetic field in the cretaceous normal
+  superchron: New data from submarine basaltic glass of the troodos ophiolite.
+\newblock {\em Geochem. Geophys. Geosyst.}, 5(2), Q02H06,
+  doi:10.1029/2003GC000635.
+
+\bibitem[Tauxe et~al., 2012]{tauxe12}
+Tauxe, L., Stickley, C., Sugisaki, S., Bijl, P., Bohaty, S., Brinkhuis, H.,
+  Escutia, C., Flores, J.-A., Houben, A., Iwai, M., Jimenez-Espejo, F., McKay,
+  R., Passchier, S., Pross, J., Riesselman, C., Roehl, U., Sangiorgi, F.,
+  Welsh, K., Klaus, A., Fehr, J., Bendle, J., Dunbar, R., Gonzalez, S., Hayden,
+  T., Katsuki, K., Olney, M., Pekar, S., Shrivastava, P., van~de Flierdt, T.,
+  Williams, T., \& Yamane, M. (2012).
+\newblock Chronostratigraphic framework for the iodp expedition 318 cores from
+  the wilkes land margin: constraints for paleoceanographic reconstruction.
+\newblock {\em Paleoceanography}, 27, doi:10.1029/2012PA002308.
+
+\bibitem[Tauxe \& Watson, 1994]{tauxe94}
+Tauxe, L. \& Watson, G.~S. (1994).
+\newblock The fold test: an eigen analysis approach.
+\newblock {\em Earth Planet. Sci. Lett.}, 122, 331--341.
+
+\bibitem[Torsvik et~al., 2008]{torsvik08}
+Torsvik, T., M\"uller, R., van~der Voo, R., Steinberger, B., \& Gaina, C.
+  (2008).
+\newblock Global plate montion frames: toward a unified model.
+\newblock {\em Rev. Geohys.}, 46, RG3004, doi:10.1029/2007RG000227.
+
+\bibitem[Vandamme, 1994]{vandamme94}
+Vandamme, D. (1994).
+\newblock A new method to determine paleosecular variation.
+\newblock {\em Phys. Earth Planet. Int.}, 85, 131--142.
+
+\bibitem[Watson, 1983]{watson83}
+Watson, G. (1983).
+\newblock Large sample theory of the langevin distributions.
+\newblock {\em J. Stat. Plann. Inference}, 8, 245--256.
+
+\end{thebibliography}
+
+
+%\bibliography{UCPbook}
+%\bibliographystyle{apalike2}
 \end{document}  
 

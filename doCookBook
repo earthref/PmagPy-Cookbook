@@ -1,3 +1,5 @@
+#First comment out all the \customlink lines and the \import{customlinks} line.
+#Run latex to catch all the errors.  then
 # uncomment the customlinks import and all the \customlink lines
 # then run: 
 htlatex PmagPy "html,1,sections+"
