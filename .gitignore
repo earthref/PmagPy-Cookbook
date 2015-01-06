@@ -27,19 +27,13 @@ Thellier_GUI_tutorial.tex
 *.aux
 
 
-PmagPy.aux
+*.tmp
 
-PmagPy.css
-
-PmagPy.dvi
-
-PmagPy.idv
-
-PmagPy.lg
-
-PmagPy.log
-
-PmagPy.tmp
-
-PmagPy.toc
-#PmagPy.tex#Cookbook-Web-Pages
+*.toc
+*.4ct
+*.4tc
+*.glg
+*.pdf
+*.xref
+*.idv
+*.log

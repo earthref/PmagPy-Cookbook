@@ -69,7 +69,7 @@
 \item  Windows users should install this  Enthought Distribution: 
  \url{http://magician.ucsd.edu/Software/PmagPy/archive/epd-7.3-2-win-x86.msi}.  If you run into problems, you may need to uninstall any previous Python installations.  
 
- \item Download the zip file from the  \href{https://github.com/ltauxe/PmagPy/releases} {PmagPy} software package github: unzip the zip file (double click on it), PC users should extract all the files to a folder on your desktop (or wherever)  and double click on the {\it install\_MacOS} or {\it install\_Windows} file depending on your operating system.  (If you are a Linux user, just copy the files to some directory and put it in your path - you know what to do.)   For Windows users, the install process will create a custom ``PmagPy Prompt'' with a shortcut on your desktop.  This prompt is identical to the regular Command Prompt, except that it has all of the PmagPy functionality built in. Whenever the documentation refers to your ``command line'', you should use the PmagPy Prompt. For non-Windows users, find your \href{#command_line}{command line} and type {\bf eqarea.py -h} and hit return.  If you do not see the help message, first try setting your path by hand following the instructions in the  \href{PmagPy_Install_Help.htm}{Trouble Shooting} help page.   If that fails, please send the error message and  Canopy version number to \href{mailto:ltauxe@ucsd.edu?subject=PmagPy Cookbook}{ltauxe@ucsd.edu}.  
+ \item Download the zip file from the  \href{https://github.com/ltauxe/PmagPy/releases/latest} {PmagPy} software package github: unzip the zip file (double click on it), PC users should extract all the files to a folder on your desktop (or wherever)  and double click on the {\it install\_MacOS} or {\it install\_Windows} file depending on your operating system.  (If you are a Linux user, just copy the files to some directory and put it in your path - you know what to do.)   For Windows users, the install process will create a custom ``PmagPy Prompt'' with a shortcut on your desktop.  This prompt is identical to the regular Command Prompt, except that it has all of the PmagPy functionality built in. Whenever the documentation refers to your ``command line'', you should use the PmagPy Prompt. For non-Windows users, find your \href{#command_line}{command line} and type {\bf eqarea.py -h} and hit return.  If you do not see the help message, first try setting your path by hand following the instructions on the  \href{./PmagPy_Install_Help.html}{Trouble Shooting} page.   If that fails, please send the error message and  Canopy version number to \href{mailto:ltauxe@ucsd.edu?subject=PmagPy Cookbook}{ltauxe@ucsd.edu}.  
   \customlink{hires}
 
 \item Optional: If you have installed the full version of Canopy and want to use the mapping programs (e.g., \href{#basemap_magic.py}{basemap\_magic.py}),  
@@ -789,8 +789,6 @@ For an introduction to programming in Python, see the  Chapter on \href{#Python}
 
 
 \customlink{command_line}
-
-
 \section{Finding your command line}
 If you are not using a Unix-like computer (*NIX), you may never have encountered a command line. While the \href{#QuickMagIC.py}{QuickMagIC.py} Graphical User Interface (GUI) is an attempt to make life as easy for you by constructing commands for you, you still need to find the command line to start it up.  Under the MacOS X operating system look for the Terminal application in the Utilities folder within the Applications folder. When it is launched, you will get a terminal window as shown below.  The Unix (and Mac OS) Bash shell has a \$ sign as a prompt.  I (LT) use the antiquated `C-shell'  (don't ask) with a \% for a prompt and  will use the \% prompt in the examples here, but any of these command line prompts will work.   
 
@@ -2391,7 +2389,7 @@ mean dec, mean inc, Eta, Deta, Ieta, Zeta, Zdec, Zinc, N
 %  fishrot.py -n 10 -D 15 -I 41 -k 50 >fishrot.out
 % gofish.py -f  fishrot.out 
    10.8    39.6    10     9.8484     59.4     6.3    10.5
-   \end{verbatim}
+\end{verbatim}
    
 \noindent     which according to the help message from {\bf gofish.py -h} is:   mean dec, mean inc, N, R, k, a95, csd.  Your results will vary because every instance of \href{#fishrot.py}{fishrot.py} draws a different sample from the Fisher distribution.   
 
@@ -2402,15 +2400,14 @@ mean dec, mean inc, Eta, Deta, Ieta, Zeta, Zdec, Zinc, N
  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{[Essentials Chapter 12]}
  \href{https://github.com/ltauxe/PmagPy/blob/master/gokent.py}{[gokent docs]}
 
-Draw a set of 20 data points  from a TK03.GAD distibution predicted for a latitude of 42$^{\circ}$N (see  14), without  reversals.  Calculate kent parameters using {\bf gokent.py} 
+Draw a set of 20 data points  from a TK03.GAD distribution predicted for a latitude of 42$^{\circ}$N (see  14), without  reversals.  Calculate kent parameters using {\bf gokent.py} 
 
 \begin{verbatim}
 % tk03.py -n 20 -lat 42 >tk03.out; gokent.py -f  tk03.out
    359.2    55.0     9.3   147.7    30.8     7.8   246.8    14.9 20
 \end{verbatim}
 
-\noindent  which according to the help message from {\bf gobing.py} is:   mean dec, mean inc, Eta, Deta, Ieta, Zeta, Zdec, Zinc, N
-
+\noindent  which according to the help message from {\bf gokent.py} is:   mean dec, mean inc, Eta, Deta, Ieta, Zeta, Zdec, Zinc, N
 
 \subsection{goprinc.py} 
  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{[Essentials Chapter 12]}
@@ -2423,7 +2420,7 @@ Draw a set of 20 data points  from a TK03.GAD distibution predicted for a latitu
 0.93863    11.0    58.6 0.04258   226.4    26.5 0.01879   128.3    15.6 20
 \end{verbatim}
 
-\noindent  which according to the help message from {\bf gobing.py} is:    $\tau_1 V1_D, V1_I,  \tau_2 V2_D V2_I \tau_3 V3_D V3_I, N$.
+\noindent  which according to the help message from {\bf goprinc.py} is:    $\tau_1 V1_D, V1_I,  \tau_2 V2_D V2_I \tau_3 V3_D V3_I, N$.
 
 \customlink{grab_magic_key.py}
 \subsection{grab\_magic\_key.py}
@@ -4159,8 +4156,8 @@ or
 or by manual input:
 \begin{verbatim}
 % sundec.py -i
-Time difference between Greenwich Mean Time (hrs to SUBTRACT from  local time
-      for GMT): 
+Time difference between Greenwich Mean Time (hrs to ADD to
+      GMT for local time): 
 <cntl-D> to quit 3
 Year:  <cntl-D to quit> 1994
 Month:  5
