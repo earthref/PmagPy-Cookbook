@@ -2389,7 +2389,7 @@ mean dec, mean inc, Eta, Deta, Ieta, Zeta, Zdec, Zinc, N
 %  fishrot.py -n 10 -D 15 -I 41 -k 50 >fishrot.out
 % gofish.py -f  fishrot.out 
    10.8    39.6    10     9.8484     59.4     6.3    10.5
-   \end{verbatim}
+\end{verbatim}
    
 \noindent     which according to the help message from {\bf gofish.py -h} is:   mean dec, mean inc, N, R, k, a95, csd.  Your results will vary because every instance of \href{#fishrot.py}{fishrot.py} draws a different sample from the Fisher distribution.   
 
@@ -2400,15 +2400,14 @@ mean dec, mean inc, Eta, Deta, Ieta, Zeta, Zdec, Zinc, N
  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{[Essentials Chapter 12]}
  \href{https://github.com/ltauxe/PmagPy/blob/master/gokent.py}{[gokent docs]}
 
-Draw a set of 20 data points  from a TK03.GAD distibution predicted for a latitude of 42$^{\circ}$N (see  14), without  reversals.  Calculate kent parameters using {\bf gokent.py} 
+Draw a set of 20 data points  from a TK03.GAD distribution predicted for a latitude of 42$^{\circ}$N (see  14), without  reversals.  Calculate kent parameters using {\bf gokent.py} 
 
 \begin{verbatim}
 % tk03.py -n 20 -lat 42 >tk03.out; gokent.py -f  tk03.out
    359.2    55.0     9.3   147.7    30.8     7.8   246.8    14.9 20
 \end{verbatim}
 
-\noindent  which according to the help message from {\bf gobing.py} is:   mean dec, mean inc, Eta, Deta, Ieta, Zeta, Zdec, Zinc, N
-
+\noindent  which according to the help message from {\bf gokent.py} is:   mean dec, mean inc, Eta, Deta, Ieta, Zeta, Zdec, Zinc, N
 
 \subsection{goprinc.py} 
  \href{http://earthref.org/MAGIC/books/Tauxe/Essentials/WebBook3ch11.html#ch11}{[Essentials Chapter 12]}
@@ -2421,7 +2420,7 @@ Draw a set of 20 data points  from a TK03.GAD distibution predicted for a latitu
 0.93863    11.0    58.6 0.04258   226.4    26.5 0.01879   128.3    15.6 20
 \end{verbatim}
 
-\noindent  which according to the help message from {\bf gobing.py} is:    $\tau_1 V1_D, V1_I,  \tau_2 V2_D V2_I \tau_3 V3_D V3_I, N$.
+\noindent  which according to the help message from {\bf goprinc.py} is:    $\tau_1 V1_D, V1_I,  \tau_2 V2_D V2_I \tau_3 V3_D V3_I, N$.
 
 \customlink{grab_magic_key.py}
 \subsection{grab\_magic\_key.py}
