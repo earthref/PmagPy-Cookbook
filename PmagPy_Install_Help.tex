@@ -117,6 +117,14 @@ Setting your path should not be an issue in Windows if you are using the PmagPy 
 \item  For Mac users, it is possible that you need to make the python scripts executable. On the command line in the directory with the scripts, type: chmod a+x *.py
 \end{itemize}
 
+\item  I'm trying to use IPython Notebooks on Windows, but it isn't working.
+
+\begin{itemize}
+\item  To access all the functionality of the Notebooks, you will need to install an updated version of IPython.  To do so, you will need to \href{https://pip.pypa.io/en/latest/installing.html}{download pip}.  Pip is an add-on to python that makes it super easy to install additional python modules.
+\item  Next, you will use pip to install IPython.  Open the Command Prompt and type this command: \begin{verbatim}pip install "ipython[notebook]" \end{verbatim}
+\item  Now you should be able to run \begin{verbatim}ipython notebook \end{verbatim} in the Command Prompt with the up to date version.  
+\end{itemize}
+
 \end{enumerate}
 
 Report a problem not listed above: e-mail \href{mailto:ltauxe@ucsd.edu}{ltauxe@ucsd.edu}. Include the following information: 1) the version of PmagPy that you are using, 2) your operating system, 3) any error messages that you got, 4) the datafile that is giving trouble, if relevant.

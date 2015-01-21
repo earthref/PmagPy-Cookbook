@@ -37,3 +37,6 @@ Thellier_GUI_tutorial.tex
 *.xref
 *.idv
 *.log
+#PmagPy.tex#
+.DS_Store
+#PmagPy.tex#
