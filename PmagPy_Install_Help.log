@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=latex 2012.6.30)  21 JAN 2015 12:25
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=latex 2012.6.30)  13 FEB 2015 17:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,7 +8,7 @@ de"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.
 documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname
  tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{
 \HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode html,1,sections+.a.b.c.\inp
-ut  PmagPy_Install_Help
+ut  PmagPy_Install_Help.tex
 (./PmagPy_Install_Help.tex
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
@@ -643,6 +643,6 @@ Here is how much of TeX's memory you used:
  11802 multiletter control sequences out of 15000+200000
  4365 words of font info for 17 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,5n,30p,954b,586s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,5n,30p,958b,586s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on PmagPy_Install_Help.dvi (9 pages, 21484 bytes).
